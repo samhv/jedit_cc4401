@@ -1,0 +1,16 @@
+<project name="JRipples" default="build">
+  <description>
+    This is an ant build.xml file for building the JRipples plugin for jEdit.
+  </description>
+
+  <property file="build.properties"/>
+  <property file="../build.properties"/>
+  <import file="..\buildsupport\plugin-build.xml" />
+
+  <!-- Extra files that should be included in the jar -->
+  <selector id="packageFiles">
+    <or>
+        <filename name="*.txt" />
+    </or>
+  </selector>
+</project>
