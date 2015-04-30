@@ -26,13 +26,13 @@ DefaultGroupName=jEdit
 FlatComponentsList=false
 ; Do not use LicenseFile here as the GPL does not require acceptance of
 ; the license for running the program, but still show it as information
-InfoBeforeFile=C:\Users\Jorge\Documents\GitHub\jedit_cc4401\src\dist\doc\COPYING.txt
+InfoBeforeFile=C:\Users\Zange\Documents\GitHub\jedit_cc4401\src\dist\doc\COPYING.txt
 OutputBaseFilename=jedit5.3pre1install
-OutputDir=C:\Users\Jorge\Documents\GitHub\jedit_cc4401\src\dist
-SetupIconFile=C:\Users\Jorge\Documents\GitHub\jedit_cc4401\src\icons\jedit.ico
+OutputDir=C:\Users\Zange\Documents\GitHub\jedit_cc4401\src\dist
+SetupIconFile=C:\Users\Zange\Documents\GitHub\jedit_cc4401\src\icons\jedit.ico
 ShowTasksTreeLines=true
 SolidCompression=true
-SourceDir=C:\Users\Jorge\Documents\GitHub\jedit_cc4401\src\dist
+SourceDir=C:\Users\Zange\Documents\GitHub\jedit_cc4401\src\dist
 TimeStampsInUTC=true
 UninstallDisplayIcon={app}\jedit.exe
 UninstallDisplayName=jEdit 5.3pre1
@@ -41,8 +41,8 @@ VersionInfoCopyright=Copyright © 1998-2015 Contributors
 VersionInfoDescription=Programmer's Text Editor
 VersionInfoTextVersion=5.3pre1
 VersionInfoVersion=05.03.01.00
-WizardImageFile=C:\Users\Jorge\Documents\GitHub\jedit_cc4401\src\icons\WindowsInstallerImage.bmp
-WizardSmallImageFile=C:\Users\Jorge\Documents\GitHub\jedit_cc4401\src\icons\WindowsInstallerSmallImage.bmp
+WizardImageFile=C:\Users\Zange\Documents\GitHub\jedit_cc4401\src\icons\WindowsInstallerImage.bmp
+WizardSmallImageFile=C:\Users\Zange\Documents\GitHub\jedit_cc4401\src\icons\WindowsInstallerSmallImage.bmp
 
 [Components]
 Name: main; Description: jEdit - Programmer's Text Editor; Flags: fixed; Types: custom compact full

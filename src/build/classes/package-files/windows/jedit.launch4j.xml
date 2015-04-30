@@ -30,7 +30,7 @@
 	<supportUrl>http://www.jEdit.org</supportUrl>
 	<cmdLine>-reuseview</cmdLine>
 	<stayAlive>true</stayAlive>
-	<icon>C:\Users\Jorge\Documents\GitHub\jedit_cc4401\src/icons/jedit.ico</icon>
+	<icon>C:\Users\Zange\Documents\GitHub\jedit_cc4401\src/icons/jedit.ico</icon>
 	<jre>
 		<minVersion>1.7.0</minVersion>
 		<!-- Prefer JDK to make tools.jar available if possible. -->
