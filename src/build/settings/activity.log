@@ -1,0 +1,153 @@
+Log file created on Tue Apr 28 12:59:27 GMT-02:00 2015
+IMPORTANT:
+Because updating this file after every log message would kill
+performance, it will be *incomplete* unless you invoke the
+Utilities->Troubleshooting->Update Activity Log on Disk command!
+12:59:24 PM [main] [message] Log: When reporting bugs, please include the following information:
+12:59:24 PM [main] [message] Log: java.version=1.7.0_71
+12:59:24 PM [main] [message] Log: java.vm.version=24.71-b01
+12:59:24 PM [main] [message] Log: java.vm.name=Java HotSpot(TM) Client VM
+12:59:24 PM [main] [message] Log: java.runtime.version=1.7.0_71-b14
+12:59:24 PM [main] [message] Log: java.runtime.name=Java(TM) SE Runtime Environment
+12:59:24 PM [main] [message] Log: java.vendor=Oracle Corporation
+12:59:24 PM [main] [message] Log: java.compiler=null
+12:59:24 PM [main] [message] Log: os.name=Windows 7
+12:59:24 PM [main] [message] Log: os.version=6.1
+12:59:24 PM [main] [message] Log: os.arch=x86
+12:59:24 PM [main] [message] Log: user.home=C:\Users\hfehrmann
+12:59:24 PM [main] [message] Log: java.home=C:\Program Files\Java\jre7
+12:59:24 PM [main] [message] Log: java.class.path=C:\Proyectos Java (E)\jEdit CC-4401\src\build\jedit.jar
+12:59:24 PM [main] [message] jEdit: starting with command line arguments: -settings=C:\Proyectos Java (E)\jEdit CC-4401\src\build/settings
+12:59:24 PM [main] [debug] jEdit: before splash screen activation:435 ms
+12:59:27 PM [main] [debug] jEdit: after splash screen activation:3027 ms
+12:59:27 PM [main] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\activity.log" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\activity.log~1~"
+12:59:27 PM [main] [notice] jEdit: jEdit version 5.3pre1
+12:59:27 PM [main] [message] jEdit: Settings directory is C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings
+12:59:28 PM [main] [message] jEdit: jEdit home directory is C:\Proyectos Java (E)\jEdit CC-4401\src\build
+12:59:28 PM [main] [debug] SplashScreen: init:1234/3372ms
+12:59:28 PM [main] [debug] SplashScreen: init system properties:150/3522ms
+12:59:29 PM [main] [message] BeanShell: Beanshell Init
+12:59:29 PM [main] [debug] SplashScreen: init beanshell:435/3957ms
+12:59:29 PM [main] [debug] SplashScreen: loading site properties:7/3964ms
+12:59:29 PM [main] [debug] SplashScreen: loading user properties:232/4196ms
+12:59:29 PM [main] [debug] GUIUtilities: Icon theme set to: tango
+12:59:29 PM [main] [debug] GUIUtilities: Loading icon theme from: jeditresource:/org/gjt/sp/jedit/icons/themes/tango/
+12:59:29 PM [main] [debug] SplashScreen: init GUI:36/4232ms
+12:59:29 PM [main] [debug] EditServer: jEdit server started on port 50701
+12:59:29 PM [main] [debug] EditServer: Authorization key is 1678831009
+12:59:29 PM [main] [debug] SplashScreen: init server:31/4263ms
+12:59:29 PM [main] [debug] jEdit: initPLAF non-edt old=javax.swing.plaf.metal.MetalLookAndFeel requested=null new=javax.swing.plaf.metal.MetalLookAndFeel
+12:59:29 PM [main] [debug] SplashScreen: init look and feel:53/4316ms
+12:59:29 PM [main] [debug] SplashScreen: init VFS Manager:5/4321ms
+12:59:29 PM [main] [debug] ActionSet: Loading actions from jar:file:/C:/Proyectos%20Java%20(E)/jEdit%20CC-4401/src/build/jedit.jar!/org/gjt/sp/jedit/actions.xml
+12:59:29 PM [main] [debug] DockableWindowManager: Loading dockables from jar:file:/C:/Proyectos%20Java%20(E)/jEdit%20CC-4401/src/build/jedit.jar!/org/gjt/sp/jedit/dockables.xml
+12:59:29 PM [main] [debug] SplashScreen: init resources:448/4769ms
+12:59:30 PM [AWT-EventQueue-0] [debug] EditBus: SearchSettingsChanged[source=null]
+12:59:30 PM [main] [debug] SplashScreen: Migrate keymaps:198/4967ms
+12:59:30 PM [main] [notice] jEdit: Loading plugins from C:\Proyectos Java (E)\jEdit CC-4401\src\build\jars
+12:59:30 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=5.0,source=C:\Proyectos Java (E)\jEdit CC-4401\src\build\jars\QuickNotepad.jar,class=QuickNotepadPlugin]
+12:59:30 PM [main] [notice] jEdit: Loading plugins from C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\jars
+12:59:30 PM [main] [debug] SplashScreen: init plugins:151/5118ms
+12:59:30 PM [main] [message] HistoryModel: Loading history
+12:59:30 PM [main] [debug] SplashScreen: init history model:40/5158ms
+12:59:30 PM [main] [message] BufferHistory: Loading C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\recent.xml
+12:59:30 PM [main] [debug] SplashScreen: init buffer history:48/5206ms
+12:59:30 PM [main] [message] KillRing: Loading C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\killring.xml
+12:59:30 PM [main] [debug] SplashScreen: init killring:52/5258ms
+12:59:30 PM [main] [debug] jEdit: initPLAF non-edt old=javax.swing.plaf.metal.MetalLookAndFeel requested=null new=javax.swing.plaf.metal.MetalLookAndFeel
+12:59:30 PM [main] [debug] jEdit: SOCKS proxy disabled
+12:59:30 PM [main] [debug] jEdit: HTTP proxy disabled
+12:59:31 PM [AWT-EventQueue-0] [debug] EditBus: PropertiesChanged[source=null]
+12:59:31 PM [main] [debug] SplashScreen: init various properties:596/5854ms
+12:59:31 PM [main] [message] jEdit: Loading mode catalog file C:\Proyectos Java (E)\jEdit CC-4401\src\build\modes\catalog
+12:59:31 PM [main] [message] jEdit: Loading mode catalog file C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\modes\catalog
+12:59:31 PM [main] [debug] SplashScreen: init modes:183/6037ms
+12:59:31 PM [main] [debug] SplashScreen: activate plugins:37/6074ms
+12:59:31 PM [main] [debug] Macros: Registered beanshell macro handler
+12:59:31 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=macros,source=null]
+12:59:31 PM [main] [message] BeanShell: Running script C:\Proyectos Java (E)\jEdit CC-4401\src\build\startup\startup.bsh
+12:59:31 PM [main] [notice] jEdit$4: Loading edit mode C:\Proyectos Java (E)\jEdit CC-4401\src\build\modes\text.xml
+12:59:32 PM [main] [debug] String: BeanShell interpreter version 2.0b4-jedit
+12:59:32 PM [main] [debug] SplashScreen: init macros:1244/7318ms
+12:59:32 PM [main] [debug] SplashScreen: run startup scripts:4/7322ms
+12:59:32 PM [main] [debug] SplashScreen: run startup scripts:9/7327ms
+12:59:32 PM [main] [debug] jEdit: main done:8800 ms
+12:59:32 PM [AWT-EventQueue-0] [message] PerspectiveManager: Loading C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=null,source=La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=null,source=La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=null,source=La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
+12:59:34 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+12:59:34 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+12:59:34 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212 addBufferAt(Sin sdas.png (%USERPROFILE%\Desktop\),-1)
+12:59:34 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212: Buffer added Sin sdas.png (%USERPROFILE%\Desktop\) at 0
+12:59:35 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212 addBufferAt(Sin sdas.png (%USERPROFILE%\Desktop\),0)
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212 addBufferAt(La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\),1)
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212: Buffer added La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\) at 0
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212 addBufferAt(Nuevo documento de texto.txt (%USERPROFILE%\Desktop\),2)
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212: Buffer added Nuevo documento de texto.txt (%USERPROFILE%\Desktop\) at 1
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212 addBufferAt(Sin sdas.png (%USERPROFILE%\Desktop\),3)
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+12:59:35 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657 addBufferAt(Sin sdas.png (%USERPROFILE%\Desktop\),-1)
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657: Buffer added Sin sdas.png (%USERPROFILE%\Desktop\) at 0
+12:59:35 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657 addBufferAt(Sin sdas.png (%USERPROFILE%\Desktop\),0)
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657 addBufferAt(La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\),1)
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657: Buffer added La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\) at 0
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657 addBufferAt(Nuevo documento de texto.txt (%USERPROFILE%\Desktop\),2)
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657: Buffer added Nuevo documento de texto.txt (%USERPROFILE%\Desktop\) at 1
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657 addBufferAt(Sin sdas.png (%USERPROFILE%\Desktop\),3)
+12:59:36 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CREATED,source=org.gjt.sp.jedit.View[active]]
+12:59:38 PM [AWT-EventQueue-0] [debug] EditBus: EditorStarted[source=null]
+12:59:38 PM [AWT-EventQueue-0] [message] jEdit: Startup complete: 14622 ms
+12:59:38 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+12:59:38 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
+12:59:44 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+01:00:00 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
+01:03:51 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+01:03:51 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+01:03:51 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+01:03:51 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+01:18:34 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+01:18:34 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+01:18:34 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+01:18:34 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+02:20:24 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+02:20:24 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+02:20:25 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+02:20:25 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+02:20:27 PM [AWT-EventQueue-0] [debug] EditBus: EditorExitRequested[source=org.gjt.sp.jedit.View[active]]
+02:20:27 PM [AWT-EventQueue-0] [message] PerspectiveManager: Saving C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml
+02:20:28 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
+02:20:28 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+02:20:28 PM [AWT-EventQueue-0] [debug] EditBus: EditorExiting[source=null]
+02:20:28 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CLOSED,source=org.gjt.sp.jedit.View[active]]
+02:20:29 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+02:20:29 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[active]]
+02:20:29 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
+02:20:29 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
+02:20:29 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
+02:20:29 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+02:20:29 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[inactive]]
+02:20:29 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
+02:20:30 PM [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\) is in no bufferSet anymore, closing it
+02:20:30 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
+02:20:30 PM [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:Nuevo documento de texto.txt (%USERPROFILE%\Desktop\) is in no bufferSet anymore, closing it
+02:20:30 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
+02:20:30 PM [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:Sin sdas.png (%USERPROFILE%\Desktop\) is in no bufferSet anymore, closing it
+02:20:30 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=5.0,source=C:\Proyectos Java (E)\jEdit CC-4401\src\build\jars\QuickNotepad.jar,class=QuickNotepadPlugin]
+02:20:31 PM [AWT-EventQueue-0] [message] BufferHistory: Saving C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\recent.xml
+02:20:31 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\recent.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\recent.xml~1~"
+02:20:31 PM [AWT-EventQueue-0] [message] KillRing: Saving C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\killring.xml
+02:20:31 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\killring.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\killring.xml~1~"
+02:20:31 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\properties" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\properties~1~"
