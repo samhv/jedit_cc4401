@@ -1,0 +1,21 @@
+#jEdit properties
+#Tue May 05 15:14:49 CLT 2015
+firstTime=false
+helpviewer.extendedState=0
+helpviewer.height=522
+helpviewer.splitter=250
+helpviewer.width=750
+helpviewer.x=50
+helpviewer.y=50
+keymap.current=imported
+migration.step.checkFileStatus=true
+search.beanshell.toggle=false
+search.ignoreCase.toggle=false
+search.regexp.toggle=false
+search.wholeWord.toggle=false
+search.wrap.toggle=false
+view.extendedState=6
+view.height=527
+view.width=762
+view.x=261
+view.y=148
