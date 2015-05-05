@@ -125,3 +125,67 @@ Utilities->Troubleshooting->Update Activity Log on Disk command!
 15:40:37 [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
 16:04:28 [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
 16:04:28 [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+16:06:02 [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+16:06:02 [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+16:08:13 [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+16:08:13 [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+16:08:14 [AWT-EventQueue-0] [warning] EditAction$Wrapper: Unknown action: GitHub
+16:08:15 [AWT-EventQueue-0] [warning] EditAction$Wrapper: Unknown action: GitHub
+16:08:15 [AWT-EventQueue-0] [warning] EditAction$Wrapper: Unknown action: GitHub
+16:08:16 [AWT-EventQueue-0] [warning] EditAction$Wrapper: Unknown action: GitHub
+16:08:16 [AWT-EventQueue-0] [warning] EditAction$Wrapper: Unknown action: GitHub
+16:16:09 [AWT-EventQueue-0] [debug] EditBus: EditorExitRequested[source=org.gjt.sp.jedit.View[active]]
+16:16:09 [AWT-EventQueue-0] [message] PerspectiveManager: Saving /Users/Pablo/git/jedit_cc4401/src/build/settings/perspective.xml
+16:16:09 [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/Users/Pablo/git/jedit_cc4401/src/build/settings/perspective.xml" to "/Users/Pablo/git/jedit_cc4401/src/build/settings/settings-backup/perspective.xml~1~"
+16:16:09 [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CLOSING,view=org.gjt.sp.jedit.View[active],source=Untitled-1 (~/)]
+16:16:09 [AWT-EventQueue-0] [debug] BufferSet: 2135667400: Buffer removed Untitled-1 (~/)
+16:16:09 [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Untitled-1 (~/)]
+16:16:09 [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=null,source=Untitled-1 (~/)]
+16:16:09 [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=null,source=Untitled-1 (~/)]
+16:16:09 [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=null,source=Untitled-1 (~/)]
+16:16:09 [AWT-EventQueue-0] [debug] BufferSet: 2135667400 addBufferAt(Untitled-1 (~/),-1)
+16:16:09 [AWT-EventQueue-0] [debug] BufferSet: 2135667400: Buffer added Untitled-1 (~/) at 0
+16:16:09 [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+16:16:09 [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+16:16:09 [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CLOSED,view=org.gjt.sp.jedit.View[active],source=Untitled-1 (~/)]
+16:16:09 [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CLOSED,source=org.gjt.sp.jedit.View[active]]
+16:16:09 [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[active]]
+16:16:09 [AWT-EventQueue-0] [debug] BufferSet: 2135667400: Buffer removed Untitled-1 (~/)
+16:16:09 [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:Untitled-1 (~/) is in no bufferSet anymore, closing it
+16:16:09 [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CLOSING,view=null,source=Untitled-1 (~/)]
+16:16:09 [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CLOSED,view=null,source=Untitled-1 (~/)]
+16:16:09 [AWT-EventQueue-0] [message] BufferHistory: Saving /Users/Pablo/git/jedit_cc4401/src/build/settings/recent.xml
+16:16:09 [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/Users/Pablo/git/jedit_cc4401/src/build/settings/recent.xml" to "/Users/Pablo/git/jedit_cc4401/src/build/settings/settings-backup/recent.xml~1~"
+16:16:09 [AWT-EventQueue-0] [message] KillRing: Saving /Users/Pablo/git/jedit_cc4401/src/build/settings/killring.xml
+16:16:09 [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/Users/Pablo/git/jedit_cc4401/src/build/settings/killring.xml" to "/Users/Pablo/git/jedit_cc4401/src/build/settings/settings-backup/killring.xml~1~"
+16:16:09 [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/Users/Pablo/git/jedit_cc4401/src/build/settings/properties" to "/Users/Pablo/git/jedit_cc4401/src/build/settings/settings-backup/properties~1~"
+16:16:11 [AWT-EventQueue-0] [message] PerspectiveManager: Loading /Users/Pablo/git/jedit_cc4401/src/build/settings/perspective.xml
+16:16:11 [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Untitled-1 (~/)]
+16:16:11 [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=null,source=Untitled-1 (~/)]
+16:16:11 [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=null,source=Untitled-1 (~/)]
+16:16:11 [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=null,source=Untitled-1 (~/)]
+16:16:11 [AWT-EventQueue-0] [debug] BufferSet: 1289613587: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+16:16:11 [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+16:16:11 [AWT-EventQueue-0] [debug] BufferSet: 1289613587 addBufferAt(Untitled-1 (~/),-1)
+16:16:11 [AWT-EventQueue-0] [debug] BufferSet: 1289613587: Buffer added Untitled-1 (~/) at 0
+16:16:11 [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+16:16:11 [AWT-EventQueue-0] [debug] BufferSet: 1289613587 addBufferAt(Untitled-1 (~/),0)
+16:16:11 [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CREATED,source=org.gjt.sp.jedit.View[active]]
+16:16:11 [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+16:16:11 [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
+16:16:12 [AWT-EventQueue-0] [debug] EditBus: EditorExitRequested[source=org.gjt.sp.jedit.View[active]]
+16:16:12 [AWT-EventQueue-0] [message] PerspectiveManager: Saving /Users/Pablo/git/jedit_cc4401/src/build/settings/perspective.xml
+16:16:12 [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/Users/Pablo/git/jedit_cc4401/src/build/settings/perspective.xml" to "/Users/Pablo/git/jedit_cc4401/src/build/settings/settings-backup/perspective.xml~1~"
+16:16:12 [AWT-EventQueue-0] [debug] EditBus: EditorExiting[source=null]
+16:16:12 [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CLOSED,source=org.gjt.sp.jedit.View[active]]
+16:16:12 [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[active]]
+16:16:12 [AWT-EventQueue-0] [debug] BufferSet: 1289613587: Buffer removed Untitled-1 (~/)
+16:16:12 [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:Untitled-1 (~/) is in no bufferSet anymore, closing it
+16:16:12 [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=DEACTIVATED,exit=true,version=1.3,source=/Users/Pablo/git/jedit_cc4401/src/build/jars/MacOSX.jar,class=macosx.MacOSXPlugin]
+16:16:12 [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=1.3,source=/Users/Pablo/git/jedit_cc4401/src/build/jars/MacOSX.jar,class=macosx.MacOSXPlugin]
+16:16:12 [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=5.0,source=/Users/Pablo/git/jedit_cc4401/src/build/jars/QuickNotepad.jar,class=QuickNotepadPlugin]
+16:16:12 [AWT-EventQueue-0] [message] BufferHistory: Saving /Users/Pablo/git/jedit_cc4401/src/build/settings/recent.xml
+16:16:12 [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/Users/Pablo/git/jedit_cc4401/src/build/settings/recent.xml" to "/Users/Pablo/git/jedit_cc4401/src/build/settings/settings-backup/recent.xml~1~"
+16:16:12 [AWT-EventQueue-0] [message] KillRing: Saving /Users/Pablo/git/jedit_cc4401/src/build/settings/killring.xml
+16:16:12 [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/Users/Pablo/git/jedit_cc4401/src/build/settings/killring.xml" to "/Users/Pablo/git/jedit_cc4401/src/build/settings/settings-backup/killring.xml~1~"
+16:16:12 [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/Users/Pablo/git/jedit_cc4401/src/build/settings/properties" to "/Users/Pablo/git/jedit_cc4401/src/build/settings/settings-backup/properties~1~"
