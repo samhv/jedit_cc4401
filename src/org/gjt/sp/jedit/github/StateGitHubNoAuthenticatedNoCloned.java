@@ -13,20 +13,17 @@ import org.eclipse.jgit.api.errors.NoHeadException;
 import org.eclipse.jgit.api.errors.NoMessageException;
 import org.eclipse.jgit.api.errors.WrongRepositoryStateException;
 
-public class StateGitHubAuthenticated extends StateGitHub {
+public class StateGitHubNoAuthenticatedNoCloned extends StateGitHub{
 
-	public StateGitHubAuthenticated(GitHub git)
+	public StateGitHubNoAuthenticatedNoCloned(GitHub git)
 	{
 		super(git);
 	}
-
+	
 	@Override
-	public void clone(String remote_url, String path) throws GitAPIException{
-		File localPath = new File(path);
-		Git result = Git.cloneRepository()
-                .setURI(remote_url)
-                .setDirectory(localPath)
-                .call();
+	public void clone(String remote_url, String path) throws GitAPIException {
+		super.clone(remote_url,path);
+		gitHub.setState(new StateGitHubNoAuthenticatedCloned(gitHub));
 	}
 
 	@Override
@@ -35,19 +32,17 @@ public class StateGitHubAuthenticated extends StateGitHub {
 			ConcurrentRefUpdateException, JGitInternalException,
 			WrongRepositoryStateException, GitAPIException {
 		
-		Git git = Git.open(new File(path));
-        git.add().addFilepattern(".").call();
-        git.commit().setMessage(comment).call();
-		
 	}
 
 	@Override
 	public void push(String path, String remote) throws JGitInternalException,
 			InvalidRemoteException, IOException, GitAPIException {
-		
-		Git git = Git.open(new File(path));
-		git.push().setRemote(remote).setCredentialsProvider(this.git.getCredential()).call();
-		
+
 	}
-	
+
+	@Override
+	public void authenticate() {
+		gitHub.setState(new StateGitHubAuthenticatedNoCloned(gitHub));
+	}
+
 }
