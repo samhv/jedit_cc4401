@@ -10,11 +10,11 @@
     <property name="lib" location="lib"/>
 
     <!-- default location of jEdit installation containing jedit.jar -->
-    <property name="jedit.install.dir" location="../.."/>
+    <property name="jedit.install.dir" location="../../src/build/"/>
 
     <!-- default location of user folder containing plugin jars -->
-    <property name="install.dir"  location="${user.home}/.jedit/jars"/>
-    <property name="jedit.plugins.dir" location="${install.dir}"/>
+    <property name="install.dir"  location="build"/>
+    <property name="jedit.plugins.dir" location="plugin"/>
 
     <!-- set up the classpath for the build -->
     <path id="project.class.path">
