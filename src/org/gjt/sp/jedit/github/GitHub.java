@@ -10,18 +10,15 @@ import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
 
 public class GitHub implements IGitHub {
 	
-	private UsernamePasswordCredentialsProvider credential;
 	private static IGitHub singleton;
-	private StateGitHub state;
+	private IStateGitHub state;
+	
+	private UsernamePasswordCredentialsProvider credential;
+	private String localPath;
 	
 	private GitHub()
 	{
-		this.state = new StateGitHubNoAuthenticated(this);
-	}
-	
-	private GitHub(String usr,String pass) {
-		this.credential = new UsernamePasswordCredentialsProvider(usr,pass);
-		this.state = new StateGitHubAuthenticated(this);
+		this.state = new StateGitHubNoAuthenticatedNoCloned(this);
 	}
 	
 	public static IGitHub getInstance()
@@ -31,39 +28,56 @@ public class GitHub implements IGitHub {
 		return singleton;	
 	}
 	
-	/*authenticate git hub account*/
-	public static void auth(String usr,String pass)
-	{
-		singleton = new GitHub(usr,pass);
-	}
-	
+	@Override
 	public void authenticate(String usr,String pass)
 	{
 		this.credential = new UsernamePasswordCredentialsProvider(usr,pass);
-		this.state = new StateGitHubAuthenticated(this);
+		state.authenticate();
 	}
 	
+	@Override
 	public void clone(String remote_url,String path) throws GitAPIException
 	{
+		this.localPath = path;
 		state.clone(remote_url, path);
 	}
 	
+	@Override
 	public void commit(String path, String comment) throws IOException, JGitInternalException, GitAPIException
 	{
 		state.commit(path, comment);
 	}
 	
+	@Override
 	public void push(String path, String remote) throws JGitInternalException, IOException, GitAPIException
 	{
 		state.push(path, remote);
 	}
+	
+	@Override
+	public void commit(String comment) throws IOException, JGitInternalException, GitAPIException
+	{
+		this.commit(this.localPath, comment);
+	}
+	
+	@Override
 	public void push(String path) throws JGitInternalException, IOException, GitAPIException
 	{
-		state.push(path,"origin");
+		this.push(path,"origin");
 	}
-
+	
+	@Override
+	public void push() throws JGitInternalException, IOException, GitAPIException
+	{
+		this.push(this.localPath, "origin");
+	}
+	
 	public CredentialsProvider getCredential() {
 		return credential;
+	}
+
+	public void setState(IStateGitHub state) {
+		this.state=state;
 	}
 	
 }
