@@ -10,6 +10,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
@@ -48,11 +49,7 @@ public class Ventana extends JFrame {
 
 		JTabbedPane panel_tab = new JTabbedPane();
 		contenedor.add(panel_tab);
-		// JPanel panel_login = new JPanel();
-		// JPanel panel_commit = new JPanel();
-		// JPanel panel_push = new JPanel();
-		// JPanel panel_issues = new JPanel();
-
+		
 		createLoginPanel();
 		createCommitPanel();
 		createPushPanel();
@@ -77,6 +74,9 @@ public class Ventana extends JFrame {
 			JLabel l = new JLabel(labels[i], JLabel.TRAILING);
 			panel_login.add(l);
 			JTextField textField = new JTextField(10);
+			if(i == 1){
+				textField = new JPasswordField(10);
+			}
 			l.setLabelFor(textField);
 			panel_login.add(textField);
 		}
