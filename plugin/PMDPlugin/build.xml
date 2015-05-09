@@ -5,16 +5,16 @@
     <property file="../build.properties"/>
 
     <!-- properties specific to this build file -->
-    <property name="build" location="build"/>
-    <property name="src" location="../../src"/>
+    <property name="build" location="../../src/build"/>
+    <property name="src" location="src"/>
     <property name="lib" location="lib"/>
 
     <!-- default location of jEdit installation containing jedit.jar -->
-    <property name="jedit.install.dir" location="../../src/build/"/>
+    <property name="jedit.install.dir" location="${build}"/>
 
     <!-- default location of user folder containing plugin jars -->
-    <property name="install.dir"  location="build"/>
-    <property name="jedit.plugins.dir" location="plugin"/>
+    <property name="install.dir"  location="${build}/jars"/>
+    <property name="jedit.plugins.dir" location="${lib}"/>
 
     <!-- set up the classpath for the build -->
     <path id="project.class.path">
