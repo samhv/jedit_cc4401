@@ -1,457 +1,153 @@
-Log file created on Wed Apr 22 17:06:36 BRT 2015
+Log file created on Tue Apr 28 12:59:27 GMT-02:00 2015
 IMPORTANT:
 Because updating this file after every log message would kill
 performance, it will be *incomplete* unless you invoke the
 Utilities->Troubleshooting->Update Activity Log on Disk command!
-05:06:33 PM [main] [message] Log: When reporting bugs, please include the following information:
-05:06:33 PM [main] [message] Log: java.version=1.7.0_71
-05:06:33 PM [main] [message] Log: java.vm.version=24.71-b01
-05:06:33 PM [main] [message] Log: java.vm.name=Java HotSpot(TM) Client VM
-05:06:33 PM [main] [message] Log: java.runtime.version=1.7.0_71-b14
-05:06:33 PM [main] [message] Log: java.runtime.name=Java(TM) SE Runtime Environment
-05:06:33 PM [main] [message] Log: java.vendor=Oracle Corporation
-05:06:33 PM [main] [message] Log: java.compiler=null
-05:06:33 PM [main] [message] Log: os.name=Windows 7
-05:06:33 PM [main] [message] Log: os.version=6.1
-05:06:33 PM [main] [message] Log: os.arch=x86
-05:06:33 PM [main] [message] Log: user.home=C:\Users\hfehrmann
-05:06:33 PM [main] [message] Log: java.home=C:\Program Files\Java\jre7
-05:06:33 PM [main] [message] Log: java.class.path=C:\Proyectos Java (E)\jEdit CC-4401\src\build\jedit.jar
-05:06:33 PM [main] [message] jEdit: starting with command line arguments: -settings=C:\Proyectos Java (E)\jEdit CC-4401\src\build/settings
-05:06:34 PM [main] [notice] jEdit: An error occurred while connecting to the jEdit server instance.
-05:06:34 PM [main] [notice] jEdit: This probably means that jEdit crashed and/or exited abnormally
-05:06:34 PM [main] [notice] jEdit: the last time it was run.
-05:06:34 PM [main] [notice] jEdit: If you don't know what this means, don't worry.
-05:06:34 PM [main] [notice] jEdit: java.net.ConnectException: Connection refused: connect
-05:06:34 PM [main] [notice] jEdit:  at java.net.DualStackPlainSocketImpl.connect0(Native Method)
-05:06:34 PM [main] [notice] jEdit:  at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-05:06:34 PM [main] [notice] jEdit:  at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-05:06:34 PM [main] [notice] jEdit:  at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-05:06:34 PM [main] [notice] jEdit:  at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-05:06:34 PM [main] [notice] jEdit:  at java.net.PlainSocketImpl.connect(Unknown Source)
-05:06:34 PM [main] [notice] jEdit:  at java.net.SocksSocketImpl.connect(Unknown Source)
-05:06:34 PM [main] [notice] jEdit:  at java.net.Socket.connect(Unknown Source)
-05:06:34 PM [main] [notice] jEdit:  at java.net.Socket.connect(Unknown Source)
-05:06:34 PM [main] [notice] jEdit:  at java.net.Socket.<init>(Unknown Source)
-05:06:34 PM [main] [notice] jEdit:  at java.net.Socket.<init>(Unknown Source)
-05:06:34 PM [main] [notice] jEdit:  at org.gjt.sp.jedit.jEdit.main(jEdit.java:318)
-05:06:34 PM [main] [debug] jEdit: before splash screen activation:1301 ms
-05:06:36 PM [main] [debug] jEdit: after splash screen activation:3357 ms
-05:06:36 PM [main] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\activity.log" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\activity.log~1~"
-05:06:36 PM [main] [notice] jEdit: jEdit version 5.3pre1
-05:06:36 PM [main] [message] jEdit: Settings directory is C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings
-05:06:36 PM [main] [message] jEdit: jEdit home directory is C:\Proyectos Java (E)\jEdit CC-4401\src\build
-05:06:36 PM [main] [debug] SplashScreen: init:104/1630ms
-05:06:36 PM [main] [debug] SplashScreen: init system properties:193/1823ms
-05:06:37 PM [main] [message] BeanShell: Beanshell Init
-05:06:37 PM [main] [debug] SplashScreen: init beanshell:271/2094ms
-05:06:37 PM [main] [debug] SplashScreen: loading site properties:6/2100ms
-05:06:37 PM [main] [debug] SplashScreen: loading user properties:179/2279ms
-05:06:37 PM [main] [debug] GUIUtilities: Icon theme set to: tango
-05:06:37 PM [main] [debug] GUIUtilities: Loading icon theme from: jeditresource:/org/gjt/sp/jedit/icons/themes/tango/
-05:06:37 PM [main] [debug] SplashScreen: init GUI:17/2296ms
-05:06:37 PM [main] [debug] EditServer: jEdit server started on port 61185
-05:06:37 PM [main] [debug] EditServer: Authorization key is 2016262794
-05:06:37 PM [main] [debug] SplashScreen: init server:18/2314ms
-05:06:37 PM [main] [debug] jEdit: initPLAF non-edt old=javax.swing.plaf.metal.MetalLookAndFeel requested=null new=javax.swing.plaf.metal.MetalLookAndFeel
-05:06:37 PM [main] [debug] SplashScreen: init look and feel:27/2341ms
-05:06:37 PM [main] [debug] SplashScreen: init VFS Manager:5/2346ms
-05:06:37 PM [main] [debug] ActionSet: Loading actions from jar:file:/C:/Proyectos%20Java%20(E)/jEdit%20CC-4401/src/build/jedit.jar!/org/gjt/sp/jedit/actions.xml
-05:06:37 PM [main] [debug] DockableWindowManager: Loading dockables from jar:file:/C:/Proyectos%20Java%20(E)/jEdit%20CC-4401/src/build/jedit.jar!/org/gjt/sp/jedit/dockables.xml
-05:06:37 PM [main] [debug] SplashScreen: init resources:324/2670ms
-05:06:37 PM [AWT-EventQueue-0] [debug] EditBus: SearchSettingsChanged[source=null]
-05:06:37 PM [main] [debug] SplashScreen: Migrate keymaps:176/2846ms
-05:06:37 PM [main] [notice] jEdit: Loading plugins from C:\Proyectos Java (E)\jEdit CC-4401\src\build\jars
-05:06:37 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=5.0,source=C:\Proyectos Java (E)\jEdit CC-4401\src\build\jars\QuickNotepad.jar,class=QuickNotepadPlugin]
-05:06:37 PM [main] [notice] jEdit: Loading plugins from C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\jars
-05:06:38 PM [main] [debug] SplashScreen: init plugins:119/2965ms
-05:06:38 PM [main] [message] HistoryModel: Loading history
-05:06:38 PM [main] [debug] SplashScreen: init history model:27/2992ms
-05:06:38 PM [main] [message] BufferHistory: Loading C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\recent.xml
-05:06:38 PM [main] [debug] SplashScreen: init buffer history:15/3007ms
-05:06:38 PM [main] [message] KillRing: Loading C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\killring.xml
-05:06:38 PM [main] [debug] SplashScreen: init killring:68/3075ms
-05:06:38 PM [main] [debug] jEdit: initPLAF non-edt old=javax.swing.plaf.metal.MetalLookAndFeel requested=null new=javax.swing.plaf.metal.MetalLookAndFeel
-05:06:38 PM [main] [debug] jEdit: SOCKS proxy disabled
-05:06:38 PM [main] [debug] jEdit: HTTP proxy disabled
-05:06:38 PM [AWT-EventQueue-0] [debug] EditBus: PropertiesChanged[source=null]
-05:06:38 PM [main] [debug] SplashScreen: init various properties:663/3738ms
-05:06:38 PM [main] [message] jEdit: Loading mode catalog file C:\Proyectos Java (E)\jEdit CC-4401\src\build\modes\catalog
-05:06:38 PM [main] [message] jEdit: Loading mode catalog file C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\modes\catalog
-05:06:39 PM [main] [debug] SplashScreen: init modes:217/3955ms
-05:06:39 PM [main] [debug] SplashScreen: activate plugins:12/3967ms
-05:06:39 PM [main] [debug] Macros: Registered beanshell macro handler
-05:06:39 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=macros,source=null]
-05:06:39 PM [main] [message] BeanShell: Running script C:\Proyectos Java (E)\jEdit CC-4401\src\build\startup\startup.bsh
-05:06:39 PM [main] [notice] jEdit$4: Loading edit mode C:\Proyectos Java (E)\jEdit CC-4401\src\build\modes\text.xml
-05:06:39 PM [main] [debug] String: BeanShell interpreter version 2.0b4-jedit
-05:06:39 PM [main] [debug] SplashScreen: init macros:792/4759ms
-05:06:39 PM [main] [debug] SplashScreen: run startup scripts:3/4762ms
-05:06:39 PM [main] [debug] SplashScreen: run startup scripts:6/4765ms
-05:06:39 PM [main] [debug] jEdit: main done:7026 ms
-05:06:39 PM [AWT-EventQueue-0] [message] PerspectiveManager: Loading C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml
-05:06:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Untitled-1 (%USERPROFILE%\)]
-05:06:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=null,source=Untitled-1 (%USERPROFILE%\)]
-05:06:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=null,source=Untitled-1 (%USERPROFILE%\)]
-05:06:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=null,source=Untitled-1 (%USERPROFILE%\)]
-05:06:40 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
-05:06:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:06:41 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430 addBufferAt(Untitled-1 (%USERPROFILE%\),-1)
-05:06:41 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer added Untitled-1 (%USERPROFILE%\) at 0
-05:06:41 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:06:41 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430 addBufferAt(Untitled-1 (%USERPROFILE%\),0)
-05:06:41 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CREATED,source=org.gjt.sp.jedit.View[active]]
-05:06:42 PM [AWT-EventQueue-0] [debug] EditBus: EditorStarted[source=null]
-05:06:42 PM [AWT-EventQueue-0] [message] jEdit: Startup complete: 9767 ms
-05:06:42 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-05:06:42 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
-05:06:49 PM [AWT-EventQueue-0] [debug] ActionSet: Loading actions from jar:file:/C:/Proyectos%20Java%20(E)/jEdit%20CC-4401/src/build/jedit.jar!/org/gjt/sp/jedit/browser.actions.xml
-05:07:08 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
-05:07:11 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
-05:07:11 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430 addBufferAt(Nuevo documento de texto.txt (%USERPROFILE%\Desktop\),-1)
-05:07:11 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer added Nuevo documento de texto.txt (%USERPROFILE%\Desktop\) at 0
-05:07:11 PM [AWT-EventQueue-0] [debug] BufferSetManager: removeBuffer(BufferSet[nbBuffers=2],Untitled-1 (%USERPROFILE%\))
-05:07:11 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer removed Untitled-1 (%USERPROFILE%\)
-05:07:11 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:07:11 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:07:11 PM [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:Untitled-1 (%USERPROFILE%\) is in no bufferSet anymore, closing it
-05:07:11 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CLOSING,view=null,source=Untitled-1 (%USERPROFILE%\)]
-05:07:11 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CLOSED,view=null,source=Untitled-1 (%USERPROFILE%\)]
-05:07:11 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
-05:07:11 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
-05:07:11 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
-05:07:17 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:07:19 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:07:20 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:07:20 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:07:21 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:07:22 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:07:22 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:07:38 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
-05:08:16 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-05:08:16 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-05:08:16 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:18:03 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-05:18:03 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-05:18:03 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:23:05 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-05:23:05 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-05:23:05 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:23:10 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:23:21 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=org.gjt.sp.jedit.View[active],source=hw.rkt (%USERPROFILE%\Desktop\)]
-05:23:21 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430 addBufferAt(hw.rkt (%USERPROFILE%\Desktop\),-1)
-05:23:21 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer added hw.rkt (%USERPROFILE%\Desktop\) at 0
-05:23:21 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=org.gjt.sp.jedit.View[active],source=hw.rkt (%USERPROFILE%\Desktop\)]
-05:23:21 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:23:21 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:23:21 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:23:21 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=hw.rkt (%USERPROFILE%\Desktop\)]
-05:23:21 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=org.gjt.sp.jedit.View[active],source=hw.rkt (%USERPROFILE%\Desktop\)]
-05:23:23 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:23:23 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:23:23 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:23:29 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:23:29 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:23:29 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:23:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:23:32 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:23:32 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:23:35 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:23:35 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:23:35 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:23:38 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
-05:23:56 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:23:56 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:23:56 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:23:56 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CLOSING,view=org.gjt.sp.jedit.View[active],source=hw.rkt (%USERPROFILE%\Desktop\)]
-05:23:56 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer removed hw.rkt (%USERPROFILE%\Desktop\)
-05:23:56 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:23:56 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:23:56 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:23:56 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CLOSED,view=org.gjt.sp.jedit.View[active],source=hw.rkt (%USERPROFILE%\Desktop\)]
-05:24:03 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:24:08 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
-05:24:12 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=org.gjt.sp.jedit.View[active],source=Sin sdas.png (%USERPROFILE%\Desktop\)]
-05:24:12 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430 addBufferAt(Sin sdas.png (%USERPROFILE%\Desktop\),-1)
-05:24:12 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer added Sin sdas.png (%USERPROFILE%\Desktop\) at 1
-05:24:12 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=org.gjt.sp.jedit.View[active],source=Sin sdas.png (%USERPROFILE%\Desktop\)]
-05:24:12 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:24:12 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:24:12 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:24:12 PM [jEdit Worker #3] [notice] BufferLoadRequest: C:\Users\hfehrmann\Desktop\Sin sdas.png: Cp1252: java.nio.charset.UnmappableCharacterException: Input length = 1
-05:24:12 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: C:\Users\hfehrmann\Desktop\Sin sdas.png:
-05:24:12 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: The file could not be loaded correctly (some data might be lost) with
-05:24:12 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: the encoding "Cp1252".
-05:24:12 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: (java.nio.charset.UnmappableCharacterException: Input length = 1)
-05:24:12 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: Try selecting a different encoding.
-05:24:12 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: It can be selected with the menu File->Reload with Encoding.
-05:24:12 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: If you want it to be done automatically, add the candidates into
-05:24:12 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: "List of fallback encodings" in Encodings pane of Global Options.
-05:24:12 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
-05:24:13 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=org.gjt.sp.jedit.View[active],source=Sin sdas.png (%USERPROFILE%\Desktop\)]
-05:24:21 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:24:23 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:24:23 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:24:23 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:24:23 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:24:38 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
-05:24:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=org.gjt.sp.jedit.View[active],source=La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)]
-05:24:40 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430 addBufferAt(La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\),-1)
-05:24:40 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer added La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\) at 0
-05:24:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=org.gjt.sp.jedit.View[active],source=La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)]
-05:24:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:24:40 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:24:40 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:24:40 PM [jEdit Worker #2] [notice] BufferLoadRequest: C:\Users\hfehrmann\Desktop\La teoria que aquí se expone est a parcialmente desarrollada in.docx: Cp1252: java.nio.charset.UnmappableCharacterException: Input length = 1
-05:24:40 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: C:\Users\hfehrmann\Desktop\La teoria que aquí se expone est a parcialmente desarrollada in.docx:
-05:24:40 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: The file could not be loaded correctly (some data might be lost) with
-05:24:40 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: the encoding "Cp1252".
-05:24:40 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: (java.nio.charset.UnmappableCharacterException: Input length = 1)
-05:24:40 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: Try selecting a different encoding.
-05:24:40 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: It can be selected with the menu File->Reload with Encoding.
-05:24:40 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: If you want it to be done automatically, add the candidates into
-05:24:40 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: "List of fallback encodings" in Encodings pane of Global Options.
-05:24:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)]
-05:24:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=org.gjt.sp.jedit.View[active],source=La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)]
-05:24:50 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:24:50 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:24:50 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:24:51 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=DIRTY_CHANGED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
-05:24:52 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:24:52 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:24:52 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:24:54 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:24:54 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:24:54 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:24:56 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=SAVING,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
-05:24:56 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
-05:24:56 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=DIRTY_CHANGED,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
-05:24:56 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=SAVED,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
-05:24:56 PM [AWT-EventQueue-0] [debug] EditBus: VFSUpdate[path=C:\Users\hfehrmann\Desktop,source=null]
-05:24:56 PM [AWT-EventQueue-0] [debug] EditBus: VFSUpdate[path=C:\Users\hfehrmann\Desktop\#Nuevo documento de texto.txt#save#,source=null]
-05:24:56 PM [AWT-EventQueue-0] [debug] EditBus: VFSUpdate[path=C:\Users\hfehrmann\Desktop\Nuevo documento de texto.txt,source=null]
-05:24:56 PM [AWT-EventQueue-0] [debug] EditBus: VFSUpdate[path=C:\Users\hfehrmann\Desktop\Nuevo documento de texto.txt~,source=null]
-05:24:58 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=DIRTY_CHANGED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
-05:24:59 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=SAVING,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
-05:24:59 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
-05:24:59 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=DIRTY_CHANGED,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
-05:24:59 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=SAVED,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
-05:24:59 PM [AWT-EventQueue-0] [debug] EditBus: VFSUpdate[path=C:\Users\hfehrmann\Desktop,source=null]
-05:24:59 PM [AWT-EventQueue-0] [debug] EditBus: VFSUpdate[path=C:\Users\hfehrmann\Desktop\#Nuevo documento de texto.txt#save#,source=null]
-05:24:59 PM [AWT-EventQueue-0] [debug] EditBus: VFSUpdate[path=C:\Users\hfehrmann\Desktop\Nuevo documento de texto.txt,source=null]
-05:25:08 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
-05:28:08 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:28:08 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:28:08 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:28:10 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:28:10 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:28:10 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:33:15 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:33:16 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:33:16 PM [AWT-EventQueue-0] [debug] EditBus: RegisterChanged[register=%,source=null]
-05:33:16 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:33:16 PM [AWT-EventQueue-0] [debug] EditBus: RegisterChanged[register=%,source=null]
-05:33:18 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:33:18 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:33:18 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:33:19 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:33:19 PM [AWT-EventQueue-0] [debug] EditBus: RegisterChanged[register=%,source=null]
-05:33:19 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:33:19 PM [AWT-EventQueue-0] [debug] EditBus: RegisterChanged[register=%,source=null]
-05:33:20 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:33:20 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:33:20 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:34:03 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:03 PM [AWT-EventQueue-0] [debug] BufferSet: 1340436: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
-05:34:03 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:03 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:03 PM [AWT-EventQueue-0] [debug] BufferSet: 1340436 addBufferAt(La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\),0)
-05:34:03 PM [AWT-EventQueue-0] [debug] BufferSet: 1340436 addBufferAt(La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\),1)
-05:34:03 PM [AWT-EventQueue-0] [debug] BufferSet: 1340436 addBufferAt(Nuevo documento de texto.txt (%USERPROFILE%\Desktop\),2)
-05:34:03 PM [AWT-EventQueue-0] [debug] BufferSet: 1340436 addBufferAt(Sin sdas.png (%USERPROFILE%\Desktop\),3)
-05:34:03 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CREATED,source=org.gjt.sp.jedit.View[inactive]]
-05:34:03 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-05:34:03 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
-05:34:07 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-05:34:07 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-05:34:07 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:07 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:08 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
-05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-05:34:09 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-05:34:09 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-05:34:09 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:10 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CLOSED,source=org.gjt.sp.jedit.View[active]]
-05:34:10 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:10 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[active]]
-05:34:10 PM [AWT-EventQueue-0] [debug] BufferSet: 1340436: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
-05:34:10 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:34:10 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:34:10 PM [AWT-EventQueue-0] [debug] BufferSet: 1340436: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
-05:34:10 PM [AWT-EventQueue-0] [debug] BufferSet: 1340436: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
-05:34:10 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-05:34:10 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-05:34:10 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:15 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:15 PM [AWT-EventQueue-0] [debug] BufferSet: 29741446: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
-05:34:15 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:15 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:15 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
-05:34:15 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
-05:34:18 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:18 PM [AWT-EventQueue-0] [debug] BufferSet: 29617045: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
-05:34:18 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:18 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:18 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
-05:34:18 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
-05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:21 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
-05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:21 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
-05:34:21 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
-05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:21 PM [AWT-EventQueue-0] [debug] BufferSet: 29741446: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
-05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:21 PM [AWT-EventQueue-0] [debug] BufferSet: 29741446: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
-05:34:21 PM [AWT-EventQueue-0] [debug] BufferSet: 29741446: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
-05:34:23 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:23 PM [AWT-EventQueue-0] [debug] BufferSet: 6083766: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
-05:34:23 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:23 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:23 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
-05:34:23 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
-05:34:24 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:24 PM [AWT-EventQueue-0] [debug] BufferSet: 23652292: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
-05:34:24 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:24 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:24 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
-05:34:24 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
-05:34:25 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:25 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
-05:34:27 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:27 PM [AWT-EventQueue-0] [debug] BufferSet: 28575539: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
-05:34:27 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:27 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:27 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
-05:34:27 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
-05:34:29 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:34:29 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:29 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:34:30 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:30 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:30 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:30 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
-05:34:32 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:32 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
-05:34:35 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:34:35 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:35 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
-05:34:38 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
-05:34:39 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:39 PM [AWT-EventQueue-0] [debug] BufferSet: 3726975: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
-05:34:39 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:39 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:39 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
-05:34:39 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
-05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 29617045: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
-05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 29617045: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
-05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 29617045: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
-05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 28575539: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
-05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 28575539: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
-05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 28575539: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
-05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 6083766: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
-05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 6083766: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
-05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 6083766: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
-05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 23652292: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
-05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 23652292: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
-05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 23652292: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
-05:35:00 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:35:00 PM [AWT-EventQueue-0] [debug] BufferSet: 11525285: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
-05:35:00 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:35:00 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:35:00 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
-05:35:00 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
-05:35:08 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
-05:35:12 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:35:13 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=DIRTY_CHANGED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
-05:35:21 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=DIRTY_CHANGED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
-05:35:23 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-05:35:23 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
-05:35:25 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-05:35:26 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=DIRTY_CHANGED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
-05:35:26 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=DIRTY_CHANGED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
-05:35:58 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-05:35:58 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-05:35:58 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:35:58 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:41:33 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-05:41:33 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-05:41:33 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:41:33 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:48:03 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-05:48:03 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-05:48:03 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:48:03 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:48:09 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
-05:48:09 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-05:48:09 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-05:48:09 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-05:48:09 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-07:57:56 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-07:57:56 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-07:57:57 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-07:57:57 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-07:57:59 PM [AWT-EventQueue-0] [debug] EditBus: EditorExitRequested[source=org.gjt.sp.jedit.View[active]]
-07:57:59 PM [AWT-EventQueue-0] [message] PerspectiveManager: Saving C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml
-07:58:01 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
-07:58:01 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-07:58:01 PM [AWT-EventQueue-0] [debug] EditBus: EditorExiting[source=null]
-07:58:01 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CLOSED,source=org.gjt.sp.jedit.View[active]]
-07:58:03 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-07:58:03 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[inactive]]
-07:58:03 PM [AWT-EventQueue-0] [debug] BufferSet: 3726975: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
-07:58:03 PM [AWT-EventQueue-0] [debug] BufferSet: 3726975: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
-07:58:03 PM [AWT-EventQueue-0] [debug] BufferSet: 3726975: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
-07:58:03 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
-07:58:03 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[active]]
-07:58:03 PM [AWT-EventQueue-0] [debug] BufferSet: 11525285: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
-07:58:03 PM [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\) is in no bufferSet anymore, closing it
-07:58:03 PM [AWT-EventQueue-0] [debug] BufferSet: 11525285: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
-07:58:03 PM [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:Nuevo documento de texto.txt (%USERPROFILE%\Desktop\) is in no bufferSet anymore, closing it
-07:58:03 PM [AWT-EventQueue-0] [debug] BufferSet: 11525285: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
-07:58:03 PM [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:Sin sdas.png (%USERPROFILE%\Desktop\) is in no bufferSet anymore, closing it
-07:58:03 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=5.0,source=C:\Proyectos Java (E)\jEdit CC-4401\src\build\jars\QuickNotepad.jar,class=QuickNotepadPlugin]
-07:58:04 PM [AWT-EventQueue-0] [message] HistoryModel: Saving history
-07:58:04 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\history" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\history~1~"
-07:58:04 PM [AWT-EventQueue-0] [message] BufferHistory: Saving C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\recent.xml
-07:58:04 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\recent.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\recent.xml~1~"
-07:58:04 PM [AWT-EventQueue-0] [message] KillRing: Saving C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\killring.xml
-07:58:05 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\killring.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\killring.xml~1~"
-07:58:05 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\properties" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\properties~1~"
+12:59:24 PM [main] [message] Log: When reporting bugs, please include the following information:
+12:59:24 PM [main] [message] Log: java.version=1.7.0_71
+12:59:24 PM [main] [message] Log: java.vm.version=24.71-b01
+12:59:24 PM [main] [message] Log: java.vm.name=Java HotSpot(TM) Client VM
+12:59:24 PM [main] [message] Log: java.runtime.version=1.7.0_71-b14
+12:59:24 PM [main] [message] Log: java.runtime.name=Java(TM) SE Runtime Environment
+12:59:24 PM [main] [message] Log: java.vendor=Oracle Corporation
+12:59:24 PM [main] [message] Log: java.compiler=null
+12:59:24 PM [main] [message] Log: os.name=Windows 7
+12:59:24 PM [main] [message] Log: os.version=6.1
+12:59:24 PM [main] [message] Log: os.arch=x86
+12:59:24 PM [main] [message] Log: user.home=C:\Users\hfehrmann
+12:59:24 PM [main] [message] Log: java.home=C:\Program Files\Java\jre7
+12:59:24 PM [main] [message] Log: java.class.path=C:\Proyectos Java (E)\jEdit CC-4401\src\build\jedit.jar
+12:59:24 PM [main] [message] jEdit: starting with command line arguments: -settings=C:\Proyectos Java (E)\jEdit CC-4401\src\build/settings
+12:59:24 PM [main] [debug] jEdit: before splash screen activation:435 ms
+12:59:27 PM [main] [debug] jEdit: after splash screen activation:3027 ms
+12:59:27 PM [main] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\activity.log" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\activity.log~1~"
+12:59:27 PM [main] [notice] jEdit: jEdit version 5.3pre1
+12:59:27 PM [main] [message] jEdit: Settings directory is C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings
+12:59:28 PM [main] [message] jEdit: jEdit home directory is C:\Proyectos Java (E)\jEdit CC-4401\src\build
+12:59:28 PM [main] [debug] SplashScreen: init:1234/3372ms
+12:59:28 PM [main] [debug] SplashScreen: init system properties:150/3522ms
+12:59:29 PM [main] [message] BeanShell: Beanshell Init
+12:59:29 PM [main] [debug] SplashScreen: init beanshell:435/3957ms
+12:59:29 PM [main] [debug] SplashScreen: loading site properties:7/3964ms
+12:59:29 PM [main] [debug] SplashScreen: loading user properties:232/4196ms
+12:59:29 PM [main] [debug] GUIUtilities: Icon theme set to: tango
+12:59:29 PM [main] [debug] GUIUtilities: Loading icon theme from: jeditresource:/org/gjt/sp/jedit/icons/themes/tango/
+12:59:29 PM [main] [debug] SplashScreen: init GUI:36/4232ms
+12:59:29 PM [main] [debug] EditServer: jEdit server started on port 50701
+12:59:29 PM [main] [debug] EditServer: Authorization key is 1678831009
+12:59:29 PM [main] [debug] SplashScreen: init server:31/4263ms
+12:59:29 PM [main] [debug] jEdit: initPLAF non-edt old=javax.swing.plaf.metal.MetalLookAndFeel requested=null new=javax.swing.plaf.metal.MetalLookAndFeel
+12:59:29 PM [main] [debug] SplashScreen: init look and feel:53/4316ms
+12:59:29 PM [main] [debug] SplashScreen: init VFS Manager:5/4321ms
+12:59:29 PM [main] [debug] ActionSet: Loading actions from jar:file:/C:/Proyectos%20Java%20(E)/jEdit%20CC-4401/src/build/jedit.jar!/org/gjt/sp/jedit/actions.xml
+12:59:29 PM [main] [debug] DockableWindowManager: Loading dockables from jar:file:/C:/Proyectos%20Java%20(E)/jEdit%20CC-4401/src/build/jedit.jar!/org/gjt/sp/jedit/dockables.xml
+12:59:29 PM [main] [debug] SplashScreen: init resources:448/4769ms
+12:59:30 PM [AWT-EventQueue-0] [debug] EditBus: SearchSettingsChanged[source=null]
+12:59:30 PM [main] [debug] SplashScreen: Migrate keymaps:198/4967ms
+12:59:30 PM [main] [notice] jEdit: Loading plugins from C:\Proyectos Java (E)\jEdit CC-4401\src\build\jars
+12:59:30 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=5.0,source=C:\Proyectos Java (E)\jEdit CC-4401\src\build\jars\QuickNotepad.jar,class=QuickNotepadPlugin]
+12:59:30 PM [main] [notice] jEdit: Loading plugins from C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\jars
+12:59:30 PM [main] [debug] SplashScreen: init plugins:151/5118ms
+12:59:30 PM [main] [message] HistoryModel: Loading history
+12:59:30 PM [main] [debug] SplashScreen: init history model:40/5158ms
+12:59:30 PM [main] [message] BufferHistory: Loading C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\recent.xml
+12:59:30 PM [main] [debug] SplashScreen: init buffer history:48/5206ms
+12:59:30 PM [main] [message] KillRing: Loading C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\killring.xml
+12:59:30 PM [main] [debug] SplashScreen: init killring:52/5258ms
+12:59:30 PM [main] [debug] jEdit: initPLAF non-edt old=javax.swing.plaf.metal.MetalLookAndFeel requested=null new=javax.swing.plaf.metal.MetalLookAndFeel
+12:59:30 PM [main] [debug] jEdit: SOCKS proxy disabled
+12:59:30 PM [main] [debug] jEdit: HTTP proxy disabled
+12:59:31 PM [AWT-EventQueue-0] [debug] EditBus: PropertiesChanged[source=null]
+12:59:31 PM [main] [debug] SplashScreen: init various properties:596/5854ms
+12:59:31 PM [main] [message] jEdit: Loading mode catalog file C:\Proyectos Java (E)\jEdit CC-4401\src\build\modes\catalog
+12:59:31 PM [main] [message] jEdit: Loading mode catalog file C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\modes\catalog
+12:59:31 PM [main] [debug] SplashScreen: init modes:183/6037ms
+12:59:31 PM [main] [debug] SplashScreen: activate plugins:37/6074ms
+12:59:31 PM [main] [debug] Macros: Registered beanshell macro handler
+12:59:31 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=macros,source=null]
+12:59:31 PM [main] [message] BeanShell: Running script C:\Proyectos Java (E)\jEdit CC-4401\src\build\startup\startup.bsh
+12:59:31 PM [main] [notice] jEdit$4: Loading edit mode C:\Proyectos Java (E)\jEdit CC-4401\src\build\modes\text.xml
+12:59:32 PM [main] [debug] String: BeanShell interpreter version 2.0b4-jedit
+12:59:32 PM [main] [debug] SplashScreen: init macros:1244/7318ms
+12:59:32 PM [main] [debug] SplashScreen: run startup scripts:4/7322ms
+12:59:32 PM [main] [debug] SplashScreen: run startup scripts:9/7327ms
+12:59:32 PM [main] [debug] jEdit: main done:8800 ms
+12:59:32 PM [AWT-EventQueue-0] [message] PerspectiveManager: Loading C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=null,source=La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=null,source=La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=null,source=La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
+12:59:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
+12:59:34 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+12:59:34 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+12:59:34 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212 addBufferAt(Sin sdas.png (%USERPROFILE%\Desktop\),-1)
+12:59:34 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212: Buffer added Sin sdas.png (%USERPROFILE%\Desktop\) at 0
+12:59:35 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212 addBufferAt(Sin sdas.png (%USERPROFILE%\Desktop\),0)
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212 addBufferAt(La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\),1)
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212: Buffer added La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\) at 0
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212 addBufferAt(Nuevo documento de texto.txt (%USERPROFILE%\Desktop\),2)
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212: Buffer added Nuevo documento de texto.txt (%USERPROFILE%\Desktop\) at 1
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212 addBufferAt(Sin sdas.png (%USERPROFILE%\Desktop\),3)
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+12:59:35 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657 addBufferAt(Sin sdas.png (%USERPROFILE%\Desktop\),-1)
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657: Buffer added Sin sdas.png (%USERPROFILE%\Desktop\) at 0
+12:59:35 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657 addBufferAt(Sin sdas.png (%USERPROFILE%\Desktop\),0)
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657 addBufferAt(La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\),1)
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657: Buffer added La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\) at 0
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657 addBufferAt(Nuevo documento de texto.txt (%USERPROFILE%\Desktop\),2)
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657: Buffer added Nuevo documento de texto.txt (%USERPROFILE%\Desktop\) at 1
+12:59:35 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657 addBufferAt(Sin sdas.png (%USERPROFILE%\Desktop\),3)
+12:59:36 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CREATED,source=org.gjt.sp.jedit.View[active]]
+12:59:38 PM [AWT-EventQueue-0] [debug] EditBus: EditorStarted[source=null]
+12:59:38 PM [AWT-EventQueue-0] [message] jEdit: Startup complete: 14622 ms
+12:59:38 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+12:59:38 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
+12:59:44 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+01:00:00 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
+01:03:51 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+01:03:51 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+01:03:51 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+01:03:51 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+01:18:34 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+01:18:34 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+01:18:34 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+01:18:34 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+02:20:24 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+02:20:24 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+02:20:25 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+02:20:25 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+02:20:27 PM [AWT-EventQueue-0] [debug] EditBus: EditorExitRequested[source=org.gjt.sp.jedit.View[active]]
+02:20:27 PM [AWT-EventQueue-0] [message] PerspectiveManager: Saving C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml
+02:20:28 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
+02:20:28 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+02:20:28 PM [AWT-EventQueue-0] [debug] EditBus: EditorExiting[source=null]
+02:20:28 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CLOSED,source=org.gjt.sp.jedit.View[active]]
+02:20:29 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+02:20:29 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[active]]
+02:20:29 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
+02:20:29 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
+02:20:29 PM [AWT-EventQueue-0] [debug] BufferSet: 6712657: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
+02:20:29 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+02:20:29 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[inactive]]
+02:20:29 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
+02:20:30 PM [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\) is in no bufferSet anymore, closing it
+02:20:30 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
+02:20:30 PM [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:Nuevo documento de texto.txt (%USERPROFILE%\Desktop\) is in no bufferSet anymore, closing it
+02:20:30 PM [AWT-EventQueue-0] [debug] BufferSet: 23263212: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
+02:20:30 PM [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:Sin sdas.png (%USERPROFILE%\Desktop\) is in no bufferSet anymore, closing it
+02:20:30 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=5.0,source=C:\Proyectos Java (E)\jEdit CC-4401\src\build\jars\QuickNotepad.jar,class=QuickNotepadPlugin]
+02:20:31 PM [AWT-EventQueue-0] [message] BufferHistory: Saving C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\recent.xml
+02:20:31 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\recent.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\recent.xml~1~"
+02:20:31 PM [AWT-EventQueue-0] [message] KillRing: Saving C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\killring.xml
+02:20:31 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\killring.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\killring.xml~1~"
+02:20:31 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\properties" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\properties~1~"

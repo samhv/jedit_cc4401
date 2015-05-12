@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE PERSPECTIVE SYSTEM "perspective.dtd">
 <PERSPECTIVE>
-<BUFFER AUTORELOAD="TRUE" AUTORELOAD_DIALOG="TRUE">C:\Users\hfehrmann\Desktop\La teoria que aquí se expone est a parcialmente desarrollada in.docx</BUFFER>
-<BUFFER AUTORELOAD="TRUE" AUTORELOAD_DIALOG="TRUE">C:\Users\hfehrmann\Desktop\Nuevo documento de texto.txt</BUFFER>
-<BUFFER AUTORELOAD="TRUE" AUTORELOAD_DIALOG="TRUE">C:\Users\hfehrmann\Desktop\Sin sdas.png</BUFFER>
 <VIEW PLAIN="FALSE">
 <PANES>
-"C:\\Users\\hfehrmann\\Desktop\\Sin sdas.png" buffer "C:\\Users\\hfehrmann\\Desktop\\La teoria que aquí se expone est a parcialmente desarrollada in.docx" buff "C:\\Users\\hfehrmann\\Desktop\\Nuevo documento de texto.txt" buff "C:\\Users\\hfehrmann\\Desktop\\Sin sdas.png" buff "global" bufferset "C:\\Users\\hfehrmann\\Desktop\\Sin sdas.png" buffer "C:\\Users\\hfehrmann\\Desktop\\La teoria que aquí se expone est a parcialmente desarrollada in.docx" buff "C:\\Users\\hfehrmann\\Desktop\\Nuevo documento de texto.txt" buff "C:\\Users\\hfehrmann\\Desktop\\Sin sdas.png" buff "global" bufferset 229 vertical
+"C:\\Users\\hfehrmann\\Desktop\\Sin sdas.png" buffer "global" bufferset "C:\\Users\\hfehrmann\\Desktop\\Sin sdas.png" buffer "global" bufferset 167 vertical
 </PANES>
-<GEOMETRY X="256" Y="86" WIDTH="768" HEIGHT="589" EXT_STATE="0" />
+<GEOMETRY X="256" Y="86" WIDTH="757" HEIGHT="441" EXT_STATE="0" />
 </VIEW>
 </PERSPECTIVE>

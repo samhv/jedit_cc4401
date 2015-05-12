@@ -30,7 +30,7 @@ public class ButtonTabComponent extends JPanel {
             }
         };
          
-        add(label);
+        add(new JLabel("caca"));
       
         label.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 5));
        

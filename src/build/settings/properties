@@ -1,5 +1,5 @@
 #jEdit properties
-#Tue Apr 28 14:20:32 GMT-02:00 2015
+#Tue May 12 13:05:50 BRT 2015
 firstTime=false
 helpviewer.extendedState=0
 helpviewer.height=538
@@ -26,7 +26,7 @@ vfs.browser.splitter=93
 vfs.browser.status.width=100
 vfs.browser.type.width=100
 view.extendedState=0
-view.height=441
-view.width=757
+view.height=570
+view.width=831
 view.x=256
 view.y=86

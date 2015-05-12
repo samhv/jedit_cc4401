@@ -1,895 +1,457 @@
-Log file created on Tue Apr 14 13:20:23 BRT 2015
+Log file created on Wed Apr 22 17:06:36 BRT 2015
 IMPORTANT:
 Because updating this file after every log message would kill
 performance, it will be *incomplete* unless you invoke the
 Utilities->Troubleshooting->Update Activity Log on Disk command!
-01:20:21 PM [main] [message] Log: When reporting bugs, please include the following information:
-01:20:21 PM [main] [message] Log: java.version=1.7.0_71
-01:20:21 PM [main] [message] Log: java.vm.version=24.71-b01
-01:20:21 PM [main] [message] Log: java.vm.name=Java HotSpot(TM) Client VM
-01:20:21 PM [main] [message] Log: java.runtime.version=1.7.0_71-b14
-01:20:21 PM [main] [message] Log: java.runtime.name=Java(TM) SE Runtime Environment
-01:20:21 PM [main] [message] Log: java.vendor=Oracle Corporation
-01:20:21 PM [main] [message] Log: java.compiler=null
-01:20:21 PM [main] [message] Log: os.name=Windows 7
-01:20:21 PM [main] [message] Log: os.version=6.1
-01:20:21 PM [main] [message] Log: os.arch=x86
-01:20:21 PM [main] [message] Log: user.home=C:\Users\hfehrmann
-01:20:21 PM [main] [message] Log: java.home=C:\Program Files\Java\jre7
-01:20:21 PM [main] [message] Log: java.class.path=C:\Proyectos Java (E)\jEdit CC-4401\src\build\jedit.jar
-01:20:21 PM [main] [message] jEdit: starting with command line arguments: -settings=C:\Proyectos Java (E)\jEdit CC-4401\src\build/settings
-01:20:21 PM [main] [debug] jEdit: before splash screen activation:319 ms
-01:20:23 PM [main] [debug] jEdit: after splash screen activation:2487 ms
-01:20:23 PM [main] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\activity.log" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\activity.log~1~"
-01:20:23 PM [main] [notice] jEdit: jEdit version 5.3pre1
-01:20:23 PM [main] [message] jEdit: Settings directory is C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings
-01:20:23 PM [main] [message] jEdit: jEdit home directory is C:\Proyectos Java (E)\jEdit CC-4401\src\build
-01:20:23 PM [main] [debug] SplashScreen: init:62/1947ms
-01:20:23 PM [main] [debug] SplashScreen: init system properties:59/2006ms
-01:20:23 PM [main] [message] BeanShell: Beanshell Init
-01:20:23 PM [main] [debug] SplashScreen: init beanshell:135/2141ms
-01:20:23 PM [main] [debug] SplashScreen: loading site properties:9/2150ms
-01:20:24 PM [main] [debug] SplashScreen: loading user properties:118/2268ms
-01:20:24 PM [main] [debug] GUIUtilities: Icon theme set to: tango
-01:20:24 PM [main] [debug] GUIUtilities: Loading icon theme from: jeditresource:/org/gjt/sp/jedit/icons/themes/tango/
-01:20:24 PM [main] [debug] SplashScreen: init GUI:10/2278ms
-01:20:24 PM [main] [debug] EditServer: jEdit server started on port 53307
-01:20:24 PM [main] [debug] EditServer: Authorization key is 2040195524
-01:20:24 PM [main] [debug] SplashScreen: init server:32/2310ms
-01:20:24 PM [main] [debug] jEdit: initPLAF non-edt old=javax.swing.plaf.metal.MetalLookAndFeel requested=null new=javax.swing.plaf.metal.MetalLookAndFeel
-01:20:24 PM [main] [debug] SplashScreen: init look and feel:40/2350ms
-01:20:24 PM [main] [debug] SplashScreen: init VFS Manager:5/2355ms
-01:20:24 PM [main] [debug] ActionSet: Loading actions from jar:file:/C:/Proyectos%20Java%20(E)/jEdit%20CC-4401/src/build/jedit.jar!/org/gjt/sp/jedit/actions.xml
-01:20:24 PM [main] [debug] DockableWindowManager: Loading dockables from jar:file:/C:/Proyectos%20Java%20(E)/jEdit%20CC-4401/src/build/jedit.jar!/org/gjt/sp/jedit/dockables.xml
-01:20:24 PM [main] [debug] SplashScreen: init resources:390/2745ms
-01:20:24 PM [AWT-EventQueue-0] [debug] EditBus: SearchSettingsChanged[source=null]
-01:20:24 PM [main] [debug] SplashScreen: Migrate keymaps:114/2859ms
-01:20:24 PM [main] [notice] jEdit: Loading plugins from C:\Proyectos Java (E)\jEdit CC-4401\src\build\jars
-01:20:24 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=5.0,source=C:\Proyectos Java (E)\jEdit CC-4401\src\build\jars\QuickNotepad.jar,class=QuickNotepadPlugin]
-01:20:24 PM [main] [notice] jEdit: Loading plugins from C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\jars
-01:20:24 PM [main] [debug] SplashScreen: init plugins:42/2901ms
-01:20:24 PM [main] [message] HistoryModel: Loading history
-01:20:24 PM [main] [debug] SplashScreen: init history model:11/2912ms
-01:20:24 PM [main] [message] BufferHistory: Loading C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\recent.xml
-01:20:24 PM [main] [debug] SplashScreen: init buffer history:17/2929ms
-01:20:24 PM [main] [message] KillRing: Loading C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\killring.xml
-01:20:24 PM [main] [debug] SplashScreen: init killring:24/2953ms
-01:20:24 PM [main] [debug] jEdit: initPLAF non-edt old=javax.swing.plaf.metal.MetalLookAndFeel requested=null new=javax.swing.plaf.metal.MetalLookAndFeel
-01:20:24 PM [main] [debug] jEdit: SOCKS proxy disabled
-01:20:24 PM [main] [debug] jEdit: HTTP proxy disabled
-01:20:25 PM [AWT-EventQueue-0] [debug] EditBus: PropertiesChanged[source=null]
-01:20:25 PM [main] [debug] SplashScreen: init various properties:265/3218ms
-01:20:25 PM [main] [message] jEdit: Loading mode catalog file C:\Proyectos Java (E)\jEdit CC-4401\src\build\modes\catalog
-01:20:25 PM [main] [message] jEdit: Loading mode catalog file C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\modes\catalog
-01:20:25 PM [main] [debug] SplashScreen: init modes:345/3563ms
-01:20:25 PM [main] [debug] SplashScreen: activate plugins:12/3575ms
-01:20:26 PM [main] [debug] Macros: Registered beanshell macro handler
-01:20:26 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=macros,source=null]
-01:20:26 PM [main] [message] BeanShell: Running script C:\Proyectos Java (E)\jEdit CC-4401\src\build\startup\startup.bsh
-01:20:26 PM [main] [notice] jEdit$4: Loading edit mode C:\Proyectos Java (E)\jEdit CC-4401\src\build\modes\text.xml
-01:20:26 PM [main] [debug] String: BeanShell interpreter version 2.0b4-jedit
-01:20:26 PM [main] [debug] SplashScreen: init macros:1592/5167ms
-01:20:26 PM [main] [debug] SplashScreen: run startup scripts:5/5172ms
-01:20:26 PM [main] [debug] SplashScreen: run startup scripts:9/5176ms
-01:20:27 PM [AWT-EventQueue-0] [message] PerspectiveManager: Loading C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml
-01:20:27 PM [main] [debug] jEdit: main done:5879 ms
-01:20:27 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Untitled-1 (%USERPROFILE%\)]
-01:20:27 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=null,source=Untitled-1 (%USERPROFILE%\)]
-01:20:27 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=null,source=Untitled-1 (%USERPROFILE%\)]
-01:20:27 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=null,source=Untitled-1 (%USERPROFILE%\)]
-01:20:27 PM [AWT-EventQueue-0] [debug] BufferSet: 2712571: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
-01:20:27 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
-01:20:27 PM [AWT-EventQueue-0] [debug] BufferSet: 2712571 addBufferAt(Untitled-1 (%USERPROFILE%\),-1)
-01:20:27 PM [AWT-EventQueue-0] [debug] BufferSet: 2712571: Buffer added Untitled-1 (%USERPROFILE%\) at 0
-01:20:28 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
-01:20:28 PM [AWT-EventQueue-0] [debug] BufferSet: 2712571 addBufferAt(Untitled-1 (%USERPROFILE%\),0)
-01:20:28 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CREATED,source=org.gjt.sp.jedit.View[active]]
-01:20:29 PM [AWT-EventQueue-0] [debug] EditBus: EditorStarted[source=null]
-01:20:29 PM [AWT-EventQueue-0] [message] jEdit: Startup complete: 8282 ms
-01:20:29 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-01:20:29 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
-01:20:54 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [message] EditServer: Socket[addr=/127.0.0.1,port=53469,localport=53307]: connected
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [debug] EditServer: Socket[addr=/127.0.0.1,port=53469,localport=53307]: authenticated successfully
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [debug] EditServer: parent = "C:\\Proyectos Java (E)\\jEdit CC-4401\\src";
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [debug] EditServer: args = new String[1];
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [debug] EditServer: args[0] = null;
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [debug] EditServer: view = jEdit.getLastView();
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [debug] EditServer: buffer = EditServer.handleClient(true,true,false,parent,args);
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [debug] EditServer: if(buffer != null && false) {
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [debug] EditServer:  buffer.setWaitSocket(socket);
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [debug] EditServer:  doNotCloseSocket = true;
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [debug] EditServer: }
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [debug] EditServer: if(view != jEdit.getLastView() && false) {
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [debug] EditServer:  jEdit.getLastView().setWaitSocket(socket);
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [debug] EditServer:  doNotCloseSocket = true;
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [debug] EditServer: }
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [debug] EditServer: if(doNotCloseSocket == void)
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [debug] EditServer:  socket.close();
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [error] jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]: Exception in thread "jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]" 
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [error] jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]: java.lang.NoClassDefFoundError: org/gjt/sp/jedit/EditServer$1
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [error] jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]:  at org.gjt.sp.jedit.EditServer.handleClient(EditServer.java:334)
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [error] jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]:  at org.gjt.sp.jedit.EditServer.run(EditServer.java:147)
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [error] jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]: Caused by: java.lang.ClassNotFoundException: org.gjt.sp.jedit.EditServer$1
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [error] jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]:  at java.net.URLClassLoader$1.run(Unknown Source)
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [error] jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]:  at java.net.URLClassLoader$1.run(Unknown Source)
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [error] jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]:  at java.security.AccessController.doPrivileged(Native Method)
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [error] jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]:  at java.net.URLClassLoader.findClass(Unknown Source)
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [error] jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]:  at java.lang.ClassLoader.loadClass(Unknown Source)
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [error] jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]:  at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [error] jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]:  at java.lang.ClassLoader.loadClass(Unknown Source)
-01:37:18 PM [jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]] [error] jEdit server daemon [C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\server]:  ... 2 more
-01:42:41 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-01:42:41 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus: Exception while sending message on EditBus:
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus: java.lang.NoClassDefFoundError: org/gjt/sp/jedit/visitors/SaveCaretInfoVisitor
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.jEdit.checkBufferStatus(jEdit.java:2418)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.View.handleViewUpdate(View.java:2084)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.lang.reflect.Method.invoke(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus.dispatch(EditBus.java:242)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus.sendImpl(EditBus.java:281)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus.access$200(EditBus.java:87)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus$SendMessage.run(EditBus.java:461)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus.send(EditBus.java:206)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.View$WindowHandler.windowActivated(View.java:2233)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.processWindowEvent(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at javax.swing.JFrame.processWindowEvent(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.processEvent(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.KeyboardFocusManager.redispatchEvent(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager.dispatchEvent(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.access$200(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.SentEvent.dispatch(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager$DefaultKeyboardFocusManagerSentEvent.dispatch(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager.sendMessage(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager.dispatchEvent(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.access$200(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.SequencedEvent.dispatch(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.access$200(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.run(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus: Caused by: java.lang.ClassNotFoundException: org.gjt.sp.jedit.visitors.SaveCaretInfoVisitor
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.net.URLClassLoader$1.run(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.net.URLClassLoader$1.run(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.net.URLClassLoader.findClass(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.lang.ClassLoader.loadClass(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  at java.lang.ClassLoader.loadClass(Unknown Source)
-01:42:41 PM [AWT-EventQueue-0] [error] EditBus:  ... 77 more
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: Exception in thread "AWT-EventQueue-0" 
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: java.lang.NoClassDefFoundError: org/gjt/sp/util/AwtRunnableQueue$RunRequestsInAWTThread
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.util.AwtRunnableQueue.queueAWTRunner(AwtRunnableQueue.java:104)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.util.TaskManager.waitForIoTasks(TaskManager.java:201)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.exit(jEdit.java:2900)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.closeView(jEdit.java:4530)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.closeView(jEdit.java:2613)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.View$WindowHandler.windowClosing(View.java:2239)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.processWindowEvent(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at javax.swing.JFrame.processWindowEvent(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.processEvent(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.access$200(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.run(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: Caused by: java.lang.ClassNotFoundException: org.gjt.sp.util.AwtRunnableQueue$RunRequestsInAWTThread
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.net.URLClassLoader$1.run(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.net.URLClassLoader$1.run(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.net.URLClassLoader.findClass(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.lang.ClassLoader.loadClass(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.lang.ClassLoader.loadClass(Unknown Source)
-01:42:42 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  ... 31 more
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: Exception in thread "AWT-EventQueue-0" 
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: java.lang.NoClassDefFoundError: org/gjt/sp/util/AwtRunnableQueue$RunRequestsInAWTThread
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.util.AwtRunnableQueue.queueAWTRunner(AwtRunnableQueue.java:104)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.util.TaskManager.waitForIoTasks(TaskManager.java:201)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.exit(jEdit.java:2900)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.closeView(jEdit.java:4530)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.closeView(jEdit.java:2613)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.View$WindowHandler.windowClosing(View.java:2239)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.processWindowEvent(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at javax.swing.JFrame.processWindowEvent(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.processEvent(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.access$200(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:42:45 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.run(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-01:42:48 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus: Exception while sending message on EditBus:
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus: java.lang.NoClassDefFoundError: org/gjt/sp/jedit/visitors/SaveCaretInfoVisitor
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.jEdit.checkBufferStatus(jEdit.java:2418)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.View.handleViewUpdate(View.java:2084)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.lang.reflect.Method.invoke(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus.dispatch(EditBus.java:242)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus.sendImpl(EditBus.java:281)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus.access$200(EditBus.java:87)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus$SendMessage.run(EditBus.java:461)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus.send(EditBus.java:206)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.View$WindowHandler.windowActivated(View.java:2233)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.processWindowEvent(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at javax.swing.JFrame.processWindowEvent(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.processEvent(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.KeyboardFocusManager.redispatchEvent(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager.dispatchEvent(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.access$200(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.SentEvent.dispatch(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager$DefaultKeyboardFocusManagerSentEvent.dispatch(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager.sendMessage(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager.dispatchEvent(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.access$200(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.SequencedEvent.dispatch(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.access$200(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:42:48 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.run(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-01:42:53 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus: Exception while sending message on EditBus:
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus: java.lang.NoClassDefFoundError: org/gjt/sp/jedit/visitors/SaveCaretInfoVisitor
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.jEdit.checkBufferStatus(jEdit.java:2418)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.View.handleViewUpdate(View.java:2084)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.lang.reflect.Method.invoke(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus.dispatch(EditBus.java:242)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus.sendImpl(EditBus.java:281)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus.access$200(EditBus.java:87)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus$SendMessage.run(EditBus.java:461)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus.send(EditBus.java:206)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.View$WindowHandler.windowActivated(View.java:2233)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.processWindowEvent(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at javax.swing.JFrame.processWindowEvent(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.processEvent(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.KeyboardFocusManager.redispatchEvent(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager.dispatchEvent(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.access$200(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.SentEvent.dispatch(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager$DefaultKeyboardFocusManagerSentEvent.dispatch(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager.sendMessage(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager.dispatchEvent(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.access$200(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.SequencedEvent.dispatch(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.access$200(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:42:53 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.run(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: Exception in thread "AWT-EventQueue-0" 
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: java.lang.NoClassDefFoundError: org/gjt/sp/util/AwtRunnableQueue$RunRequestsInAWTThread
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.util.AwtRunnableQueue.queueAWTRunner(AwtRunnableQueue.java:104)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.util.TaskManager.waitForIoTasks(TaskManager.java:201)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.exit(jEdit.java:2900)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.closeView(jEdit.java:4530)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.closeView(jEdit.java:2613)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.View$WindowHandler.windowClosing(View.java:2239)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.processWindowEvent(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at javax.swing.JFrame.processWindowEvent(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.processEvent(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.access$200(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.run(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: Exception in thread "AWT-EventQueue-0" 
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: java.lang.NoClassDefFoundError: org/gjt/sp/util/AwtRunnableQueue$RunRequestsInAWTThread
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.util.AwtRunnableQueue.queueAWTRunner(AwtRunnableQueue.java:104)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.util.TaskManager.waitForIoTasks(TaskManager.java:201)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.exit(jEdit.java:2900)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.closeView(jEdit.java:4530)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.closeView(jEdit.java:2613)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.View$WindowHandler.windowClosing(View.java:2239)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.processWindowEvent(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at javax.swing.JFrame.processWindowEvent(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.processEvent(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.access$200(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:42:54 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.run(Unknown Source)
-01:42:55 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
-01:42:57 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: Exception in thread "AWT-EventQueue-0" 
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: java.lang.NoClassDefFoundError: org/gjt/sp/util/AwtRunnableQueue$RunRequestsInAWTThread
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.util.AwtRunnableQueue.queueAWTRunner(AwtRunnableQueue.java:104)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.util.TaskManager.waitForIoTasks(TaskManager.java:201)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.exit(jEdit.java:2900)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.closeView(jEdit.java:4530)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.closeView(jEdit.java:2613)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.View$WindowHandler.windowClosing(View.java:2239)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.processWindowEvent(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at javax.swing.JFrame.processWindowEvent(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.processEvent(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.access$200(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:42:59 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.run(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: Exception in thread "AWT-EventQueue-0" 
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: java.lang.NoClassDefFoundError: org/gjt/sp/jedit/gui/KeyEventWorkaround
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.gui.InputHandler._preprocessKeyEvent(InputHandler.java:213)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.gui.InputHandler.processKeyEvent(InputHandler.java:96)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.textarea.TextArea.processKeyEvent(TextArea.java:4734)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.processEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.processEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.KeyboardFocusManager.redispatchEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.dispatchEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.access$200(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.run(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: Caused by: java.lang.ClassNotFoundException: org.gjt.sp.jedit.gui.KeyEventWorkaround
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.net.URLClassLoader$1.run(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.net.URLClassLoader$1.run(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.net.URLClassLoader.findClass(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.lang.ClassLoader.loadClass(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.lang.ClassLoader.loadClass(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  ... 35 more
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: Exception in thread "AWT-EventQueue-0" 
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: java.lang.NoClassDefFoundError: org/gjt/sp/jedit/gui/KeyEventWorkaround
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.gui.InputHandler._preprocessKeyEvent(InputHandler.java:213)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.gui.InputHandler.processKeyEvent(InputHandler.java:96)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.textarea.TextArea.processKeyEvent(TextArea.java:4734)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.processEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.processEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.KeyboardFocusManager.redispatchEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.dispatchEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.access$200(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:43:01 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.run(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: Exception in thread "AWT-EventQueue-0" 
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: java.lang.NoClassDefFoundError: org/gjt/sp/jedit/gui/KeyEventWorkaround
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.gui.InputHandler._preprocessKeyEvent(InputHandler.java:213)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.gui.InputHandler.processKeyEvent(InputHandler.java:96)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.textarea.TextArea.processKeyEvent(TextArea.java:4734)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.processEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.processEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.KeyboardFocusManager.redispatchEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.dispatchEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.access$200(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.run(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: Exception in thread "AWT-EventQueue-0" 
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: java.lang.NoClassDefFoundError: org/gjt/sp/jedit/gui/KeyEventWorkaround
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.gui.InputHandler._preprocessKeyEvent(InputHandler.java:213)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.gui.InputHandler.processKeyEvent(InputHandler.java:96)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.textarea.TextArea.processKeyEvent(TextArea.java:4734)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.processEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.processEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.KeyboardFocusManager.redispatchEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.dispatchEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.access$200(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.run(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: Exception in thread "AWT-EventQueue-0" 
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: java.lang.NoClassDefFoundError: org/gjt/sp/jedit/gui/KeyEventWorkaround
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.gui.InputHandler._preprocessKeyEvent(InputHandler.java:213)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.gui.InputHandler.processKeyEvent(InputHandler.java:96)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.textarea.TextArea.processKeyEvent(TextArea.java:4734)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.processEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.processEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.KeyboardFocusManager.redispatchEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.DefaultKeyboardFocusManager.dispatchEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.access$200(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:43:02 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.run(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-01:43:05 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus: Exception while sending message on EditBus:
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus: java.lang.NoClassDefFoundError: org/gjt/sp/jedit/visitors/SaveCaretInfoVisitor
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.jEdit.checkBufferStatus(jEdit.java:2418)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.View.handleViewUpdate(View.java:2084)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.lang.reflect.Method.invoke(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus.dispatch(EditBus.java:242)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus.sendImpl(EditBus.java:281)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus.access$200(EditBus.java:87)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus$SendMessage.run(EditBus.java:461)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.EditBus.send(EditBus.java:206)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at org.gjt.sp.jedit.View$WindowHandler.windowActivated(View.java:2233)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.processWindowEvent(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at javax.swing.JFrame.processWindowEvent(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.processEvent(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.KeyboardFocusManager.redispatchEvent(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager.dispatchEvent(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.access$200(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.SentEvent.dispatch(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager$DefaultKeyboardFocusManagerSentEvent.dispatch(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager.sendMessage(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.DefaultKeyboardFocusManager.dispatchEvent(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.access$200(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.SequencedEvent.dispatch(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.access$200(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:43:05 PM [AWT-EventQueue-0] [error] EditBus:  at java.awt.EventDispatchThread.run(Unknown Source)
-01:43:25 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: Exception in thread "AWT-EventQueue-0" 
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: java.lang.NoClassDefFoundError: org/gjt/sp/util/AwtRunnableQueue$RunRequestsInAWTThread
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.util.AwtRunnableQueue.queueAWTRunner(AwtRunnableQueue.java:104)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.util.TaskManager.waitForIoTasks(TaskManager.java:201)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.exit(jEdit.java:2900)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.closeView(jEdit.java:4530)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.closeView(jEdit.java:2613)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.View$WindowHandler.windowClosing(View.java:2239)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.processWindowEvent(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at javax.swing.JFrame.processWindowEvent(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.processEvent(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.access$200(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.run(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: Exception in thread "AWT-EventQueue-0" 
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0: java.lang.NoClassDefFoundError: org/gjt/sp/util/AwtRunnableQueue$RunRequestsInAWTThread
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.util.AwtRunnableQueue.queueAWTRunner(AwtRunnableQueue.java:104)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.util.TaskManager.waitForIoTasks(TaskManager.java:201)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.exit(jEdit.java:2900)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.closeView(jEdit.java:4530)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.jEdit.closeView(jEdit.java:2613)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at org.gjt.sp.jedit.View$WindowHandler.windowClosing(View.java:2239)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.processWindowEvent(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at javax.swing.JFrame.processWindowEvent(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.processEvent(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEventImpl(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Container.dispatchEventImpl(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Window.dispatchEventImpl(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.Component.dispatchEvent(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.access$200(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$3.run(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue$4.run(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.AccessController.doPrivileged(Native Method)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventQueue.dispatchEvent(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [error] AWT-EventQueue-0:  at java.awt.EventDispatchThread.run(Unknown Source)
-01:43:31 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
-01:43:31 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
-01:43:31 PM [AWT-EventQueue-0] [error] EditBus: Exception while sending message on EditBus:
-01:43:31 PM [AWT-EventQueue-0] [error] EditBus: java.lang.NoClassDefFoundError: org/gjt/sp/jedit/visitors/SaveCaretInfoV
+05:06:33 PM [main] [message] Log: When reporting bugs, please include the following information:
+05:06:33 PM [main] [message] Log: java.version=1.7.0_71
+05:06:33 PM [main] [message] Log: java.vm.version=24.71-b01
+05:06:33 PM [main] [message] Log: java.vm.name=Java HotSpot(TM) Client VM
+05:06:33 PM [main] [message] Log: java.runtime.version=1.7.0_71-b14
+05:06:33 PM [main] [message] Log: java.runtime.name=Java(TM) SE Runtime Environment
+05:06:33 PM [main] [message] Log: java.vendor=Oracle Corporation
+05:06:33 PM [main] [message] Log: java.compiler=null
+05:06:33 PM [main] [message] Log: os.name=Windows 7
+05:06:33 PM [main] [message] Log: os.version=6.1
+05:06:33 PM [main] [message] Log: os.arch=x86
+05:06:33 PM [main] [message] Log: user.home=C:\Users\hfehrmann
+05:06:33 PM [main] [message] Log: java.home=C:\Program Files\Java\jre7
+05:06:33 PM [main] [message] Log: java.class.path=C:\Proyectos Java (E)\jEdit CC-4401\src\build\jedit.jar
+05:06:33 PM [main] [message] jEdit: starting with command line arguments: -settings=C:\Proyectos Java (E)\jEdit CC-4401\src\build/settings
+05:06:34 PM [main] [notice] jEdit: An error occurred while connecting to the jEdit server instance.
+05:06:34 PM [main] [notice] jEdit: This probably means that jEdit crashed and/or exited abnormally
+05:06:34 PM [main] [notice] jEdit: the last time it was run.
+05:06:34 PM [main] [notice] jEdit: If you don't know what this means, don't worry.
+05:06:34 PM [main] [notice] jEdit: java.net.ConnectException: Connection refused: connect
+05:06:34 PM [main] [notice] jEdit:  at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+05:06:34 PM [main] [notice] jEdit:  at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+05:06:34 PM [main] [notice] jEdit:  at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+05:06:34 PM [main] [notice] jEdit:  at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+05:06:34 PM [main] [notice] jEdit:  at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+05:06:34 PM [main] [notice] jEdit:  at java.net.PlainSocketImpl.connect(Unknown Source)
+05:06:34 PM [main] [notice] jEdit:  at java.net.SocksSocketImpl.connect(Unknown Source)
+05:06:34 PM [main] [notice] jEdit:  at java.net.Socket.connect(Unknown Source)
+05:06:34 PM [main] [notice] jEdit:  at java.net.Socket.connect(Unknown Source)
+05:06:34 PM [main] [notice] jEdit:  at java.net.Socket.<init>(Unknown Source)
+05:06:34 PM [main] [notice] jEdit:  at java.net.Socket.<init>(Unknown Source)
+05:06:34 PM [main] [notice] jEdit:  at org.gjt.sp.jedit.jEdit.main(jEdit.java:318)
+05:06:34 PM [main] [debug] jEdit: before splash screen activation:1301 ms
+05:06:36 PM [main] [debug] jEdit: after splash screen activation:3357 ms
+05:06:36 PM [main] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\activity.log" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\activity.log~1~"
+05:06:36 PM [main] [notice] jEdit: jEdit version 5.3pre1
+05:06:36 PM [main] [message] jEdit: Settings directory is C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings
+05:06:36 PM [main] [message] jEdit: jEdit home directory is C:\Proyectos Java (E)\jEdit CC-4401\src\build
+05:06:36 PM [main] [debug] SplashScreen: init:104/1630ms
+05:06:36 PM [main] [debug] SplashScreen: init system properties:193/1823ms
+05:06:37 PM [main] [message] BeanShell: Beanshell Init
+05:06:37 PM [main] [debug] SplashScreen: init beanshell:271/2094ms
+05:06:37 PM [main] [debug] SplashScreen: loading site properties:6/2100ms
+05:06:37 PM [main] [debug] SplashScreen: loading user properties:179/2279ms
+05:06:37 PM [main] [debug] GUIUtilities: Icon theme set to: tango
+05:06:37 PM [main] [debug] GUIUtilities: Loading icon theme from: jeditresource:/org/gjt/sp/jedit/icons/themes/tango/
+05:06:37 PM [main] [debug] SplashScreen: init GUI:17/2296ms
+05:06:37 PM [main] [debug] EditServer: jEdit server started on port 61185
+05:06:37 PM [main] [debug] EditServer: Authorization key is 2016262794
+05:06:37 PM [main] [debug] SplashScreen: init server:18/2314ms
+05:06:37 PM [main] [debug] jEdit: initPLAF non-edt old=javax.swing.plaf.metal.MetalLookAndFeel requested=null new=javax.swing.plaf.metal.MetalLookAndFeel
+05:06:37 PM [main] [debug] SplashScreen: init look and feel:27/2341ms
+05:06:37 PM [main] [debug] SplashScreen: init VFS Manager:5/2346ms
+05:06:37 PM [main] [debug] ActionSet: Loading actions from jar:file:/C:/Proyectos%20Java%20(E)/jEdit%20CC-4401/src/build/jedit.jar!/org/gjt/sp/jedit/actions.xml
+05:06:37 PM [main] [debug] DockableWindowManager: Loading dockables from jar:file:/C:/Proyectos%20Java%20(E)/jEdit%20CC-4401/src/build/jedit.jar!/org/gjt/sp/jedit/dockables.xml
+05:06:37 PM [main] [debug] SplashScreen: init resources:324/2670ms
+05:06:37 PM [AWT-EventQueue-0] [debug] EditBus: SearchSettingsChanged[source=null]
+05:06:37 PM [main] [debug] SplashScreen: Migrate keymaps:176/2846ms
+05:06:37 PM [main] [notice] jEdit: Loading plugins from C:\Proyectos Java (E)\jEdit CC-4401\src\build\jars
+05:06:37 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=5.0,source=C:\Proyectos Java (E)\jEdit CC-4401\src\build\jars\QuickNotepad.jar,class=QuickNotepadPlugin]
+05:06:37 PM [main] [notice] jEdit: Loading plugins from C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\jars
+05:06:38 PM [main] [debug] SplashScreen: init plugins:119/2965ms
+05:06:38 PM [main] [message] HistoryModel: Loading history
+05:06:38 PM [main] [debug] SplashScreen: init history model:27/2992ms
+05:06:38 PM [main] [message] BufferHistory: Loading C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\recent.xml
+05:06:38 PM [main] [debug] SplashScreen: init buffer history:15/3007ms
+05:06:38 PM [main] [message] KillRing: Loading C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\killring.xml
+05:06:38 PM [main] [debug] SplashScreen: init killring:68/3075ms
+05:06:38 PM [main] [debug] jEdit: initPLAF non-edt old=javax.swing.plaf.metal.MetalLookAndFeel requested=null new=javax.swing.plaf.metal.MetalLookAndFeel
+05:06:38 PM [main] [debug] jEdit: SOCKS proxy disabled
+05:06:38 PM [main] [debug] jEdit: HTTP proxy disabled
+05:06:38 PM [AWT-EventQueue-0] [debug] EditBus: PropertiesChanged[source=null]
+05:06:38 PM [main] [debug] SplashScreen: init various properties:663/3738ms
+05:06:38 PM [main] [message] jEdit: Loading mode catalog file C:\Proyectos Java (E)\jEdit CC-4401\src\build\modes\catalog
+05:06:38 PM [main] [message] jEdit: Loading mode catalog file C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\modes\catalog
+05:06:39 PM [main] [debug] SplashScreen: init modes:217/3955ms
+05:06:39 PM [main] [debug] SplashScreen: activate plugins:12/3967ms
+05:06:39 PM [main] [debug] Macros: Registered beanshell macro handler
+05:06:39 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=macros,source=null]
+05:06:39 PM [main] [message] BeanShell: Running script C:\Proyectos Java (E)\jEdit CC-4401\src\build\startup\startup.bsh
+05:06:39 PM [main] [notice] jEdit$4: Loading edit mode C:\Proyectos Java (E)\jEdit CC-4401\src\build\modes\text.xml
+05:06:39 PM [main] [debug] String: BeanShell interpreter version 2.0b4-jedit
+05:06:39 PM [main] [debug] SplashScreen: init macros:792/4759ms
+05:06:39 PM [main] [debug] SplashScreen: run startup scripts:3/4762ms
+05:06:39 PM [main] [debug] SplashScreen: run startup scripts:6/4765ms
+05:06:39 PM [main] [debug] jEdit: main done:7026 ms
+05:06:39 PM [AWT-EventQueue-0] [message] PerspectiveManager: Loading C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml
+05:06:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Untitled-1 (%USERPROFILE%\)]
+05:06:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=null,source=Untitled-1 (%USERPROFILE%\)]
+05:06:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=null,source=Untitled-1 (%USERPROFILE%\)]
+05:06:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=null,source=Untitled-1 (%USERPROFILE%\)]
+05:06:40 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+05:06:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:06:41 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430 addBufferAt(Untitled-1 (%USERPROFILE%\),-1)
+05:06:41 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer added Untitled-1 (%USERPROFILE%\) at 0
+05:06:41 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:06:41 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430 addBufferAt(Untitled-1 (%USERPROFILE%\),0)
+05:06:41 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CREATED,source=org.gjt.sp.jedit.View[active]]
+05:06:42 PM [AWT-EventQueue-0] [debug] EditBus: EditorStarted[source=null]
+05:06:42 PM [AWT-EventQueue-0] [message] jEdit: Startup complete: 9767 ms
+05:06:42 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+05:06:42 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
+05:06:49 PM [AWT-EventQueue-0] [debug] ActionSet: Loading actions from jar:file:/C:/Proyectos%20Java%20(E)/jEdit%20CC-4401/src/build/jedit.jar!/org/gjt/sp/jedit/browser.actions.xml
+05:07:08 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
+05:07:11 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+05:07:11 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430 addBufferAt(Nuevo documento de texto.txt (%USERPROFILE%\Desktop\),-1)
+05:07:11 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer added Nuevo documento de texto.txt (%USERPROFILE%\Desktop\) at 0
+05:07:11 PM [AWT-EventQueue-0] [debug] BufferSetManager: removeBuffer(BufferSet[nbBuffers=2],Untitled-1 (%USERPROFILE%\))
+05:07:11 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer removed Untitled-1 (%USERPROFILE%\)
+05:07:11 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:07:11 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:07:11 PM [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:Untitled-1 (%USERPROFILE%\) is in no bufferSet anymore, closing it
+05:07:11 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CLOSING,view=null,source=Untitled-1 (%USERPROFILE%\)]
+05:07:11 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CLOSED,view=null,source=Untitled-1 (%USERPROFILE%\)]
+05:07:11 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+05:07:11 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+05:07:11 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+05:07:17 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:07:19 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:07:20 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:07:20 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:07:21 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:07:22 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:07:22 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:07:38 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
+05:08:16 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+05:08:16 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+05:08:16 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:18:03 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+05:18:03 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+05:18:03 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:23:05 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+05:23:05 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+05:23:05 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:23:10 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:23:21 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=org.gjt.sp.jedit.View[active],source=hw.rkt (%USERPROFILE%\Desktop\)]
+05:23:21 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430 addBufferAt(hw.rkt (%USERPROFILE%\Desktop\),-1)
+05:23:21 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer added hw.rkt (%USERPROFILE%\Desktop\) at 0
+05:23:21 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=org.gjt.sp.jedit.View[active],source=hw.rkt (%USERPROFILE%\Desktop\)]
+05:23:21 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:23:21 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:23:21 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:23:21 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=hw.rkt (%USERPROFILE%\Desktop\)]
+05:23:21 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=org.gjt.sp.jedit.View[active],source=hw.rkt (%USERPROFILE%\Desktop\)]
+05:23:23 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:23:23 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:23:23 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:23:29 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:23:29 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:23:29 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:23:32 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:23:32 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:23:32 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:23:35 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:23:35 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:23:35 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:23:38 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
+05:23:56 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:23:56 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:23:56 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:23:56 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CLOSING,view=org.gjt.sp.jedit.View[active],source=hw.rkt (%USERPROFILE%\Desktop\)]
+05:23:56 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer removed hw.rkt (%USERPROFILE%\Desktop\)
+05:23:56 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:23:56 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:23:56 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:23:56 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CLOSED,view=org.gjt.sp.jedit.View[active],source=hw.rkt (%USERPROFILE%\Desktop\)]
+05:24:03 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:24:08 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
+05:24:12 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=org.gjt.sp.jedit.View[active],source=Sin sdas.png (%USERPROFILE%\Desktop\)]
+05:24:12 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430 addBufferAt(Sin sdas.png (%USERPROFILE%\Desktop\),-1)
+05:24:12 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer added Sin sdas.png (%USERPROFILE%\Desktop\) at 1
+05:24:12 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=org.gjt.sp.jedit.View[active],source=Sin sdas.png (%USERPROFILE%\Desktop\)]
+05:24:12 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:24:12 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:24:12 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:24:12 PM [jEdit Worker #3] [notice] BufferLoadRequest: C:\Users\hfehrmann\Desktop\Sin sdas.png: Cp1252: java.nio.charset.UnmappableCharacterException: Input length = 1
+05:24:12 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: C:\Users\hfehrmann\Desktop\Sin sdas.png:
+05:24:12 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: The file could not be loaded correctly (some data might be lost) with
+05:24:12 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: the encoding "Cp1252".
+05:24:12 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: (java.nio.charset.UnmappableCharacterException: Input length = 1)
+05:24:12 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: Try selecting a different encoding.
+05:24:12 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: It can be selected with the menu File->Reload with Encoding.
+05:24:12 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: If you want it to be done automatically, add the candidates into
+05:24:12 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: "List of fallback encodings" in Encodings pane of Global Options.
+05:24:12 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
+05:24:13 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=org.gjt.sp.jedit.View[active],source=Sin sdas.png (%USERPROFILE%\Desktop\)]
+05:24:21 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:24:23 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:24:23 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:24:23 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:24:23 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:24:38 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
+05:24:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=org.gjt.sp.jedit.View[active],source=La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)]
+05:24:40 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430 addBufferAt(La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\),-1)
+05:24:40 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer added La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\) at 0
+05:24:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=org.gjt.sp.jedit.View[active],source=La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)]
+05:24:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:24:40 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:24:40 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:24:40 PM [jEdit Worker #2] [notice] BufferLoadRequest: C:\Users\hfehrmann\Desktop\La teoria que aquí se expone est a parcialmente desarrollada in.docx: Cp1252: java.nio.charset.UnmappableCharacterException: Input length = 1
+05:24:40 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: C:\Users\hfehrmann\Desktop\La teoria que aquí se expone est a parcialmente desarrollada in.docx:
+05:24:40 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: The file could not be loaded correctly (some data might be lost) with
+05:24:40 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: the encoding "Cp1252".
+05:24:40 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: (java.nio.charset.UnmappableCharacterException: Input length = 1)
+05:24:40 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: Try selecting a different encoding.
+05:24:40 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: It can be selected with the menu File->Reload with Encoding.
+05:24:40 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: If you want it to be done automatically, add the candidates into
+05:24:40 PM [AWT-EventQueue-0] [notice] ErrorListDialog$ErrorEntry: "List of fallback encodings" in Encodings pane of Global Options.
+05:24:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)]
+05:24:40 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=org.gjt.sp.jedit.View[active],source=La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)]
+05:24:50 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:24:50 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:24:50 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:24:51 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=DIRTY_CHANGED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+05:24:52 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:24:52 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:24:52 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:24:54 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:24:54 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:24:54 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:24:56 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=SAVING,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+05:24:56 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+05:24:56 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=DIRTY_CHANGED,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+05:24:56 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=SAVED,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+05:24:56 PM [AWT-EventQueue-0] [debug] EditBus: VFSUpdate[path=C:\Users\hfehrmann\Desktop,source=null]
+05:24:56 PM [AWT-EventQueue-0] [debug] EditBus: VFSUpdate[path=C:\Users\hfehrmann\Desktop\#Nuevo documento de texto.txt#save#,source=null]
+05:24:56 PM [AWT-EventQueue-0] [debug] EditBus: VFSUpdate[path=C:\Users\hfehrmann\Desktop\Nuevo documento de texto.txt,source=null]
+05:24:56 PM [AWT-EventQueue-0] [debug] EditBus: VFSUpdate[path=C:\Users\hfehrmann\Desktop\Nuevo documento de texto.txt~,source=null]
+05:24:58 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=DIRTY_CHANGED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+05:24:59 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=SAVING,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+05:24:59 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+05:24:59 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=DIRTY_CHANGED,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+05:24:59 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=SAVED,view=org.gjt.sp.jedit.View[active],source=Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)]
+05:24:59 PM [AWT-EventQueue-0] [debug] EditBus: VFSUpdate[path=C:\Users\hfehrmann\Desktop,source=null]
+05:24:59 PM [AWT-EventQueue-0] [debug] EditBus: VFSUpdate[path=C:\Users\hfehrmann\Desktop\#Nuevo documento de texto.txt#save#,source=null]
+05:24:59 PM [AWT-EventQueue-0] [debug] EditBus: VFSUpdate[path=C:\Users\hfehrmann\Desktop\Nuevo documento de texto.txt,source=null]
+05:25:08 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
+05:28:08 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:28:08 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:28:08 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:28:10 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:28:10 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:28:10 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:33:15 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:33:16 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:33:16 PM [AWT-EventQueue-0] [debug] EditBus: RegisterChanged[register=%,source=null]
+05:33:16 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:33:16 PM [AWT-EventQueue-0] [debug] EditBus: RegisterChanged[register=%,source=null]
+05:33:18 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:33:18 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:33:18 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:33:19 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:33:19 PM [AWT-EventQueue-0] [debug] EditBus: RegisterChanged[register=%,source=null]
+05:33:19 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:33:19 PM [AWT-EventQueue-0] [debug] EditBus: RegisterChanged[register=%,source=null]
+05:33:20 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:33:20 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:33:20 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:34:03 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:03 PM [AWT-EventQueue-0] [debug] BufferSet: 1340436: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+05:34:03 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:03 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:03 PM [AWT-EventQueue-0] [debug] BufferSet: 1340436 addBufferAt(La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\),0)
+05:34:03 PM [AWT-EventQueue-0] [debug] BufferSet: 1340436 addBufferAt(La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\),1)
+05:34:03 PM [AWT-EventQueue-0] [debug] BufferSet: 1340436 addBufferAt(Nuevo documento de texto.txt (%USERPROFILE%\Desktop\),2)
+05:34:03 PM [AWT-EventQueue-0] [debug] BufferSet: 1340436 addBufferAt(Sin sdas.png (%USERPROFILE%\Desktop\),3)
+05:34:03 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CREATED,source=org.gjt.sp.jedit.View[inactive]]
+05:34:03 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+05:34:03 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
+05:34:07 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+05:34:07 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+05:34:07 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:07 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:08 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
+05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+05:34:09 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+05:34:09 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+05:34:09 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:09 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:10 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CLOSED,source=org.gjt.sp.jedit.View[active]]
+05:34:10 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:10 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[active]]
+05:34:10 PM [AWT-EventQueue-0] [debug] BufferSet: 1340436: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
+05:34:10 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:34:10 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:34:10 PM [AWT-EventQueue-0] [debug] BufferSet: 1340436: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
+05:34:10 PM [AWT-EventQueue-0] [debug] BufferSet: 1340436: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
+05:34:10 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+05:34:10 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+05:34:10 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:15 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:15 PM [AWT-EventQueue-0] [debug] BufferSet: 29741446: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+05:34:15 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:15 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:15 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
+05:34:15 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
+05:34:18 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:18 PM [AWT-EventQueue-0] [debug] BufferSet: 29617045: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+05:34:18 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:18 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:18 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
+05:34:18 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
+05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:21 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
+05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:21 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
+05:34:21 PM [AWT-EventQueue-0] [debug] BufferSet: 24732430: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
+05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:21 PM [AWT-EventQueue-0] [debug] BufferSet: 29741446: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
+05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:21 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:21 PM [AWT-EventQueue-0] [debug] BufferSet: 29741446: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
+05:34:21 PM [AWT-EventQueue-0] [debug] BufferSet: 29741446: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
+05:34:23 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:23 PM [AWT-EventQueue-0] [debug] BufferSet: 6083766: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+05:34:23 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:23 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:23 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
+05:34:23 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
+05:34:24 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:24 PM [AWT-EventQueue-0] [debug] BufferSet: 23652292: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+05:34:24 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:24 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:24 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
+05:34:24 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
+05:34:25 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:25 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
+05:34:27 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:27 PM [AWT-EventQueue-0] [debug] BufferSet: 28575539: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+05:34:27 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:27 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:27 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
+05:34:27 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
+05:34:29 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:34:29 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:29 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:34:30 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:30 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:30 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:30 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
+05:34:32 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:32 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
+05:34:35 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:34:35 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:35 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[active]]
+05:34:38 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
+05:34:39 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:39 PM [AWT-EventQueue-0] [debug] BufferSet: 3726975: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+05:34:39 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:39 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:39 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
+05:34:39 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
+05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 29617045: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
+05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 29617045: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
+05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 29617045: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
+05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 28575539: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
+05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 28575539: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
+05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 28575539: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
+05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 6083766: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
+05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 6083766: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
+05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=BUFFER_CHANGED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 6083766: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
+05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:34:55 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 23652292: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
+05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 23652292: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
+05:34:55 PM [AWT-EventQueue-0] [debug] BufferSet: 23652292: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
+05:35:00 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:35:00 PM [AWT-EventQueue-0] [debug] BufferSet: 11525285: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+05:35:00 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:35:00 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:35:00 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
+05:35:00 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
+05:35:08 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
+05:35:12 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:35:13 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=DIRTY_CHANGED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
+05:35:21 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=DIRTY_CHANGED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
+05:35:23 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+05:35:23 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
+05:35:25 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+05:35:26 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=DIRTY_CHANGED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
+05:35:26 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=DIRTY_CHANGED,view=null,source=Sin sdas.png (%USERPROFILE%\Desktop\)]
+05:35:58 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+05:35:58 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+05:35:58 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:35:58 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:41:33 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+05:41:33 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+05:41:33 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:41:33 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:48:03 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+05:48:03 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+05:48:03 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:48:03 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:48:09 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=EDIT_PANE_CHANGED,source=org.gjt.sp.jedit.View[active]]
+05:48:09 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+05:48:09 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+05:48:09 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+05:48:09 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+07:57:56 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+07:57:56 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+07:57:57 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+07:57:57 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+07:57:59 PM [AWT-EventQueue-0] [debug] EditBus: EditorExitRequested[source=org.gjt.sp.jedit.View[active]]
+07:57:59 PM [AWT-EventQueue-0] [message] PerspectiveManager: Saving C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml
+07:58:01 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\perspective.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\perspective.xml~1~"
+07:58:01 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+07:58:01 PM [AWT-EventQueue-0] [debug] EditBus: EditorExiting[source=null]
+07:58:01 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CLOSED,source=org.gjt.sp.jedit.View[active]]
+07:58:03 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+07:58:03 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[inactive]]
+07:58:03 PM [AWT-EventQueue-0] [debug] BufferSet: 3726975: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
+07:58:03 PM [AWT-EventQueue-0] [debug] BufferSet: 3726975: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
+07:58:03 PM [AWT-EventQueue-0] [debug] BufferSet: 3726975: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
+07:58:03 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+07:58:03 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[active]]
+07:58:03 PM [AWT-EventQueue-0] [debug] BufferSet: 11525285: Buffer removed La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\)
+07:58:03 PM [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:La teoria que aquí se expone est a parcialmente desarrollada in.docx (%USERPROFILE%\Desktop\) is in no bufferSet anymore, closing it
+07:58:03 PM [AWT-EventQueue-0] [debug] BufferSet: 11525285: Buffer removed Nuevo documento de texto.txt (%USERPROFILE%\Desktop\)
+07:58:03 PM [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:Nuevo documento de texto.txt (%USERPROFILE%\Desktop\) is in no bufferSet anymore, closing it
+07:58:03 PM [AWT-EventQueue-0] [debug] BufferSet: 11525285: Buffer removed Sin sdas.png (%USERPROFILE%\Desktop\)
+07:58:03 PM [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:Sin sdas.png (%USERPROFILE%\Desktop\) is in no bufferSet anymore, closing it
+07:58:03 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=5.0,source=C:\Proyectos Java (E)\jEdit CC-4401\src\build\jars\QuickNotepad.jar,class=QuickNotepadPlugin]
+07:58:04 PM [AWT-EventQueue-0] [message] HistoryModel: Saving history
+07:58:04 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\history" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\history~1~"
+07:58:04 PM [AWT-EventQueue-0] [message] BufferHistory: Saving C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\recent.xml
+07:58:04 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\recent.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\recent.xml~1~"
+07:58:04 PM [AWT-EventQueue-0] [message] KillRing: Saving C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\killring.xml
+07:58:05 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\killring.xml" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\killring.xml~1~"
+07:58:05 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\properties" to "C:\Proyectos Java (E)\jEdit CC-4401\src\build\settings\settings-backup\properties~1~"
