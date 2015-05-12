@@ -1,0 +1,6 @@
+[vfs.browser.path]
+C:\\Users\\hfehrmann
+[vfs.browser.filter]
+*\[^~#\]
+[action]
+open-file
