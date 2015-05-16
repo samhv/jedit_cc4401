@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry excluding="build/|de/|dist/|lib/|lib/compile/|properties/|test/org/jedit/io/" including="org/" kind="src" path="src"/>
+	<classpathentry kind="src" path="libs"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="src/lib/compile/jsr305.jar"/>
 	<classpathentry kind="lib" path="src/lib/test/junit-dep.jar"/>
+	<classpathentry kind="lib" path="libs/com.jcraft.jsch_0.1.27.jar"/>
+	<classpathentry kind="lib" path="libs/org-eclipse-jgit.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

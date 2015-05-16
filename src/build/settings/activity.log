@@ -1,0 +1,114 @@
+Log file created on Fri May 08 16:53:51 CLT 2015
+IMPORTANT:
+Because updating this file after every log message would kill
+performance, it will be *incomplete* unless you invoke the
+Utilities->Troubleshooting->Update Activity Log on Disk command!
+16:53:50 [main] [message] Log: When reporting bugs, please include the following information:
+16:53:50 [main] [message] Log: java.version=1.8.0_25
+16:53:50 [main] [message] Log: java.vm.version=25.25-b02
+16:53:50 [main] [message] Log: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+16:53:50 [main] [message] Log: java.runtime.version=1.8.0_25-b17
+16:53:50 [main] [message] Log: java.runtime.name=Java(TM) SE Runtime Environment
+16:53:50 [main] [message] Log: java.vendor=Oracle Corporation
+16:53:50 [main] [message] Log: java.compiler=null
+16:53:50 [main] [message] Log: os.name=Mac OS X
+16:53:50 [main] [message] Log: os.version=10.10.3
+16:53:50 [main] [message] Log: os.arch=x86_64
+16:53:50 [main] [message] Log: user.home=/Users/Pablo
+16:53:50 [main] [message] Log: java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre
+16:53:50 [main] [message] Log: java.class.path=/Users/Pablo/git/jedit_cc4401/src/build/jedit.jar
+16:53:50 [main] [message] jEdit: starting with command line arguments: -settings=/Users/Pablo/git/jedit_cc4401/src/build/settings
+16:53:50 [main] [debug] jEdit: before splash screen activation:54 ms
+16:53:51 [main] [debug] jEdit: after splash screen activation:979 ms
+16:53:51 [main] [debug] MiscUtilities: Saving backup of file "/Users/Pablo/git/jedit_cc4401/src/build/settings/activity.log" to "/Users/Pablo/git/jedit_cc4401/src/build/settings/settings-backup/activity.log~1~"
+16:53:51 [main] [notice] jEdit: jEdit version 5.3pre1
+16:53:51 [main] [message] jEdit: Settings directory is /Users/Pablo/git/jedit_cc4401/src/build/settings
+16:53:51 [main] [message] jEdit: jEdit home directory is /Users/Pablo/git/jedit_cc4401/src/build
+16:53:51 [main] [debug] SplashScreen: init:44/653ms
+16:53:51 [main] [debug] SplashScreen: init system properties:25/678ms
+16:53:51 [main] [message] BeanShell: Beanshell Init
+16:53:51 [main] [debug] SplashScreen: init beanshell:47/725ms
+16:53:51 [main] [debug] SplashScreen: loading site properties:2/727ms
+16:53:51 [main] [debug] SplashScreen: loading user properties:40/767ms
+16:53:51 [main] [debug] GUIUtilities: Icon theme set to: tango
+16:53:51 [main] [debug] GUIUtilities: Loading icon theme from: jeditresource:/org/gjt/sp/jedit/icons/themes/tango/
+16:53:51 [main] [debug] SplashScreen: init GUI:6/773ms
+16:53:51 [main] [debug] EditServer: jEdit server started on port 51276
+16:53:51 [main] [debug] EditServer: Authorization key is 390398115
+16:53:51 [main] [debug] SplashScreen: init server:30/803ms
+16:53:51 [main] [debug] jEdit: initPLAF non-edt old=com.apple.laf.AquaLookAndFeel requested=null new=com.apple.laf.AquaLookAndFeel
+16:53:51 [main] [debug] SplashScreen: init look and feel:6/809ms
+16:53:51 [main] [debug] SplashScreen: init VFS Manager:1/810ms
+16:53:51 [main] [debug] ActionSet: Loading actions from jar:file:/Users/Pablo/git/jedit_cc4401/src/build/jedit.jar!/org/gjt/sp/jedit/actions.xml
+16:53:51 [main] [debug] DockableWindowManager: Loading dockables from jar:file:/Users/Pablo/git/jedit_cc4401/src/build/jedit.jar!/org/gjt/sp/jedit/dockables.xml
+16:53:51 [main] [debug] SplashScreen: init resources:87/897ms
+16:53:51 [AWT-EventQueue-0] [debug] EditBus: SearchSettingsChanged[source=null]
+16:53:51 [main] [debug] SplashScreen: Migrate keymaps:53/950ms
+16:53:51 [main] [notice] jEdit: Loading plugins from /Users/Pablo/git/jedit_cc4401/src/build/jars
+16:53:51 [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=1.3,source=/Users/Pablo/git/jedit_cc4401/src/build/jars/MacOSX.jar,class=macosx.MacOSXPlugin]
+16:53:51 [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=5.0,source=/Users/Pablo/git/jedit_cc4401/src/build/jars/QuickNotepad.jar,class=QuickNotepadPlugin]
+16:53:51 [main] [notice] jEdit: Loading plugins from /Users/Pablo/git/jedit_cc4401/src/build/settings/jars
+16:53:51 [main] [debug] SplashScreen: init plugins:14/964ms
+16:53:51 [main] [message] HistoryModel: Loading history
+16:53:51 [main] [debug] SplashScreen: init history model:4/968ms
+16:53:51 [main] [message] BufferHistory: Loading /Users/Pablo/git/jedit_cc4401/src/build/settings/recent.xml
+16:53:51 [main] [debug] SplashScreen: init buffer history:5/973ms
+16:53:51 [main] [message] KillRing: Loading /Users/Pablo/git/jedit_cc4401/src/build/settings/killring.xml
+16:53:51 [main] [debug] SplashScreen: init killring:15/988ms
+16:53:51 [main] [debug] jEdit: initPLAF non-edt old=com.apple.laf.AquaLookAndFeel requested=null new=com.apple.laf.AquaLookAndFeel
+16:53:51 [main] [debug] jEdit: SOCKS proxy disabled
+16:53:51 [main] [debug] jEdit: HTTP proxy disabled
+16:53:51 [AWT-EventQueue-0] [debug] EditBus: PropertiesChanged[source=null]
+16:53:51 [main] [debug] SplashScreen: init various properties:144/1132ms
+16:53:51 [main] [message] jEdit: Loading mode catalog file /Users/Pablo/git/jedit_cc4401/src/build/modes/catalog
+16:53:51 [main] [message] jEdit: Loading mode catalog file /Users/Pablo/git/jedit_cc4401/src/build/settings/modes/catalog
+16:53:51 [main] [debug] SplashScreen: init modes:47/1179ms
+16:53:51 [main] [debug] PluginJAR: Activating macosx.MacOSXPlugin because of startup
+16:53:51 [main] [debug] PluginJAR: Opening /Users/Pablo/git/jedit_cc4401/src/build/jars/MacOSX.jar
+16:53:51 [main] [debug] SplashScreen: activate plugins:17/1196ms
+16:53:51 [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=ACTIVATED,exit=false,version=1.3,source=/Users/Pablo/git/jedit_cc4401/src/build/jars/MacOSX.jar,class=macosx.MacOSXPlugin]
+16:53:51 [main] [debug] Macros: Registered beanshell macro handler
+16:53:51 [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=macros,source=null]
+16:53:51 [main] [message] BeanShell: Running script /Users/Pablo/git/jedit_cc4401/src/build/startup/startup.bsh
+16:53:51 [main] [notice] jEdit$4: Loading edit mode /Users/Pablo/git/jedit_cc4401/src/build/modes/text.xml
+16:53:51 [main] [debug] String: BeanShell interpreter version 2.0b4-jedit
+16:53:52 [main] [debug] SplashScreen: init macros:238/1434ms
+16:53:52 [main] [debug] SplashScreen: run startup scripts:1/1435ms
+16:53:52 [main] [debug] SplashScreen: run startup scripts:3/1437ms
+16:53:52 [main] [debug] jEdit: main done:1830 ms
+16:53:52 [AWT-EventQueue-0] [message] PerspectiveManager: Loading /Users/Pablo/git/jedit_cc4401/src/build/settings/perspective.xml
+16:53:52 [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Untitled-1 (~/)]
+16:53:52 [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=null,source=Untitled-1 (~/)]
+16:53:52 [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=null,source=Untitled-1 (~/)]
+16:53:52 [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=null,source=Untitled-1 (~/)]
+16:53:52 [AWT-EventQueue-0] [debug] BufferSet: 2035655273: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+16:53:52 [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+16:53:52 [AWT-EventQueue-0] [debug] BufferSet: 2035655273 addBufferAt(Untitled-1 (~/),-1)
+16:53:52 [AWT-EventQueue-0] [debug] BufferSet: 2035655273: Buffer added Untitled-1 (~/) at 0
+16:53:52 [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+16:53:52 [AWT-EventQueue-0] [debug] BufferSet: 2035655273 addBufferAt(Untitled-1 (~/),0)
+16:53:52 [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CREATED,source=org.gjt.sp.jedit.View[active]]
+16:53:52 [AWT-EventQueue-0] [debug] EditBus: EditorStarted[source=null]
+16:53:52 [AWT-EventQueue-0] [message] jEdit: Startup complete: 2680 ms
+16:53:53 [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+16:53:53 [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
+16:53:54 [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+16:53:54 [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+16:54:21 [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/Users/Pablo/git/jedit_cc4401/src/build/settings/perspective.xml" to "/Users/Pablo/git/jedit_cc4401/src/build/settings/settings-backup/perspective.xml~1~"
+16:54:21 [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+16:54:22 [AWT-EventQueue-0] [debug] EditBus: EditorExitRequested[source=org.gjt.sp.jedit.View[active]]
+16:54:22 [AWT-EventQueue-0] [message] PerspectiveManager: Saving /Users/Pablo/git/jedit_cc4401/src/build/settings/perspective.xml
+16:54:22 [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/Users/Pablo/git/jedit_cc4401/src/build/settings/perspective.xml" to "/Users/Pablo/git/jedit_cc4401/src/build/settings/settings-backup/perspective.xml~1~"
+16:54:22 [AWT-EventQueue-0] [debug] EditBus: EditorExiting[source=null]
+16:54:22 [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CLOSED,source=org.gjt.sp.jedit.View[active]]
+16:54:22 [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[active]]
+16:54:22 [AWT-EventQueue-0] [debug] BufferSet: 2035655273: Buffer removed Untitled-1 (~/)
+16:54:22 [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:Untitled-1 (~/) is in no bufferSet anymore, closing it
+16:54:22 [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=DEACTIVATED,exit=true,version=1.3,source=/Users/Pablo/git/jedit_cc4401/src/build/jars/MacOSX.jar,class=macosx.MacOSXPlugin]
+16:54:22 [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=1.3,source=/Users/Pablo/git/jedit_cc4401/src/build/jars/MacOSX.jar,class=macosx.MacOSXPlugin]
+16:54:22 [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=5.0,source=/Users/Pablo/git/jedit_cc4401/src/build/jars/QuickNotepad.jar,class=QuickNotepadPlugin]
+16:54:22 [AWT-EventQueue-0] [message] BufferHistory: Saving /Users/Pablo/git/jedit_cc4401/src/build/settings/recent.xml
+16:54:22 [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/Users/Pablo/git/jedit_cc4401/src/build/settings/recent.xml" to "/Users/Pablo/git/jedit_cc4401/src/build/settings/settings-backup/recent.xml~1~"
+16:54:22 [AWT-EventQueue-0] [message] KillRing: Saving /Users/Pablo/git/jedit_cc4401/src/build/settings/killring.xml
+16:54:22 [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/Users/Pablo/git/jedit_cc4401/src/build/settings/killring.xml" to "/Users/Pablo/git/jedit_cc4401/src/build/settings/settings-backup/killring.xml~1~"
+16:54:22 [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/Users/Pablo/git/jedit_cc4401/src/build/settings/properties" to "/Users/Pablo/git/jedit_cc4401/src/build/settings/settings-backup/properties~1~"

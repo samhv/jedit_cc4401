@@ -37,7 +37,9 @@ view.toolbar=new-file open-file save close-buffer - print - \
 	undo redo - cut copy paste - find find-next - \
 	new-view unsplit split-horizontal split-vertical - \
 	buffer-options combined-options - \
-	plugin-manager - help
+	plugin-manager - help - \
+	GitHub	
+
 
 new-file.icon=22x22/actions/document-new.png
 open-file.icon=22x22/actions/document-open.png
@@ -62,6 +64,7 @@ global-options.icon=22x22/categories/preferences-system.png
 combined-options.icon=22x22/categories/preferences-system.png
 plugin-manager.icon=22x22/places/plugins.png
 help.icon=22x22/apps/help-browser.png
+GitHub.icon=22x22/actions/github.png
 
 #{{{ Icon list for tool bar editor
 icons=22x22/actions/resize-horisontal.png \
@@ -121,6 +124,7 @@ icons=22x22/actions/resize-horisontal.png \
 	22x22/devices/printer.png \
 	22x22/places/plugins.png \
 	22x22/categories/preferences-system.png \
+	22x22/actions/github.png \
 	Blank24.gif
 #}}}
 
