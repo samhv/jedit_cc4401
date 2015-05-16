@@ -1,1 +1,16 @@
+#exclude any file under "bins" folders
 /bin/
+
+#exclude all folder in the build folder expect the build/jars folders. 
+!src/build/*
+src/build/*
+!src/build/jars
+
+
+src/lib/
+
+#Exclude any file under /src/.svn
+src/.svn/
+
+#Exclude eclipse setting folder
+.settings/
