@@ -1,0 +1,13 @@
+<!DOCTYPE ACTIONS SYSTEM "actions.dtd">
+<ACTIONS>
+	<ACTION NAME="start_analysis">
+		<CODE>
+			wm.addDockableWindow("start-analysis");
+		</CODE>
+	</ACTION>
+	<ACTION NAME="jripples.test">
+		<CODE>
+			wm.addDockableWindow(JRipplesPlugin.NAME);
+		</CODE>
+	</ACTION>
+</ACTIONS>

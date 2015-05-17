@@ -1,6 +1,6 @@
 #exclude any file under "bins" folders
 /bin/
-
+plugin/JRipplesPlugin/build/
 #exclude all folder in the build folder expect the build/jars folders. 
 !src/build/*
 src/build/*
@@ -13,3 +13,4 @@ src/.svn/
 #Exclude eclipse setting folder
 .settings/
 plugin/JRipplesPlugin/build/
+plugin/buildsupport/.svn/

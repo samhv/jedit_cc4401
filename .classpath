@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="build/|de/|dist/|lib/|lib/compile/|properties/|test/org/jedit/io/" including="org/" kind="src" path="src"/>
+	<classpathentry excluding="build" including="org" kind="src" path="src"/>
 	<classpathentry kind="src" path="libs"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="src/lib/compile/jsr305.jar"/>
