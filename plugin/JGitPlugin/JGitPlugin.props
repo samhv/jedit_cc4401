@@ -1,0 +1,21 @@
+# Plugin properties
+plugin.jegit.JGitPlugin.activate=defer
+
+plugin.jegit.JGitPlugin.name=JGit Plugin
+plugin.jegit.JGitPlugin.author=Pablo Bustamente, Sam Hernandez, Raimil Cruz
+plugin.jegit.JGitPlugin.version=1.0.0
+plugin.jegit.JGitPlugin.docs=index.html
+plugin.jegit.JGitPlugin.description=Provides options to manage a Git project and to communicate with GitHub 
+#plugin.jegit.JGitPlugin.depend.0=jdk 1.7
+plugin.jegit.JGitPlugin.depend.1=jedit 5.3pre1
+
+plugin.jegit.JGitPlugin.menu= \
+    git_clone \
+    git_issues \    
+    
+#Menu title
+git_clone.label=Git Clone
+git_issues.label=Manage Issues
+
+#Names for dockables window
+jgit-issues-mgr.title=Issues Manager

@@ -12,3 +12,4 @@ src/.svn/
 
 #Exclude eclipse setting folder
 .settings/
+plugin/JRipplesPlugin/build/
