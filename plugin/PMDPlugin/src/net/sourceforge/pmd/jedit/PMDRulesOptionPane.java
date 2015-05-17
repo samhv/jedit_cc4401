@@ -17,10 +17,13 @@ import org.gjt.sp.jedit.browser.VFSFileChooserDialog;
 
 import java.awt.FlowLayout;
 import java.awt.event.*;
+
 import javax.swing.*;
+import javax.swing.filechooser.*;
 import javax.swing.filechooser.FileFilter;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
+
 import java.util.List;
 import java.awt.Dimension;
 
@@ -28,6 +31,7 @@ import net.sourceforge.pmd.Rule;
 import net.sourceforge.pmd.RuleSet;
 import net.sourceforge.pmd.RuleSets;
 import net.sourceforge.pmd.RuleSetWriter;
+
 import java.io.*;
 
 import common.gui.pathbuilder.PathBuilder;
@@ -77,6 +81,39 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
         add(panel);
     }
     
+    public void settingPMDRulesOptionPane(){
+    	
+    	if(rules !=null){
+    		
+    		if ( jEdit.getBooleanProperty( USE_DEFAULT_RULES_KEY, false ) ) {
+                rules.loadGoodRulesTree();
+    		}
+                tree = new CheckboxTree( rules.getRoot() );
+                tree.getCheckingModel().setCheckingMode( TreeCheckingModel.CheckingMode.PROPAGATE_PRESERVING_UNCHECK );
+                tree.setCheckingPaths( rules.getCheckingModel().getCheckingPaths() );
+                tree.setRootVisible( false );
+                tree.addMouseMotionListener( new MyMouseMotionAdapter() );
+                rules_pane = new JScrollPane( tree );
+                rules_pane.setMaximumSize( new Dimension( 500, 200 ) );
+                rules_pane.setPreferredSize( new Dimension( 500, 200 ) );
+                
+            }
+    	
+    	else{
+    		JOptionPane.showMessageDialog( null,
+            jEdit.getProperty( "net.sf.pmd.Error_loading_rules._Check_any_custom_rulesets_for_errors.", "Error loading rules. Check any custom rulesets for errors." ),
+            jEdit.getProperty( "net.sf.pmd.Error_Loading_Rules", "Error Loading Rules" ),
+            JOptionPane.ERROR_MESSAGE );
+    	}
+    	
+    	
+    		
+    }
+    	
+    	
+    
+    
+    
     private JPanel getRulesPanel() {
         JPanel panel = new JPanel();
         panel.setLayout( new KappaLayout() );
@@ -93,25 +130,7 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
         // means the ruleset will be checked if one or more of the rules it contains
         // is checked.
         JScrollPane rules_pane = null;
-        if ( rules == null ) {
-            JOptionPane.showMessageDialog( null,
-                    jEdit.getProperty( "net.sf.pmd.Error_loading_rules._Check_any_custom_rulesets_for_errors.", "Error loading rules. Check any custom rulesets for errors." ),
-                    jEdit.getProperty( "net.sf.pmd.Error_Loading_Rules", "Error Loading Rules" ),
-                    JOptionPane.ERROR_MESSAGE );
-        }
-        else {
-            if ( jEdit.getBooleanProperty( USE_DEFAULT_RULES_KEY, false ) ) {
-                rules.loadGoodRulesTree();
-            }
-            tree = new CheckboxTree( rules.getRoot() );
-            tree.getCheckingModel().setCheckingMode( TreeCheckingModel.CheckingMode.PROPAGATE_PRESERVING_UNCHECK );
-            tree.setCheckingPaths( rules.getCheckingModel().getCheckingPaths() );
-            tree.setRootVisible( false );
-            tree.addMouseMotionListener( new MyMouseMotionAdapter() );
-            rules_pane = new JScrollPane( tree );
-            rules_pane.setMaximumSize( new Dimension( 500, 200 ) );
-            rules_pane.setPreferredSize( new Dimension( 500, 200 ) );
-        }
+        this.settingPMDRulesOptionPane();
 
         useDefaultRules.addActionListener(
             new ActionListener() {
@@ -192,6 +211,13 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
             }
         );
 
+        settingPanel(panel);
+        return panel;
+    }
+    
+    
+    public void settingPanel(JPanel panel){
+    	
         panel.setBorder( BorderFactory.createEmptyBorder( 12, 11, 11, 12 ) );
         panel.add( "0, 0,  2, 1,  W, w,  3", rules_label );
         panel.add( "0, 1,  2, 1,  W, w,  3", useDefaultRules );
@@ -201,7 +227,7 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
         panel.add( "0, 13, 2, 1,  W, w,  3", exampleLabel );
         panel.add( "0, 14, 2, 6,  0, wh, 3", example_pane );
         panel.add( "0, 20, 2, 1,  W, w,  3", more_info_label );
-        return panel;
+    	
     }
     
     public void _save() {
