@@ -1,0 +1,37 @@
+<project name="JGitPlugin" default="dist.nojavadoc" basedir=".">
+
+    	<property file="build.properties" />
+    	<property file="../build.properties" />
+	<!--Directorio donde se encuentra el fichero jedit.jar-->
+	<property name="jedit.install.dir"  value="../../src/build" />
+	<!--Directorio donde se se copiará el jar del plugin-->
+	<property name="install.dir"        value="../../src/build/jars" />
+	<property name="javadoc.packagenames"	value="jegit.*" />	
+    <property name="docs-proc.target"       value="none" />
+	<property name="dist.target" 			value="dist.complete" />
+	<property name="compiler.source" value="1.8" />
+	<property name="compiler.target" value="1.8" />
+	<property name="jedit.plugins.dir" value="${install.dir}" />
+	<!-- You should set this property in your ../build.properties to 
+	     the location of the jedit "build-support/trunk" project
+	     checked out from jEdit's SVN repository --> 
+	<property name="build.support" value="..\buildsupport" />
+	
+	<import file="..\buildsupport\plugin-build.xml" />
+	<!--<import file="${build.support}/plugin-build.xml" />-->
+
+    <!-- Extra files that get put into the jar file, above and beyond
+         the default set (which always includes actions,dockables,services.xml,
+         *.props, etc -->
+
+	<!-- Add needed jar  to the classpath. -->
+	<path id="project.class.path">
+		<!-- Usado por Egit para codificar y decodificar JSON. -->
+		<pathelement location="../../libs/gson-1.7.2.jar"/>
+		<pathelement location="../../libs/org.eclipse.egit.github.core-2.1.5.jar" />
+	</path>
+
+
+
+</project>
+

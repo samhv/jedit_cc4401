@@ -12,5 +12,11 @@ src/.svn/
 
 #Exclude eclipse setting folder
 .settings/
-plugin/JRipplesPlugin/build/
+
+#Plugins
+#Exclude svn plugin common ant compilation artifacts
 plugin/buildsupport/.svn/
+#Exclude build for JRipples plugin
+plugin/JRipplesPlugin/build/
+#Exclude build for JGitPlugin plugin
+plugin/JGitPlugin/build/
