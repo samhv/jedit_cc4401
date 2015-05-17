@@ -6,4 +6,7 @@
 	<DOCKABLE NAME="jripples">
 		new JRipples(view, position);
 	</DOCKABLE>
+	<DOCKABLE NAME="start-analysis">
+		new JRipplesProjectSelector(view, position);
+	</DOCKABLE>
 </DOCKABLES>

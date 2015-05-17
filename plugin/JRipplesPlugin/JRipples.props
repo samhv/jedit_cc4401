@@ -7,7 +7,7 @@ plugin.JRipplesPlugin.usePluginHome=true
 
 # Required for all plugins:
 plugin.JRipplesPlugin.name=JRipples
-plugin.JRipplesPlugin.author=Javier Liberman, Francisco Peters
+plugin.JRipplesPlugin.author=Javier Liberman, Francisco Peters, Raimil Cruz
 
 # version number == jEdit version number
 plugin.JRipplesPlugin.version=0.1
@@ -22,14 +22,18 @@ plugin.JRipplesPlugin.docs=index.html
 
 # quicknotepad's plugin menu - a list of actions or separators
 plugin.JRipplesPlugin.menu=jripples \
-	- \
+	start_analysis \
 	jripples.test
 
 # action labels for actions supplied by dockables.xml
 jripples.label=JRipples
 
 # action labels for actions supplied by actions.xml
+start_analysis.label=Start analysis
 jripples.test.label=MTest
+
+#Names for dockables windows
+start-analysis.title = JRipples analysis configuration
 
 # plugin option pane
 plugin.JRipplesPlugin.option-pane=jripples
