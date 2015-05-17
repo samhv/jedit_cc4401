@@ -1,4 +1,4 @@
-<project name="PMDPlugin" default="dist" basedir=".">
+<project name="PMDPlugin" default="build" basedir=".">
 
     <!-- user defined build properties, these override any properties set below -->
     <property file="build.properties"/>
@@ -24,7 +24,7 @@
         <pathelement location="${jedit.plugins.dir}/kappalayout.jar"/>
         <pathelement location="${build}"/>
         <fileset casesensitive="false" id="pmd.libs" dir="${lib}">
-            <include name="*.jar"/>
+            <include name="*.jar"/>            
         </fileset>
     </path>
 
@@ -57,8 +57,9 @@
     </target>
 
     <!-- Target: jar - create the plugin -->
-    <target name="dist" depends="compile">
-        <jar jarfile="${install.dir}/${ant.project.name}.jar">
+    <target name="build" depends="compile">
+	    <delete file="${install.dir}/${ant.project.name}.jar"/>    	
+        <jar jarfile="${install.dir}/${ant.project.name}.jar">            
             <fileset dir="${build}"/>
             <fileset dir="${basedir}">
                 <include name="*.props"/>

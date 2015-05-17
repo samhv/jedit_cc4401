@@ -52,11 +52,18 @@ public class CPDDuplicateCodeViewer extends JPanel {
             }
         }
        );
-        add(new JScrollPane(tree));
-
-        JButton saveBtn = new JButton("Save");
+        add(new JScrollPane(tree));        
         JPanel btnPanel = new JPanel();
-        btnPanel.add(saveBtn);
+        writePanel(btnPanel);
+
+    }
+/***
+ *  Aquí se crea el contenido en una nueva ventana, se puede reutilizar el panel o uno nuevo
+ * @param btnPanel
+ */
+    public void writePanel(JPanel btnPanel){
+    	JButton saveBtn = new JButton("Save");
+    	btnPanel.add(saveBtn);
         add(btnPanel, BorderLayout.SOUTH);
         saveBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
@@ -69,9 +76,8 @@ public class CPDDuplicateCodeViewer extends JPanel {
             }
         }
        );
-
     }
-
+    
     public void refreshTree() {
         treeModel.reload();
     }
