@@ -132,30 +132,7 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
         JScrollPane rules_pane = null;
         this.settingPMDRulesOptionPane();
 
-        useDefaultRules.addActionListener(
-            new ActionListener() {
-                public void actionPerformed( final ActionEvent ae ) {
-                    SwingUtilities.invokeLater( new Runnable() {
-                                public void run() {
-                                    if ( ( ( JCheckBox ) ae.getSource() ).isSelected() ) {
-                                        rules.loadGoodRulesTree();
-                                        customRulesButton.setEnabled( false );
-                                    }
-                                    else {
-                                        rules.loadTree();
-                                        customRulesButton.setEnabled( true );
-                                    }
-                                    tree.setModel( rules.getTreeModel() );
-                                    tree.getCheckingModel().setCheckingMode( TreeCheckingModel.CheckingMode.PROPAGATE_PRESERVING_UNCHECK );
-                                    tree.setCheckingPaths( rules.getCheckingModel().getCheckingPaths() );
-                                    tree.invalidate();
-                                    tree.validate();
-                                }
-                            }
-                                              );
-                }
-            }
-        );
+        settingUseDefaultRules();
 
         exampleLabel = new JLabel( jEdit.getProperty( "net.sf.pmd.Example", "Example" ) );
         JScrollPane example_pane = new JScrollPane( exampleTextArea );
@@ -202,7 +179,55 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
 
         JLabel more_info_label = new JLabel( jEdit.getProperty( "net.sf.pmd.Please_see_http>//pmd.sf.net/_for_more_information", "Please see http://pmd.sf.net/ for more information" ) );
 
-        customRulesButton = new JButton( "Custom Rules" );
+        
+        settingRulesButton();
+        settingPanelDimension(panel);
+        return panel;
+    }
+    
+    /**
+     * Sets the useDefaultRules JCheckbox instance
+     * @author Paloma Pérez
+     */
+    
+    public void settingUseDefaultRules(){
+    	
+    	 useDefaultRules.addActionListener(
+    	            new ActionListener() {
+    	                public void actionPerformed( final ActionEvent ae ) {
+    	                    SwingUtilities.invokeLater( new Runnable() {
+    	                                public void run() {
+    	                                    if ( ( ( JCheckBox ) ae.getSource() ).isSelected() ) {
+    	                                        rules.loadGoodRulesTree();
+    	                                        customRulesButton.setEnabled( false );
+    	                                    }
+    	                                    else {
+    	                                        rules.loadTree();
+    	                                        customRulesButton.setEnabled( true );
+    	                                    }
+    	                                    tree.setModel( rules.getTreeModel() );
+    	                                    tree.getCheckingModel().setCheckingMode( TreeCheckingModel.CheckingMode.PROPAGATE_PRESERVING_UNCHECK );
+    	                                    tree.setCheckingPaths( rules.getCheckingModel().getCheckingPaths() );
+    	                                    tree.invalidate();
+    	                                    tree.validate();
+    	                                }
+    	                            }
+    	                                              );
+    	                }
+    	            }
+    	        );
+    	
+    }
+    
+    /**
+     * 
+     * Sets the rules button options
+     * @author Paloma Pérez
+     */
+    
+    public void settingRulesButton(){
+    	
+    	customRulesButton = new JButton( "Custom Rules" );
         customRulesButton.addActionListener(
             new ActionListener() {
                 public void actionPerformed( ActionEvent ae ) {
@@ -210,13 +235,18 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
                 }
             }
         );
-
-        settingPanel(panel);
-        return panel;
+    	
     }
     
     
-    public void settingPanel(JPanel panel){
+
+    /**
+     * Sets the dimension of a JPanel object. 
+     * @param panel 
+     * @author Paloma Pérez
+     */
+    
+    public void settingPanelDimension(JPanel panel){
     	
         panel.setBorder( BorderFactory.createEmptyBorder( 12, 11, 11, 12 ) );
         panel.add( "0, 0,  2, 1,  W, w,  3", rules_label );
