@@ -43,15 +43,21 @@ public class PMDGeneralOptionPane extends AbstractOptionPane implements OptionPa
         chkPrintRule = new JCheckBox( jEdit.getProperty("net.sf.pmd.Print_Rulename_in_ErrorList", "Print Rulename in ErrorList"), jEdit.getBooleanProperty( PMDJEditPlugin.PRINT_RULE ) );
         chkShowProgressBar = new JCheckBox( jEdit.getProperty("net.sf.pmd.Show_PMD_Progress_Bar", "Show PMD Progress Bar"), jEdit.getBooleanProperty( PMDJEditPlugin.SHOW_PROGRESS ) );
         
+        settingPanel(panel);
+
+        add( panel );
+    }
+
+    public void settingPanel(JPanel panel){
         panel.add("0, 0, 1, 1, W, w, 3", title);
         panel.add("0, 1, 1, 1, W, w, 3", chkRunPMDOnSave);
         panel.add("0, 2, 1, 1, W, w, 3", chkClearErrorListOnSave);
         panel.add("0, 3, 1, 1, W, w, 3", chkPrintRule);
         panel.add("0, 4, 1, 1, W, w, 3", chkShowProgressBar);
-
-        add( panel );
+    	
     }
-
+    
+    
     public void _save() {
         // If the user has checked "Run PMD on save", set the plugin to load on jEdit
         // start up so that the "run on save" feature works right away.  Unchecking
