@@ -54,8 +54,8 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
     CheckboxTree tree;
     JCheckBox useDefaultRules;
     JLabel exampleLabel;
-    JButton exportButton;
-    JButton customRulesButton;
+    JButton exportButton = new JButton( "Export this ruleset" );
+    JButton customRulesButton= new JButton( "Custom Rules" );
     
     
     static final String USE_DEFAULT_RULES_KEY = "pmd.use-default-rules";
@@ -138,9 +138,24 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
         JScrollPane example_pane = new JScrollPane( exampleTextArea );
         example_pane.setMaximumSize( new Dimension( 500, 200 ) );
         example_pane.setPreferredSize( new Dimension( 500, 200 ) );
+        settingExportButton();
 
-        exportButton = new JButton( "Export this ruleset" );
-        exportButton.addActionListener(
+        JLabel more_info_label = new JLabel( jEdit.getProperty( "net.sf.pmd.Please_see_http>//pmd.sf.net/_for_more_information", "Please see http://pmd.sf.net/ for more information" ) );
+
+        
+        settingRulesButton();
+        settingPanelDimension(panel);
+        return panel;
+    }
+    
+    
+    /***
+     * Sets the exportButton instance
+     * @author Paloma Pérez
+     */
+    public void settingExportButton(JButton export){
+    	
+        export.addActionListener(
             new ActionListener() {
                 public void actionPerformed( ActionEvent ae ) {
                     RuleSets rulesets = rules.getSelectedRules();
@@ -175,15 +190,10 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
                 }
             }
         );
-
-
-        JLabel more_info_label = new JLabel( jEdit.getProperty( "net.sf.pmd.Please_see_http>//pmd.sf.net/_for_more_information", "Please see http://pmd.sf.net/ for more information" ) );
-
-        
-        settingRulesButton();
-        settingPanelDimension(panel);
-        return panel;
+    	
     }
+    
+    
     
     /**
      * Sets the useDefaultRules JCheckbox instance
@@ -227,7 +237,6 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
     
     public void settingRulesButton(){
     	
-    	customRulesButton = new JButton( "Custom Rules" );
         customRulesButton.addActionListener(
             new ActionListener() {
                 public void actionPerformed( ActionEvent ae ) {
