@@ -780,6 +780,29 @@ public class View extends JFrame implements InputHandlerProvider
 			getToolkit().beep();
 	} //}}}
 
+	
+	
+	
+	public void myGetParent(Component comp) {
+		while(!(comp instanceof JSplitPane) && comp != null)
+		{
+			comp = comp.getParent();
+		}
+	}
+	
+	public void myCleaner(Component comp, BufferSet.Scope scope) {
+		for(EditPane _editPane: getEditPanes())
+		{
+			if(GUIUtilities.isAncestorOf(comp,_editPane)
+				&& _editPane != editPane)
+			{
+				if (scope == BufferSet.Scope.editpane)
+					mergeBufferSets(editPane, _editPane);
+				_editPane.close();
+			}
+		}
+	}
+	
 	//{{{ unsplitCurrent() method
 	/**
 	 * Removes the current split.
@@ -795,24 +818,12 @@ public class View extends JFrame implements InputHandlerProvider
 
 			// find first split pane parenting current edit pane
 			Component comp = editPane;
-			while(!(comp instanceof JSplitPane) && comp != null)
-			{
-				comp = comp.getParent();
-			}
+			myGetParent(comp);
 
 			BufferSet.Scope scope = jEdit.getBufferSetManager().getScope();
 			// get rid of any edit pane that is a child
 			// of the current edit pane's parent splitter
-			for(EditPane _editPane: getEditPanes())
-			{
-				if(GUIUtilities.isAncestorOf(comp,_editPane)
-					&& _editPane != editPane)
-				{
-					if (scope == BufferSet.Scope.editpane)
-						mergeBufferSets(editPane, _editPane);
-					_editPane.close();
-				}
-			}
+			myCleaner(comp, scope);
 
 			JComponent parent = comp == null ? null : (JComponent)comp.getParent();
 
@@ -1456,6 +1467,12 @@ public class View extends JFrame implements InputHandlerProvider
 		EditBus.send(new ViewUpdate(this,ViewUpdate.FULL_SCREEN_TOGGLED));
 	} //}}}
 
+	
+	public void myRemoveAll(Set<Buffer> checkingBuffers, View view){
+		checkingBuffers.removeAll(
+				view.getOpenBuffers());
+	}
+	
 	//{{{ confirmToCloseDirty() methods
 	/**
 	 * If the view contains dirty buffers which will be closed on
@@ -1471,8 +1488,7 @@ public class View extends JFrame implements InputHandlerProvider
 		{
 			if (view != this)
 			{
-				checkingBuffers.removeAll(
-					view.getOpenBuffers());
+				myRemoveAll(checkingBuffers, view);
 			}
 		}
 		for (Buffer buffer: checkingBuffers)
@@ -1485,6 +1501,18 @@ public class View extends JFrame implements InputHandlerProvider
 		return true;
 	} //}}}
 
+	public void myCloseAll(EditPane[] editPanes) {
+		for (EditPane ep : editPanes)
+			ep.close();
+	}
+	
+	public void myExitSocket() {
+		waitSocket.getOutputStream().write('\0');
+		waitSocket.getOutputStream().flush();
+		waitSocket.getInputStream().close();
+		waitSocket.getOutputStream().close();
+		waitSocket.close();
+	}
 	//{{{ close() method
 	void close()
 	{
@@ -1498,8 +1526,7 @@ public class View extends JFrame implements InputHandlerProvider
 		dispose();
 
 		EditPane[] editPanes = getEditPanes();
-		for (EditPane ep : editPanes)
-			ep.close();
+		myCloseAll(editPanes);
 
 		// null some variables so that retaining references
 		// to closed views won't hurt as much.
@@ -1517,11 +1544,7 @@ public class View extends JFrame implements InputHandlerProvider
 		{
 			try
 			{
-				waitSocket.getOutputStream().write('\0');
-				waitSocket.getOutputStream().flush();
-				waitSocket.getInputStream().close();
-				waitSocket.getOutputStream().close();
-				waitSocket.close();
+				myExitSocket();
 			}
 			catch(IOException io)
 			{
@@ -2253,17 +2276,24 @@ loop:		while (true)
 		{
 		}
 
+		
+		
 		public ViewConfig(boolean plainView)
 		{
 			this.plainView = plainView;
+			myInitiation();
+		}
+
+		public void myInitiation() {
 			String prefix = plainView ? "plain-view" : "view";
 			x = jEdit.getIntegerProperty(prefix + ".x",0);
 			y = jEdit.getIntegerProperty(prefix + ".y",0);
 			width = jEdit.getIntegerProperty(prefix + ".width",0);
 			height = jEdit.getIntegerProperty(prefix + ".height",0);
 			extState = jEdit.getIntegerProperty(prefix + ".extendedState", Frame.NORMAL);
+		
 		}
-
+		
 		public ViewConfig(boolean plainView, String splitConfig,
 			int x, int y, int width, int height, int extState)
 		{
