@@ -961,7 +961,16 @@ public class Buffer extends JEditBuffer
 	//}}}
 
 	//{{{ Property methods
+public void myAutoReload() {
+	if (!autoreloadOverridden)
+	{
+		setAutoReloadDialog(jEdit.getBooleanProperty("autoReloadDialog"));
+		setAutoReload(jEdit.getBooleanProperty("autoReload"));
+	}
+	if (!isTemporary())
+		EditBus.send(new BufferUpdate(this,null,BufferUpdate.PROPERTIES_CHANGED));
 
+}
 	//{{{ propertiesChanged() method
 	/**
 	 * Reloads settings from the properties. This should be called
@@ -975,13 +984,7 @@ public class Buffer extends JEditBuffer
 		longLineLimit = jEdit.getIntegerProperty("longLineLimit", 4000);
 		String largefilemode = getStringProperty("largefilemode");
 		longBufferMode = "limited".equals(largefilemode) || "nohighlight".equals(largefilemode);
-		if (!autoreloadOverridden)
-		{
-			setAutoReloadDialog(jEdit.getBooleanProperty("autoReloadDialog"));
-			setAutoReload(jEdit.getBooleanProperty("autoReload"));
-		}
-		if (!isTemporary())
-			EditBus.send(new BufferUpdate(this,null,BufferUpdate.PROPERTIES_CHANGED));
+		myAutoReload();
 	} //}}}
 
 	//{{{ getDefaultProperty() method
@@ -1281,15 +1284,8 @@ public class Buffer extends JEditBuffer
 			new String[] { getMarkerNameString() });
 	} //}}}
 
-	//{{{ getMarkerNameString() method
-	/**
-	 * Returns a string of all set markers, used by the status bar
-	 * (eg, "a b $ % ^").
-	 * @since jEdit 4.2pre2
-	 */
-	public String getMarkerNameString()
-	{
-		StringBuilder buf = new StringBuilder();
+	
+	public void myAppend(StringBuilder buf) {
 		for (Marker marker : markers)
 		{
 			if (marker.getShortcut() != '\0')
@@ -1299,6 +1295,18 @@ public class Buffer extends JEditBuffer
 				buf.append(marker.getShortcut());
 			}
 		}
+	}
+	
+	//{{{ getMarkerNameString() method
+	/**
+	 * Returns a string of all set markers, used by the status bar
+	 * (eg, "a b $ % ^").
+	 * @since jEdit 4.2pre2
+	 */
+	public String getMarkerNameString()
+	{
+		StringBuilder buf = new StringBuilder();
+		myAppend(buf);
 
 		if(buf.length() == 0)
 			return jEdit.getProperty("view.status.no-markers");
@@ -1674,6 +1682,14 @@ public class Buffer extends JEditBuffer
 		finishLoading();
 	} //}}}
 
+	public void myExitSocket() throws IOException {
+		waitSocket.getOutputStream().write('\0');
+		waitSocket.getOutputStream().flush();
+		waitSocket.getInputStream().close();
+		waitSocket.getOutputStream().close();
+		waitSocket.close();
+	}
+	
 	//{{{ close() method
 	void close()
 	{
@@ -1687,11 +1703,7 @@ public class Buffer extends JEditBuffer
 		{
 			try
 			{
-				waitSocket.getOutputStream().write('\0');
-				waitSocket.getOutputStream().flush();
-				waitSocket.getInputStream().close();
-				waitSocket.getOutputStream().close();
-				waitSocket.close();
+				myExitSocket();
 			}
 			catch(IOException io)
 			{
