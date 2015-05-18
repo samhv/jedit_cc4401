@@ -52,7 +52,8 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
     JTextArea exampleTextArea = new JTextArea( 12, 60 );
     JTextField txtCustomRules;
     CheckboxTree tree;
-    JCheckBox useDefaultRules;
+    JCheckBox useDefaultRules = new JCheckBox( jEdit.getProperty( "net.sf.pmd.Select_default_rules", "Select default rules" ) );
+
     JLabel exampleLabel;
     JButton exportButton = new JButton( "Export this ruleset" );
     JButton customRulesButton= new JButton( "Custom Rules" );
@@ -109,19 +110,13 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
     	
     		
     }
-    	
-    	
-    
-    
-    
+
     private JPanel getRulesPanel() {
         JPanel panel = new JPanel();
         panel.setLayout( new KappaLayout() );
 
         JLabel rules_label = new JLabel( jEdit.getProperty( "net.sf.pmd.Rules", "Rules" ) );
-        useDefaultRules = new JCheckBox( jEdit.getProperty( "net.sf.pmd.Select_default_rules", "Select default rules" ) );
-        useDefaultRules.setSelected( jEdit.getBooleanProperty( USE_DEFAULT_RULES_KEY, false ) );
-        
+       
         // use a checkbox tree for displaying the rules.  This lets the rules be
         // grouped by ruleset, and makes it very easy to select an entire set of
         // rules with a single click. The tree is only 2 levels
@@ -201,7 +196,7 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
      */
     
     public void settingUseDefaultRules(){
-    	
+    	useDefaultRules.setSelected( jEdit.getBooleanProperty( USE_DEFAULT_RULES_KEY, false ) );
     	 useDefaultRules.addActionListener(
     	            new ActionListener() {
     	                public void actionPerformed( final ActionEvent ae ) {
