@@ -111,6 +111,15 @@ public class StyleEditor extends EnhancedDialog implements ActionListener
 		super(parent, jEdit.getProperty("style-editor.title"),true);
 		initialize(parent, style, styleName);
 	}
+	
+	
+	
+	/*
+	 * Metodo a modificar potencialmente para PMD
+	 * 
+	 * */
+	
+	
 	private void initialize(Component comp, SyntaxStyle style, String styleName)
 	{
 		JPanel content = new JPanel(new BorderLayout(12,12));
