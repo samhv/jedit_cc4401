@@ -1,4 +1,5 @@
 bin/
+src/build/*
 .classpath
 .project
 .settings/
