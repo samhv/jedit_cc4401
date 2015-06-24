@@ -1506,7 +1506,7 @@ public class View extends JFrame implements InputHandlerProvider
 			ep.close();
 	}
 	
-	public void myExitSocket() {
+	public void myExitSocket() throws IOException{
 		waitSocket.getOutputStream().write('\0');
 		waitSocket.getOutputStream().flush();
 		waitSocket.getInputStream().close();
