@@ -343,7 +343,17 @@ public class EditPane extends JPanel implements BufferSetListener
 			caretInfo = new CaretInfo();
 			caretsForPath.put(buffer.getPath(), caretInfo);
 		}
-		caretInfo.setSelection(textArea, buffer);
+		caretInfo.caret = textArea.getCaretPosition();
+
+
+		Selection[] selection = textArea.getSelection();
+		for(int i = 0; i < selection.length; i++)
+			selection[i] = (Selection)selection[i].clone();
+		buffer.setProperty(Buffer.SELECTION,selection);
+		caretInfo.selection = selection;
+
+		caretInfo.rectangularSelection = textArea.isRectangularSelectionEnabled();
+		caretInfo.multipleSelection = textArea.isMultipleSelectionEnabled();
 
 		buffer.setIntegerProperty(Buffer.SCROLL_VERT,
 			textArea.getFirstPhysicalLine());
@@ -396,17 +406,20 @@ public class EditPane extends JPanel implements BufferSetListener
 				buffer.getLength()));
 
 		// set any selections
-		Selection[] selection = caretInfo.getSelection();
+		Selection[] selection = caretInfo.selection;
 		if ( selection == null )
 		{
 			selection = (Selection[]) buffer.getProperty(Buffer.SELECTION);
 		}
-		for(int i = 0; i < selection.length; i++)
+		if(selection != null)
 		{
-			Selection s = selection[i];
-			int max = buffer.getLength();
-			if(s.getStart() > max || s.getEnd() > max)
-				selection[i] = null;
+			for(int i = 0; i < selection.length; i++)
+			{
+				Selection s = selection[i];
+				int max = buffer.getLength();
+				if(s.getStart() > max || s.getEnd() > max)
+					selection[i] = null;
+			}
 		}
 		textArea.setSelection(selection);
 		textArea.setRectangularSelectionEnabled(caretInfo.rectangularSelection);
@@ -471,32 +484,11 @@ public class EditPane extends JPanel implements BufferSetListener
 	private static class CaretInfo
 	{
 		public int caret = -1;
-		private Selection[] selection;
+		public Selection[] selection;
 		public int scrollVert = -1;
 		public int scrollHoriz = -1;
 		public boolean rectangularSelection;
 		public boolean multipleSelection;
-		
-		void setSelection(JEditTextArea textArea, Buffer buffer){
-			this.caret = textArea.getCaretPosition();
-
-			Selection[] selection = textArea.getSelection();
-			for(int i = 0; i < selection.length; i++)
-				selection[i] = (Selection)selection[i].clone();
-			buffer.setProperty(Buffer.SELECTION,selection);
-			this.selection = selection;
-
-			this.rectangularSelection = textArea.isRectangularSelectionEnabled();
-			this.multipleSelection = textArea.isMultipleSelectionEnabled();
-		}
-
-		public Selection[] getSelection() {
-			return selection;
-		}
-
-		public void setSelection(Selection[] selection) {
-			this.selection = selection;
-		}
 	} //}}}
 
 	//{{{ goToNextMarker() method

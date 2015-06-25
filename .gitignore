@@ -1,4 +1,7 @@
 bin/
+src/build/
+src/.ant-targets-build.xml
+jars/
 .classpath
 .project
 .settings/
