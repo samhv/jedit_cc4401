@@ -197,7 +197,7 @@ public class EditPane extends JPanel implements BufferSetListener
 					// only do this if we are the current edit pane
 					if(view.getEditPane() == EditPane.this
 						&& (bufferSwitcher == null
-						|| !bufferSwitcher.isPopupVisible()))
+						|| !bufferSwitcher.specialState()))
 					{
 						textArea.requestFocus();
 					}

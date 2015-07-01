@@ -23,6 +23,7 @@ package org.gjt.sp.jedit.gui;
 import javax.swing.event.*;
 import javax.swing.plaf.ComboBoxUI;
 import javax.swing.plaf.basic.BasicComboBoxUI;
+
 import java.lang.reflect.Field;
 
 import javax.swing.*;
@@ -49,6 +50,7 @@ import org.gjt.sp.util.ThreadUtilities;
 */
 public class BufferSwitcher extends JComboBox
 {
+
 	// private members
 	private final EditPane editPane;
 	private boolean updating;
@@ -95,6 +97,9 @@ public class BufferSwitcher extends JComboBox
 		EditBus.addToBus(this);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.gjt.sp.jedit.gui.BufferSwitcher#updateBufferList()
+	 */
 	public void updateBufferList()
 	{
 		// if the buffer count becomes 0, then it is guaranteed to
@@ -132,6 +137,9 @@ public class BufferSwitcher extends JComboBox
 		ThreadUtilities.runInDispatchThread(runnable);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.gjt.sp.jedit.gui.BufferSwitcher#handlePropertiesChanged(org.gjt.sp.jedit.msg.PropertiesChanged)
+	 */
 	@EBHandler
 	public void handlePropertiesChanged(PropertiesChanged msg)
 	{
@@ -434,6 +442,13 @@ public class BufferSwitcher extends JComboBox
 			}
 		}
 	}
+	//Metodos que se deben modi
+
+	public boolean specialState() {
+		return isPopupVisible();
+	}
+	
+	
 }
 
 // :noTabs=false:

@@ -30,7 +30,7 @@ public class ButtonTabComponent extends JPanel {
             }
         };
          
-        add(new JLabel("caca"));
+        add(label);
       
         label.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 5));
        
@@ -49,7 +49,7 @@ public class ButtonTabComponent extends JPanel {
             setUI(new BasicButtonUI());
       
             setContentAreaFilled(false);
-           
+            
             setFocusable(false);
             setBorder(BorderFactory.createEtchedBorder());
             setBorderPainted(false);
@@ -97,6 +97,8 @@ public class ButtonTabComponent extends JPanel {
             if (component instanceof AbstractButton) {
                 AbstractButton button = (AbstractButton) component;
                 button.setBorderPainted(true);
+                System.out.println("hola que pasa");
+                
             }
         }
  
