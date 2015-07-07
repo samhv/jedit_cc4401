@@ -39,8 +39,8 @@ import org.gjt.sp.jedit.EditBus.EBHandler;
 import org.gjt.sp.jedit.buffer.JEditBuffer;
 import org.gjt.sp.jedit.bufferset.BufferSet;
 import org.gjt.sp.jedit.bufferset.BufferSetListener;
-import org.gjt.sp.jedit.gui.BufferSwitcher;
 import org.gjt.sp.jedit.gui.StatusBar;
+import org.gjt.sp.jedit.gui.TabbedBufferSwitcher;
 import org.gjt.sp.jedit.msg.BufferChanging;
 import org.gjt.sp.jedit.msg.BufferUpdate;
 import org.gjt.sp.jedit.msg.EditPaneUpdate;
@@ -295,7 +295,7 @@ public class EditPane extends JPanel implements BufferSetListener
 	 * @return the buffer switcher (it can be null)
 	 * @since jEdit 4.1pre8
 	 */
-	public BufferSwitcher getBufferSwitcher()
+	public TabbedBufferSwitcher getBufferSwitcher()
 	{
 		return bufferSwitcher;
 	} //}}}
@@ -870,7 +870,7 @@ public class EditPane extends JPanel implements BufferSetListener
 	/** The current buffer. */
 	private Buffer buffer;
 	private Buffer recentBuffer;
-	private BufferSwitcher bufferSwitcher;
+	private TabbedBufferSwitcher bufferSwitcher;
 
 	/** The textArea inside the edit pane. */
 	private final JEditTextArea textArea;
@@ -1055,7 +1055,7 @@ public class EditPane extends JPanel implements BufferSetListener
 		{
 			if(bufferSwitcher == null)
 			{
-				bufferSwitcher = new BufferSwitcher(this);
+				bufferSwitcher = new TabbedBufferSwitcher(this);
 				add(BorderLayout.NORTH,bufferSwitcher);
 				bufferSwitcher.updateBufferList();
 				revalidate();
@@ -1312,3 +1312,5 @@ public class EditPane extends JPanel implements BufferSetListener
 		} //}}}
 	} //}}}
 }
+
+
