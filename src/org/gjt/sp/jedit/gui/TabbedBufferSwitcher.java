@@ -26,6 +26,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.AbstractBorder;
+import javax.swing.border.Border;
 
 import org.gjt.sp.jedit.Buffer;
 import org.gjt.sp.jedit.EditBus;
@@ -47,6 +48,7 @@ public class TabbedBufferSwitcher extends JPanel {
 
 	private static Color selectedColor = new Color(0xffffff);
 	private static Color unselectedColor = new Color(0xeeeeee);
+	private static Color borderColor = new Color(0x7a8a99);
 
 	public TabbedBufferSwitcher(final EditPane editPane){
 		//Things for custom tab
@@ -205,7 +207,7 @@ public class TabbedBufferSwitcher extends JPanel {
 							Tab t = (Tab)c;
 							if (!t.isSelected()){
 								Graphics2D g2 = (Graphics2D)g;
-								g2.setColor(Color.MAGENTA);
+								g2.setColor(TabbedBufferSwitcher.borderColor);
 								g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
 													RenderingHints.VALUE_ANTIALIAS_ON);
 								g2.drawArc(0, 0, 20, 20, 90, 90);
@@ -268,9 +270,11 @@ public class TabbedBufferSwitcher extends JPanel {
 	class RoundButton extends JButton {
 
 		private final Tab tab;
+		private boolean over;
 		
 		public RoundButton(String text, Icon icon, final Tab tab) {
 			this.tab = tab;
+			over = false;
 			
 			setModel(new DefaultButtonModel());
 			init(text, icon);
@@ -297,13 +301,14 @@ public class TabbedBufferSwitcher extends JPanel {
 					tab.dispatchEvent(e);
 					if (e.getComponent() instanceof RoundButton){
 						final RoundButton b = (RoundButton)e.getComponent();
-
+						b.over = true;
+						
 						b.setBorder(new AbstractBorder() {
 
 							@Override
 							public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
 								Graphics2D g2 = (Graphics2D) g;
-								g2.setColor(new Color(0xaaaaaa));
+								g2.setColor(TabbedBufferSwitcher.borderColor);
 								g2.drawOval(0, 0, width - 1, height - 1);
 							}
 							
@@ -320,6 +325,7 @@ public class TabbedBufferSwitcher extends JPanel {
 				public void mouseExited(MouseEvent e) {
 					if (e.getComponent() instanceof RoundButton){
 						RoundButton b = (RoundButton)e.getComponent();
+						b.over = false;
 
 						b.setBorder(BorderFactory.createEmptyBorder(2, 2, 2, 2));
 					}
@@ -363,6 +369,15 @@ public class TabbedBufferSwitcher extends JPanel {
 		
 		private void close(){
 			jEdit.closeBuffer( tab.getTabbedPane().getEditPane(), (Buffer)tab.getObject());
+		}
+		
+		@Override
+		protected void paintComponent(Graphics g) {
+			if (over){
+				g.setColor(new Color(0xc0bcFE));
+				g.fillOval(0, 0, getWidth() - 1, getHeight() - 1);
+			}
+			super.paintComponent(g);
 		}
 	}
 }
