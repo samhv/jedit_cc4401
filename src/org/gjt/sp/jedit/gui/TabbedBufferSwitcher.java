@@ -6,15 +6,26 @@ import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Insets;
+import java.awt.RenderingHints;
+import java.awt.Shape;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.Arrays;
-import java.util.Comparator;
+import java.awt.geom.Ellipse2D;
 import java.util.LinkedList;
 import java.util.List;
 
+import javax.swing.BorderFactory;
+import javax.swing.DefaultButtonModel;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.border.AbstractBorder;
 
 import org.gjt.sp.jedit.Buffer;
 import org.gjt.sp.jedit.EditBus;
@@ -52,10 +63,10 @@ public class TabbedBufferSwitcher extends JPanel {
 		center.setBackground(new Color(0xeeeeee));
 
 		center.setLayout(new FlowLayout(FlowLayout.LEFT, 1, 0));
-		
+
 		add(up,BorderLayout.NORTH);
 		add(center,BorderLayout.CENTER);
-		add(down,BorderLayout.SOUTH);
+		//add(down,BorderLayout.SOUTH);
 
 		tabs = new LinkedList<Tab>();
 
@@ -82,7 +93,7 @@ public class TabbedBufferSwitcher extends JPanel {
 				updating = true;
 				setMaximumRowCount(jEdit.getIntegerProperty("bufferSwitcher.maxRowCount",10));
 				Buffer[] buffers = bufferSet.getAllBuffers();
-				if (jEdit.getBooleanProperty("bufferswitcher.sortBuffers", true)) {
+				/*if (jEdit.getBooleanProperty("bufferswitcher.sortBuffers", true)) {
 					Arrays.sort(buffers, new Comparator<Buffer>(){
 						public int compare(Buffer a, Buffer b) {
 							if (jEdit.getBooleanProperty("bufferswitcher.sortByName", true)) {
@@ -92,7 +103,7 @@ public class TabbedBufferSwitcher extends JPanel {
 							}
 						}
 					});
-				}
+				}*/
 				setTabs(buffers);
 				setSelectedItem(editPane.getBuffer());
 				//addDnD();
@@ -104,12 +115,17 @@ public class TabbedBufferSwitcher extends JPanel {
 
 	private void setTabs(Buffer[] buffers) {
 		center.removeAll();
-		tabs.clear();
+		List<Tab> tbuff = new LinkedList<Tab>(tabs);
 		for(int i = 0; i<buffers.length && i<maxOpenFile; i++){
 			Tab t = new Tab(buffers[i],this);
-			center.add(t);
-			tabs.add(t);
+			if (!tabs.contains(t)){
+				tabs.add(t);
+			}
+			tbuff.remove(t);
 		}
+		tabs.removeAll(tbuff);
+		for (Tab t : tabs)
+			center.add(t);
 		center.revalidate();
 		center.repaint();
 	}
@@ -125,7 +141,10 @@ public class TabbedBufferSwitcher extends JPanel {
 	public Object getSelectedItem() {
 		return selected;
 	}
-
+	
+	public EditPane getEditPane(){
+		return editPane;
+	}
 
 	public void setSelectedItem(Object anObject) {
 		if (selected != null) selected.unselect();
@@ -137,7 +156,7 @@ public class TabbedBufferSwitcher extends JPanel {
 			}
 		}
 	}
-	
+
 	private void setTab(Tab tab) {
 		setSelectedItem(tab.getObject());
 		editPane.setBuffer((Buffer)tab.getObject());
@@ -146,9 +165,15 @@ public class TabbedBufferSwitcher extends JPanel {
 	public boolean specialState() {
 		return false;
 	}
+	
+	@Override
+	protected void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		
+	}
 
 	public void showPopup(){ }
-	
+
 	private class Tab extends JPanel{
 
 		final TabbedBufferSwitcher tp;
@@ -159,7 +184,8 @@ public class TabbedBufferSwitcher extends JPanel {
 			buffer = anObject;
 			add(new JLabel(buffer.getName()));
 			setToolTipText(buffer.getPath());
-
+			add(new RoundButton("",new ImageIcon("/home/hans/close.png"),this));
+			
 			addMouseListener(new MouseAdapter(){
 
 				@Override
@@ -169,6 +195,32 @@ public class TabbedBufferSwitcher extends JPanel {
 						Tab tab = (Tab) t;
 						tp.setTab(tab);
 					}
+				}
+				
+				@Override
+				public void mouseEntered(MouseEvent e) {
+					setBorder(new AbstractBorder() {
+						@Override
+						public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
+							Tab t = (Tab)c;
+							if (!t.isSelected()){
+								Graphics2D g2 = (Graphics2D)g;
+								g2.setColor(Color.MAGENTA);
+								g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+													RenderingHints.VALUE_ANTIALIAS_ON);
+								g2.drawArc(0, 0, 20, 20, 90, 90);
+								g2.drawArc(width-21, 0,20, 20, 0, 90);
+								g2.drawLine(10, 0, width-11, 0);
+								g2.drawLine(0, 10, 0, height-1);
+								g2.drawLine(width-1, 10, width-1, height-1);
+							}
+						}
+					});
+				}
+				
+				@Override
+				public void mouseExited(MouseEvent e) {
+					setBorder(BorderFactory.createEmptyBorder());
 				}
 
 			});
@@ -185,6 +237,10 @@ public class TabbedBufferSwitcher extends JPanel {
 		public Object getObject(){
 			return buffer;
 		}
+		
+		public boolean isSelected(){
+			return getBackground() == TabbedBufferSwitcher.selectedColor;
+		}
 
 		@Override
 		protected void paintComponent(Graphics g) {
@@ -193,6 +249,120 @@ public class TabbedBufferSwitcher extends JPanel {
 			g.setColor(getBackground());
 			g.fillRect(0, 5, w, h-5);
 			g.fillRoundRect(0, 0, w, h-5, 10, 10);
+		}
+		
+		public TabbedBufferSwitcher getTabbedPane(){
+			return tp;
+		}
+		
+		@Override
+		public boolean equals(Object obj) {
+			if (obj instanceof Tab){
+				Tab t = (Tab) obj;
+				return this.buffer.equals(t.buffer);
+			}
+			return false;
+		}
+	}
+
+	class RoundButton extends JButton {
+
+		private final Tab tab;
+		
+		public RoundButton(String text, Icon icon, final Tab tab) {
+			this.tab = tab;
+			
+			setModel(new DefaultButtonModel());
+			init(text, icon);
+			if(icon==null) {
+				return;
+			}
+			
+			setPreferredSize(new Dimension(icon.getIconWidth() + 20, icon.getIconHeight() + 20));
+			
+			setBorder(BorderFactory.createRaisedBevelBorder());
+			//setBackground(Color.BLACK);
+			setContentAreaFilled(false);
+			setFocusPainted(false);
+			//setVerticalAlignment(SwingConstants.TOP);
+			setAlignmentY(Component.TOP_ALIGNMENT);
+			
+			initShape();
+			
+			setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
+			addMouseListener(new MouseAdapter() {
+				
+				@Override
+				public void mouseEntered(MouseEvent e) {
+					tab.dispatchEvent(e);
+					if (e.getComponent() instanceof RoundButton){
+						final RoundButton b = (RoundButton)e.getComponent();
+
+						b.setBorder(new AbstractBorder() {
+
+							@Override
+							public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
+								Graphics2D g2 = (Graphics2D) g;
+								g2.setColor(new Color(0xaaaaaa));
+								g2.drawOval(0, 0, width - 1, height - 1);
+							}
+							
+							public Insets getBorderInsets(Component c, Insets insets) {
+								insets.set(2, 2, 2, 2);
+								return insets;
+							};
+							
+						});
+					}
+				}
+				
+				@Override
+				public void mouseExited(MouseEvent e) {
+					if (e.getComponent() instanceof RoundButton){
+						RoundButton b = (RoundButton)e.getComponent();
+
+						b.setBorder(BorderFactory.createEmptyBorder(2, 2, 2, 2));
+					}
+				}
+			});
+			
+			addActionListener(new ActionListener() {
+				
+				@Override
+				public void actionPerformed(ActionEvent arg0) {
+					close();
+				}
+			});
+		}
+		
+		protected Shape shape, base;
+		protected Insets insets;
+		
+		protected void initShape() {
+			if(!getBounds().equals(base)) {
+				Dimension s = getPreferredSize();
+				base = getBounds();
+				shape = new Ellipse2D.Float(0, 0, s.width-1, s.height-1);
+			}
+		}
+		
+		@Override 
+		public Dimension getPreferredSize() {
+			Icon icon = getIcon();
+			Insets i = getInsets();
+			int iw = Math.max(icon.getIconWidth(), icon.getIconHeight());
+			return new Dimension(iw+i.right+i.left, iw+i.top+i.bottom);
+		}
+		
+		@Override 
+		public boolean contains(int x, int y) {
+			initShape();
+			return shape.contains(x, y);
+			//or return super.contains(x, y) && ((image.getRGB(x, y) >> 24) & 0xff) > 0;
+		}
+		
+		private void close(){
+			jEdit.closeBuffer( tab.getTabbedPane().getEditPane(), (Buffer)tab.getObject());
 		}
 	}
 }
