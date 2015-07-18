@@ -151,7 +151,7 @@ public class PluginOptionGroup extends OptionGroup
 		{
 			return !(node instanceof OptionGroup);
 		}
-
+		
 		/*public void valueForPathChanged(TreePath path, Object newValue)
 		{
 			// this model may not be changed by the TableCellEditor
