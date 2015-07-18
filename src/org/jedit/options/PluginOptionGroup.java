@@ -156,6 +156,7 @@ public class PluginOptionGroup extends OptionGroup
 		{
 			// this model may not be changed by the TableCellEditor
 		}*/
+		
 
 		protected void fireNodesChanged(Object source, Object[] path,
 			int[] childIndices, Object[] children)
