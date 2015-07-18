@@ -15,22 +15,25 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.geom.Ellipse2D;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 import javax.swing.BorderFactory;
 import javax.swing.DefaultButtonModel;
 import javax.swing.Icon;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.AbstractBorder;
-import javax.swing.border.Border;
 
 import org.gjt.sp.jedit.Buffer;
 import org.gjt.sp.jedit.EditBus;
 import org.gjt.sp.jedit.EditPane;
+import org.gjt.sp.jedit.GUIUtilities;
 import org.gjt.sp.jedit.jEdit;
 import org.gjt.sp.jedit.bufferset.BufferSet;
 import org.gjt.sp.jedit.msg.PropertiesChanged;
@@ -39,29 +42,31 @@ import org.gjt.sp.util.ThreadUtilities;
 
 public class TabbedBufferSwitcher extends JPanel {
 
+	private int maxOpenFile;
+	private int index;
+	private boolean updating;
 	private List<Tab> tabs;
 	private final EditPane editPane;
 	private JPanel center;
 	private Tab selected;
-	private boolean updating;
-	private int maxOpenFile;
+	
+	private JPanel left;
+	private JPanel right;
 
 	private static Color selectedColor = new Color(0xffffff);
 	private static Color unselectedColor = new Color(0xeeeeee);
 	private static Color borderColor = new Color(0x7a8a99);
+	private static Color buttonClose = new Color(0xc0bcfe);
 
 	public TabbedBufferSwitcher(final EditPane editPane){
 		//Things for custom tab
 		this.editPane = editPane;
 		JPanel up = new JPanel();
-		JPanel down = new JPanel();
 		center = new JPanel();
 		setLayout(new BorderLayout(0,0));
 
 		up.setBackground(TabbedBufferSwitcher.unselectedColor);
-		down.setBackground(TabbedBufferSwitcher.selectedColor);
 		up.setPreferredSize(new Dimension(0,2));
-		down.setPreferredSize(new Dimension(0,2));
 		center.setBackground(new Color(0xeeeeee));
 
 		center.setLayout(new FlowLayout(FlowLayout.LEFT, 1, 0));
@@ -70,12 +75,22 @@ public class TabbedBufferSwitcher extends JPanel {
 		add(center,BorderLayout.CENTER);
 		//add(down,BorderLayout.SOUTH);
 
-		tabs = new LinkedList<Tab>();
+		tabs = new ArrayList<Tab>();
+		index = 0;
+		left = new JPanel();
+		left.setBackground(Color.BLUE);
+		right = new JPanel();
+		right.setBackground(Color.YELLOW);
 
 		//Things for jedit
 		updating = false;
 
 		setMaximumRowCount(jEdit.getIntegerProperty("bufferSwitcher.maxRowCount", 10));
+		
+		try{
+			BufferedWriter bf = new BufferedWriter(new FileWriter(new File("/home/hans/put.txt")));
+			bf.write(jEdit.getProperties().toString());
+		}catch(Exception e){}
 
 		EditBus.addToBus(this);
 	}
@@ -126,10 +141,29 @@ public class TabbedBufferSwitcher extends JPanel {
 			tbuff.remove(t);
 		}
 		tabs.removeAll(tbuff);
-		for (Tab t : tabs)
-			center.add(t);
+		setUITabs();
 		center.revalidate();
 		center.repaint();
+	}
+
+	private void setUITabs() {
+		for (Tab t : tabs){
+			center.add(t);
+		}
+//		int length = 10, width = getWidth();
+//		boolean overflow = false;
+//		List<Tab> subttabs = tabs.subList(index, tabs.size());
+//		for(Tab t : subttabs){
+//			if (t.getWidth() + length > width){
+//				overflow = true;
+//				break;
+//			}
+//			length += t.getWidth();
+//			center.add(t);
+//		}
+//		if (overflow){
+//			
+//		}
 	}
 
 	public void setMaximumRowCount(int integerProperty) {
@@ -171,7 +205,6 @@ public class TabbedBufferSwitcher extends JPanel {
 	@Override
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		
 	}
 
 	public void showPopup(){ }
@@ -186,7 +219,7 @@ public class TabbedBufferSwitcher extends JPanel {
 			buffer = anObject;
 			add(new JLabel(buffer.getName()));
 			setToolTipText(buffer.getPath());
-			add(new RoundButton("",new ImageIcon("/home/hans/close.png"),this));
+			add(new RoundButton("",GUIUtilities.loadIcon(jEdit.getProperty("close-tab.icon")),this));
 			
 			addMouseListener(new MouseAdapter(){
 
@@ -374,7 +407,7 @@ public class TabbedBufferSwitcher extends JPanel {
 		@Override
 		protected void paintComponent(Graphics g) {
 			if (over){
-				g.setColor(new Color(0xc0bcFE));
+				g.setColor(TabbedBufferSwitcher.buttonClose);
 				g.fillOval(0, 0, getWidth() - 1, getHeight() - 1);
 			}
 			super.paintComponent(g);
