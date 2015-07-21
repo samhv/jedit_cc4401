@@ -27,9 +27,11 @@ import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.DefaultButtonModel;
 import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 import javax.swing.border.AbstractBorder;
 import javax.swing.border.Border;
 
@@ -51,6 +53,7 @@ public class TabbedBufferSwitcher extends JPanel {
 	private List<Tab> tabs;
 	private final EditPane editPane;
 	private JPanel center;
+	private JPanel middle;
 	private Tab selected;
 
 	private JPanel left;
@@ -80,30 +83,47 @@ public class TabbedBufferSwitcher extends JPanel {
 			}
 		}
 	};
+	private static Border moveBorders = new AbstractBorder() {
+		private Color border = new Color(0x7a8a99);
+		
+		public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
+			g.setColor(border);
+			g.drawLine(0, 0, 0, height);
+			g.drawLine(0, 0, width-1, 0);
+			g.drawLine(width-1, 0, width-1, height);
+			
+		};
+	};
 
 	public TabbedBufferSwitcher(final EditPane editPane){
 		//Things for custom tab
 		this.editPane = editPane;
 		JPanel up = new JPanel();
 		center = new JPanel();
+		middle = new JPanel();
 		setLayout(new BorderLayout(0,0));
-
+		middle.setLayout(new BorderLayout());
+		
 		up.setBackground(TabbedBufferSwitcher.unselectedColor);
 		up.setPreferredSize(new Dimension(0,2));
 		center.setBackground(new Color(0xeeeeee));
 
 		center.setLayout(new FlowLayout(FlowLayout.LEFT, 1, 0));
-
+		
+		middle.add(center,BorderLayout.CENTER);
 		add(up,BorderLayout.NORTH);
-		add(center,BorderLayout.CENTER);
+		add(middle,BorderLayout.CENTER);
 		//add(down,BorderLayout.SOUTH);
 
 		tabs = new ArrayList<Tab>();
 		index = 0;
-		left = new JPanel();
-		left.setBackground(Color.BLUE);
+		left = new JPanel(new FlowLayout(FlowLayout.CENTER));
+		left.add(new JLabel(GUIUtilities.loadIcon("arrow-left.png")));
+		left.setBorder(TabbedBufferSwitcher.moveBorders);
+		
 		right = new JPanel();
-		right.setBackground(Color.YELLOW);
+		right.add(new JLabel(GUIUtilities.loadIcon("arrow-right.png")));
+		right.setBorder(TabbedBufferSwitcher.moveBorders);
 		
 		width_parent = -1;
 
@@ -198,6 +218,8 @@ public class TabbedBufferSwitcher extends JPanel {
 //			center.add(t);
 //		}
 		center.removeAll();
+		middle.remove(left);
+		middle.remove(right);
 		int length = 10, width = getWidth();
 		if (width_parent == -1)
 			return;
@@ -212,13 +234,13 @@ public class TabbedBufferSwitcher extends JPanel {
 			center.add(t);
 		}
 		if (overflow){
-			center.add(right);
-			center.add(left,0);
+			middle.add(right,BorderLayout.EAST);
+			middle.add(left,BorderLayout.WEST);
 		}else{
 			while(index > 0){
 				if ( tabs.get(index-1).getWidth() + length > width){
-					center.add(right);
-					center.add(left,0);
+					middle.add(right,BorderLayout.EAST);
+					middle.add(left,BorderLayout.WEST);
 					break;
 				}
 				index--;
@@ -226,6 +248,8 @@ public class TabbedBufferSwitcher extends JPanel {
 				center.add(tabs.get(index),0);
 			}
 		}
+		middle.revalidate();
+		middle.repaint();
 		center.revalidate();
 		center.repaint();
 	}
