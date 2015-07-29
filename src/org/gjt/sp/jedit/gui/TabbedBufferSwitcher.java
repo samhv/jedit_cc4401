@@ -214,13 +214,10 @@ public class TabbedBufferSwitcher extends JPanel {
 	}
 
 	private void setUITabs() {
-//		for (Tab t : tabs){
-//			center.add(t);
-//		}
 		center.removeAll();
 		middle.remove(left);
 		middle.remove(right);
-		int length = 10, width = getWidth();
+		int length = 17*2, width = getWidth();
 		if (width_parent == -1)
 			return;
 		boolean overflow = false;
