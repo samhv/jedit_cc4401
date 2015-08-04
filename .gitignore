@@ -4,6 +4,3 @@ src/.ant-targets-build.xml
 jars/
 src/org/gjt/sp/jedit/change_edit_bufferSwitcher.sh
 tempEditPane.java
-.classpath
-.project
-.settings/
