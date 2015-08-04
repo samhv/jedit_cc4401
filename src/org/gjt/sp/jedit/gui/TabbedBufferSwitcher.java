@@ -378,7 +378,7 @@ public class TabbedBufferSwitcher extends JPanel {
 		}
 	}
 
-	class RoundButton extends JButton {
+	private class RoundButton extends JButton {
 
 		private final Tab tab;
 		private boolean over;
