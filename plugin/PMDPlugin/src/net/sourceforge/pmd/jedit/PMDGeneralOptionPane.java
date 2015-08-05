@@ -38,23 +38,25 @@ public class PMDGeneralOptionPane extends AbstractOptionPane implements OptionPa
         
         JLabel title = new JLabel("<html><b>" + jEdit.getProperty("options.pmd.general.label", "PMD Settings"));
 
+        settingPanel(panel, title);
+
+        
+    }
+
+    public void settingPanel(JPanel panel, JLabel title){
+    	
         chkRunPMDOnSave = new JCheckBox( jEdit.getProperty("net.sf.pmd.Run_PMD_on_Save", "Run PMD on Save"), jEdit.getBooleanProperty( PMDJEditPlugin.RUN_PMD_ON_SAVE ) );
         chkClearErrorListOnSave = new JCheckBox( jEdit.getProperty("net.sf.pmd.Clear_ErrorList_on_Save", "Clear ErrorList on Save"), jEdit.getBooleanProperty( PMDJEditPlugin.CLEAR_ERRORLIST_ON_SAVE ) );
         chkPrintRule = new JCheckBox( jEdit.getProperty("net.sf.pmd.Print_Rulename_in_ErrorList", "Print Rulename in ErrorList"), jEdit.getBooleanProperty( PMDJEditPlugin.PRINT_RULE ) );
         chkShowProgressBar = new JCheckBox( jEdit.getProperty("net.sf.pmd.Show_PMD_Progress_Bar", "Show PMD Progress Bar"), jEdit.getBooleanProperty( PMDJEditPlugin.SHOW_PROGRESS ) );
         
-        settingPanel(panel);
-
-        add( panel );
-    }
-
-    public void settingPanel(JPanel panel){
+    	
         panel.add("0, 0, 1, 1, W, w, 3", title);
         panel.add("0, 1, 1, 1, W, w, 3", chkRunPMDOnSave);
         panel.add("0, 2, 1, 1, W, w, 3", chkClearErrorListOnSave);
         panel.add("0, 3, 1, 1, W, w, 3", chkPrintRule);
         panel.add("0, 4, 1, 1, W, w, 3", chkShowProgressBar);
-    	
+        add( panel );
     }
     
     
