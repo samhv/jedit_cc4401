@@ -2,3 +2,5 @@
 src/build/
 jars/
 src/.ant-targets-build.xml
+.classpath
+.project
