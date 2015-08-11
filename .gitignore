@@ -7,3 +7,4 @@ src/.ant-targets-build.xml
 .project
 .classpath
 .DS_Store
+src/.ant-targets-build.xml
