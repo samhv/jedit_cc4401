@@ -998,5 +998,11 @@ install-plugins.clear-plugin-set.icon=22x22/actions/edit-clear.png
 
 #}}}
 
+#{{{ Tabs Images GUI
+
+close-tab.icon=10x10/actions/close_tab.png
+
+#}}}
+
 errorwidget.popupmenu=logs-remove-all-errors
 

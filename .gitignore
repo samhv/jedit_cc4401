@@ -1,6 +1,9 @@
 src/.idea
 src/.svn
-
+bin/
+src/.ant-targets-build.xml
 .project
-.classpath/
+.classpath
 .DS_Store
+src/.ant-targets-build.xml
+

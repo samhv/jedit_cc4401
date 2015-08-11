@@ -434,6 +434,11 @@ public class BufferSwitcher extends JComboBox
 			}
 		}
 	}
+	
+	public boolean specialState() {
+		return isPopupVisible();
+	}
+
 }
 
 // :noTabs=false:
