@@ -2,7 +2,8 @@ src/tmp/**
 src/tmp/**/*
 src/.idea
 src/.svn
-
+bin/
+src/.ant-targets-build.xml
 .project
 .classpath/
 .DS_Store
