@@ -72,3 +72,4 @@ public class PMDGeneralOptionPane extends AbstractOptionPane implements OptionPa
         jEdit.setBooleanProperty( PMDJEditPlugin.SHOW_PROGRESS, chkShowProgressBar.isSelected() );
         PMDJEditPlugin.addProgressBar();
     }
+}
