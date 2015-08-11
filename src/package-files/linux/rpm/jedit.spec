@@ -48,6 +48,9 @@ ant docs-html-xsltproc javadoc dist
 # Build QuickNotepad.jar
 (cd jars/QuickNotepad && ant)
 
+# Build PMDPlugin.jar
+(cd jars/PMDPlugin && ant)
+
 # Create installer filelists
 sh installer/mk_filelist.sh
 
