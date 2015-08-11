@@ -29,6 +29,8 @@ import javax.swing.plaf.ColorUIResource;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.TreePath;
 
+import org.gjt.sp.jedit.browser.VFSBrowser;
+import org.gjt.sp.jedit.View;
 /**
  * A renderer for the CheckboxTree. This implementation decorates a
  * DefaultTreeCellRenderer (i.e. a JLabel) with a checkbox, by adding a

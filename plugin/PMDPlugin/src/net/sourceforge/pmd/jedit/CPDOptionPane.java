@@ -5,7 +5,7 @@
  */
 package net.sourceforge.pmd.jedit;
 
-
+import org.gjt.sp.jedit.View;
 import org.gjt.sp.jedit.AbstractOptionPane;
 import org.gjt.sp.jedit.OptionPane;
 import org.gjt.sp.jedit.jEdit;
@@ -65,8 +65,7 @@ public class CPDOptionPane extends AbstractOptionPane implements OptionPane {
         panel.add("1, 2, 1, 1, W, w, 3", txtMinTileSize);
         panel.add("0, 3, 1, 1, W, w, 3", lblRenderer);
         panel.add("1, 3, 1, 1, W, w, 3", comboRenderer);
- 
- 
+        
         add(panel);
     }
 

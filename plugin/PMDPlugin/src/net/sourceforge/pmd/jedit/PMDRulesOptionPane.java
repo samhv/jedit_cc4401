@@ -8,12 +8,14 @@ package net.sourceforge.pmd.jedit;
 import net.sourceforge.pmd.jedit.checkboxtree.*;
 
 import org.gjt.sp.jedit.AbstractOptionPane;
+import org.gjt.sp.jedit.EditPane;
 import org.gjt.sp.jedit.OptionPane;
 import org.gjt.sp.jedit.jEdit;
 import org.gjt.sp.jedit.GUIUtilities;
 import org.gjt.sp.util.StringList;
 import org.gjt.sp.jedit.browser.VFSBrowser;
 import org.gjt.sp.jedit.browser.VFSFileChooserDialog;
+import org.gjt.sp.jedit.View;
 
 import java.awt.FlowLayout;
 import java.awt.event.*;
@@ -78,45 +80,17 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
         
         panel.add("0, 0, 1, 1, W, w, 3", title);
         panel.add("0, 1, 1, 1, W, w, 3", getRulesPanel());
-        
         add(panel);
     }
     
-    public void settingPMDRulesOptionPane(){
-    	
-    	if(rules !=null){
-    		
-    		if ( jEdit.getBooleanProperty( USE_DEFAULT_RULES_KEY, false ) ) {
-                rules.loadGoodRulesTree();
-    		}
-                tree = new CheckboxTree( rules.getRoot() );
-                tree.getCheckingModel().setCheckingMode( TreeCheckingModel.CheckingMode.PROPAGATE_PRESERVING_UNCHECK );
-                tree.setCheckingPaths( rules.getCheckingModel().getCheckingPaths() );
-                tree.setRootVisible( false );
-                tree.addMouseMotionListener( new MyMouseMotionAdapter() );
-                rules_pane = new JScrollPane( tree );
-                rules_pane.setMaximumSize( new Dimension( 500, 200 ) );
-                rules_pane.setPreferredSize( new Dimension( 500, 200 ) );
-                
-            }
-    	
-    	else{
-    		JOptionPane.showMessageDialog( null,
-            jEdit.getProperty( "net.sf.pmd.Error_loading_rules._Check_any_custom_rulesets_for_errors.", "Error loading rules. Check any custom rulesets for errors." ),
-            jEdit.getProperty( "net.sf.pmd.Error_Loading_Rules", "Error Loading Rules" ),
-            JOptionPane.ERROR_MESSAGE );
-    	}
-    	
-    	
-    		
-    }
-
     private JPanel getRulesPanel() {
         JPanel panel = new JPanel();
         panel.setLayout( new KappaLayout() );
 
         JLabel rules_label = new JLabel( jEdit.getProperty( "net.sf.pmd.Rules", "Rules" ) );
-       
+        useDefaultRules = new JCheckBox( jEdit.getProperty( "net.sf.pmd.Select_default_rules", "Select default rules" ) );
+        useDefaultRules.setSelected( jEdit.getBooleanProperty( USE_DEFAULT_RULES_KEY, false ) );
+        
         // use a checkbox tree for displaying the rules.  This lets the rules be
         // grouped by ruleset, and makes it very easy to select an entire set of
         // rules with a single click. The tree is only 2 levels
@@ -125,32 +99,58 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
         // means the ruleset will be checked if one or more of the rules it contains
         // is checked.
         JScrollPane rules_pane = null;
-        this.settingPMDRulesOptionPane();
+        if ( rules == null ) {
+            JOptionPane.showMessageDialog( null,
+                    jEdit.getProperty( "net.sf.pmd.Error_loading_rules._Check_any_custom_rulesets_for_errors.", "Error loading rules. Check any custom rulesets for errors." ),
+                    jEdit.getProperty( "net.sf.pmd.Error_Loading_Rules", "Error Loading Rules" ),
+                    JOptionPane.ERROR_MESSAGE );
+        }
+        else {
+            if ( jEdit.getBooleanProperty( USE_DEFAULT_RULES_KEY, false ) ) {
+                rules.loadGoodRulesTree();
+            }
+            tree = new CheckboxTree( rules.getRoot() );
+            tree.getCheckingModel().setCheckingMode( TreeCheckingModel.CheckingMode.PROPAGATE_PRESERVING_UNCHECK );
+            tree.setCheckingPaths( rules.getCheckingModel().getCheckingPaths() );
+            tree.setRootVisible( false );
+            tree.addMouseMotionListener( new MyMouseMotionAdapter() );
+            rules_pane = new JScrollPane( tree );
+            rules_pane.setMaximumSize( new Dimension( 500, 200 ) );
+            rules_pane.setPreferredSize( new Dimension( 500, 200 ) );
+        }
 
-        settingUseDefaultRules();
+        useDefaultRules.addActionListener(
+            new ActionListener() {
+                public void actionPerformed( final ActionEvent ae ) {
+                    SwingUtilities.invokeLater( new Runnable() {
+                                public void run() {
+                                    if ( ( ( JCheckBox ) ae.getSource() ).isSelected() ) {
+                                        rules.loadGoodRulesTree();
+                                        customRulesButton.setEnabled( false );
+                                    }
+                                    else {
+                                        rules.loadTree();
+                                        customRulesButton.setEnabled( true );
+                                    }
+                                    tree.setModel( rules.getTreeModel() );
+                                    tree.getCheckingModel().setCheckingMode( TreeCheckingModel.CheckingMode.PROPAGATE_PRESERVING_UNCHECK );
+                                    tree.setCheckingPaths( rules.getCheckingModel().getCheckingPaths() );
+                                    tree.invalidate();
+                                    tree.validate();
+                                }
+                            }
+                                              );
+                }
+            }
+        );
 
         exampleLabel = new JLabel( jEdit.getProperty( "net.sf.pmd.Example", "Example" ) );
         JScrollPane example_pane = new JScrollPane( exampleTextArea );
         example_pane.setMaximumSize( new Dimension( 500, 200 ) );
         example_pane.setPreferredSize( new Dimension( 500, 200 ) );
-        settingExportButton();
 
-        JLabel more_info_label = new JLabel( jEdit.getProperty( "net.sf.pmd.Please_see_http>//pmd.sf.net/_for_more_information", "Please see http://pmd.sf.net/ for more information" ) );
-
-        
-        settingRulesButton();
-        settingPanelDimension(panel);
-        return panel;
-    }
-    
-    
-    /***
-     * Sets the exportButton instance
-     * @author Paloma Pérez
-     */
-    public void settingExportButton(JButton export){
-    	
-        export.addActionListener(
+        exportButton = new JButton( "Export this ruleset" );
+        exportButton.addActionListener(
             new ActionListener() {
                 public void actionPerformed( ActionEvent ae ) {
                     RuleSets rulesets = rules.getSelectedRules();
@@ -185,53 +185,11 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
                 }
             }
         );
-    	
-    }
-    
-    
-    
-    /**
-     * Sets the useDefaultRules JCheckbox instance
-     * @author Paloma Pérez
-     */
-    
-    public void settingUseDefaultRules(){
-    	useDefaultRules.setSelected( jEdit.getBooleanProperty( USE_DEFAULT_RULES_KEY, false ) );
-    	 useDefaultRules.addActionListener(
-    	            new ActionListener() {
-    	                public void actionPerformed( final ActionEvent ae ) {
-    	                    SwingUtilities.invokeLater( new Runnable() {
-    	                                public void run() {
-    	                                    if ( ( ( JCheckBox ) ae.getSource() ).isSelected() ) {
-    	                                        rules.loadGoodRulesTree();
-    	                                        customRulesButton.setEnabled( false );
-    	                                    }
-    	                                    else {
-    	                                        rules.loadTree();
-    	                                        customRulesButton.setEnabled( true );
-    	                                    }
-    	                                    tree.setModel( rules.getTreeModel() );
-    	                                    tree.getCheckingModel().setCheckingMode( TreeCheckingModel.CheckingMode.PROPAGATE_PRESERVING_UNCHECK );
-    	                                    tree.setCheckingPaths( rules.getCheckingModel().getCheckingPaths() );
-    	                                    tree.invalidate();
-    	                                    tree.validate();
-    	                                }
-    	                            }
-    	                                              );
-    	                }
-    	            }
-    	        );
-    	
-    }
-    
-    /**
-     * 
-     * Sets the rules button options
-     * @author Paloma Pérez
-     */
-    
-    public void settingRulesButton(){
-    	
+
+
+        JLabel more_info_label = new JLabel( jEdit.getProperty( "net.sf.pmd.Please_see_http>//pmd.sf.net/_for_more_information", "Please see http://pmd.sf.net/ for more information" ) );
+
+        customRulesButton = new JButton( "Custom Rules" );
         customRulesButton.addActionListener(
             new ActionListener() {
                 public void actionPerformed( ActionEvent ae ) {
@@ -239,19 +197,7 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
                 }
             }
         );
-    	
-    }
-    
-    
 
-    /**
-     * Sets the dimension of a JPanel object. 
-     * @param panel 
-     * @author Paloma Pérez
-     */
-    
-    public void settingPanelDimension(JPanel panel){
-    	
         panel.setBorder( BorderFactory.createEmptyBorder( 12, 11, 11, 12 ) );
         panel.add( "0, 0,  2, 1,  W, w,  3", rules_label );
         panel.add( "0, 1,  2, 1,  W, w,  3", useDefaultRules );
@@ -261,7 +207,7 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
         panel.add( "0, 13, 2, 1,  W, w,  3", exampleLabel );
         panel.add( "0, 14, 2, 6,  0, wh, 3", example_pane );
         panel.add( "0, 20, 2, 1,  W, w,  3", more_info_label );
-    	
+        return panel;
     }
     
     public void _save() {
