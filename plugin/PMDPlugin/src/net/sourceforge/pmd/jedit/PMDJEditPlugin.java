@@ -503,6 +503,14 @@ public class PMDJEditPlugin extends EBPlugin {
         return txttilesize;
     }
     
+    public static JComboBox filetypesel(CPDFileFilter [] choices){
+    	
+        JComboBox fileTypeSelector = new JComboBox( choices );
+        fileTypeSelector.setSelectedIndex( lastSelectedFilter );
+        fileTypeSelector.setEditable( false );
+        return fileTypeSelector;
+    }
+    
     public static void cpdDir( View view ) {
     	
     	instance.MainView=view;
@@ -516,9 +524,7 @@ public class PMDJEditPlugin extends EBPlugin {
         JCheckBox chkRecursive = new JCheckBox( jEdit.getProperty( "net.sf.pmd.Recursive", "Recursive" ), jEdit.getBooleanProperty( CHECK_DIR_RECURSIVE ) );
 
         CPDFileFilter[] choices = getCPDFileFilters();
-        JComboBox fileTypeSelector = new JComboBox( choices );
-        fileTypeSelector.setSelectedIndex( lastSelectedFilter );
-        fileTypeSelector.setEditable( false );
+        JComboBox fileTypeSelector = filetypesel(choices);
 
         JTextField inclusionsRegex = new JTextField();
         inclusionsRegex.setText( lastInclusion );
