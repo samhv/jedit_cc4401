@@ -484,12 +484,24 @@ public class PMDJEditPlugin extends EBPlugin {
         return chooser;
     }
     
+    /***
+     * Creates and set JPanel pnlAccesory
+     * @return JPanel
+     */
+    
+    public static JPanel pnlaccessory(){
+    		
+            JPanel pnlAccessory = new JPanel();
+            pnlAccessory.setLayout( new KappaLayout() );
+            return pnlAccessory;
+    }
+    
     public static void cpdDir( View view ) {
+    	
     	instance.MainView=view;
     	JFileChooser chooser = setChooser();
+    	JPanel pnlAccessory = pnlaccessory();
 
-        JPanel pnlAccessory = new JPanel();
-        pnlAccessory.setLayout( new KappaLayout() );
 
         JLabel lblMinTileSize = new JLabel( jEdit.getProperty( "net.sf.pmd.Minimum_Tile_size_>", "Minimum Tile size :" ) );
         JTextField txttilesize = new JTextField(3 );
