@@ -39,12 +39,18 @@ public class CPDOptionPane extends AbstractOptionPane implements OptionPane {
         super(PMDJEditPlugin.NAME);
     }
 
+    public JPanel panelset(){
+    	
+        JPanel panel = new JPanel(new KappaLayout());
+        panel.setBorder(BorderFactory.createEmptyBorder(6, 6, 6, 6));
+        return panel;
+    }
+    
     public void _init() {
         removeAll();
         setLayout(new FlowLayout(FlowLayout.LEFT));
 
-        JPanel panel = new JPanel(new KappaLayout());
-        panel.setBorder(BorderFactory.createEmptyBorder(6, 6, 6, 6));
+        JPanel panel = panelset();
 
         JLabel title = new JLabel("<html><b>" + jEdit.getProperty("cpd-viewer.label", "Copy/Paste Detector"));
  
