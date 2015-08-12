@@ -496,6 +496,13 @@ public class PMDJEditPlugin extends EBPlugin {
             return pnlAccessory;
     }
     
+    public static JTextField txtTitleSize(){
+    	
+        JTextField txttilesize = new JTextField(3 );
+        txttilesize.setText( jEdit.getIntegerProperty( DEFAULT_TILE_MINSIZE_PROPERTY, 100 ) + "" );
+        return txttilesize;
+    }
+    
     public static void cpdDir( View view ) {
     	
     	instance.MainView=view;
@@ -504,8 +511,7 @@ public class PMDJEditPlugin extends EBPlugin {
 
 
         JLabel lblMinTileSize = new JLabel( jEdit.getProperty( "net.sf.pmd.Minimum_Tile_size_>", "Minimum Tile size :" ) );
-        JTextField txttilesize = new JTextField(3 );
-        txttilesize.setText( jEdit.getIntegerProperty( DEFAULT_TILE_MINSIZE_PROPERTY, 100 ) + "" );
+        JTextField txttilesize = txtTitleSize();
 
         JCheckBox chkRecursive = new JCheckBox( jEdit.getProperty( "net.sf.pmd.Recursive", "Recursive" ), jEdit.getBooleanProperty( CHECK_DIR_RECURSIVE ) );
 
