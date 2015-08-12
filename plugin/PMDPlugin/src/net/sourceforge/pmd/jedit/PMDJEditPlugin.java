@@ -95,7 +95,7 @@ public class PMDJEditPlugin extends EBPlugin {
     private static String lastInclusion = "";
     private static String lastExclusion = "";
     
-    public View view;
+    public static View view;
 
     public void start() {
         instance = this;

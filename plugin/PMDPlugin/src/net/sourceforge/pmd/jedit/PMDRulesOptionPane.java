@@ -27,6 +27,7 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 
 import java.util.List;
+import java.awt.BorderLayout;
 import java.awt.Dimension;
 
 import net.sourceforge.pmd.Rule;
@@ -80,7 +81,8 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
         
         panel.add("0, 0, 1, 1, W, w, 3", title);
         panel.add("0, 1, 1, 1, W, w, 3", getRulesPanel());
-        add(panel);
+        View view=PMDJEditPlugin.view;
+        view.getContentPane().add(BorderLayout.PAGE_END,panel);
     }
     
     private JPanel getRulesPanel() {

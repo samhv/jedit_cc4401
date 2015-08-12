@@ -58,7 +58,7 @@ public class CPDDuplicateCodeViewer extends JPanel {
 
     }
 /***
- *  Aquí se crea el contenido en una nueva ventana, se puede reutilizar el panel o uno nuevo
+ *  Aqui se crea el contenido en una nueva ventana, se puede reutilizar el panel o uno nuevo
  * @param btnPanel
  */
     public void writePanel(JPanel btnPanel){
