@@ -472,11 +472,21 @@ public class PMDJEditPlugin extends EBPlugin {
             return;
         }
     }
-
+    
+    /***
+     * Creates and set JFileChooser
+     * @return JFileChooser
+     */
+    
+    public static JFileChooser setChooser(){
+        JFileChooser chooser = new JFileChooser( jEdit.getProperty( LAST_DIRECTORY ) );
+        chooser.setFileSelectionMode( JFileChooser.DIRECTORIES_ONLY ); 
+        return chooser;
+    }
+    
     public static void cpdDir( View view ) {
     	instance.MainView=view;
-        JFileChooser chooser = new JFileChooser( jEdit.getProperty( LAST_DIRECTORY ) );
-        chooser.setFileSelectionMode( JFileChooser.DIRECTORIES_ONLY );
+    	JFileChooser chooser = setChooser();
 
         JPanel pnlAccessory = new JPanel();
         pnlAccessory.setLayout( new KappaLayout() );
