@@ -52,19 +52,23 @@ public class CPDDuplicateCodeViewer extends JPanel {
             }
         }
        );
-        add(new JScrollPane(tree));        
+        JPanel panel= new JPanel();
+        panel.setLayout(new BorderLayout());        
+        panel.add(new JScrollPane(tree));        
         JPanel btnPanel = new JPanel();
-        writePanel(btnPanel);
+        writePanel(btnPanel,panel);
 
     }
 /***
  *  Aqui se crea el contenido en una nueva ventana, se puede reutilizar el panel o uno nuevo
  * @param btnPanel
  */
-    public void writePanel(JPanel btnPanel){
+    public void writePanel(JPanel btnPanel, JPanel panel){
     	JButton saveBtn = new JButton("Save");
     	btnPanel.add(saveBtn);
-        add(btnPanel, BorderLayout.SOUTH);
+        panel.add(btnPanel, BorderLayout.SOUTH);
+        View view=PMDJEditPlugin.MainView;
+        view.getContentPane().add(BorderLayout.EAST,panel);
         saveBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
                 String[] dirs = GUIUtilities.showVFSFileDialog(CPDDuplicateCodeViewer.this.view, System.getProperty("user.home"), VFSBrowser.SAVE_DIALOG, false);

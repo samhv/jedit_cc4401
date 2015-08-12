@@ -81,8 +81,8 @@ public class PMDRulesOptionPane extends AbstractOptionPane implements OptionPane
         
         panel.add("0, 0, 1, 1, W, w, 3", title);
         panel.add("0, 1, 1, 1, W, w, 3", getRulesPanel());
-        View view=PMDJEditPlugin.view;
-        view.getContentPane().add(BorderLayout.PAGE_END,panel);
+        View view=PMDJEditPlugin.MainView;
+        view.getContentPane().add(BorderLayout.WEST,panel);
     }
     
     private JPanel getRulesPanel() {

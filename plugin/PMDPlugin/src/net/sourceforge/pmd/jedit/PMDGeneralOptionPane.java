@@ -50,7 +50,7 @@ public class PMDGeneralOptionPane extends AbstractOptionPane implements OptionPa
         panel.add("0, 2, 1, 1, W, w, 3", chkClearErrorListOnSave);
         panel.add("0, 3, 1, 1, W, w, 3", chkPrintRule);
         panel.add("0, 4, 1, 1, W, w, 3", chkShowProgressBar);
-        View view=PMDJEditPlugin.view;
+        View view=PMDJEditPlugin.MainView;
         view.getContentPane().add(BorderLayout.WEST,panel);
     }
 

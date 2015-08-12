@@ -95,7 +95,7 @@ public class PMDJEditPlugin extends EBPlugin {
     private static String lastInclusion = "";
     private static String lastExclusion = "";
     
-    public static View view;
+    public static View MainView;
 
     public void start() {
         instance = this;
@@ -115,7 +115,7 @@ public class PMDJEditPlugin extends EBPlugin {
     }
 
     public static void checkDirectory( View view ) {
-    	instance.view=view;
+    	instance.MainView=view;
         instance.instanceCheckDirectory( view );
     }
 
@@ -135,7 +135,7 @@ public class PMDJEditPlugin extends EBPlugin {
 
     // check all open buffers
     public static void checkAllOpenBuffers( View view ) {
-    	instance.view=view;
+    	instance.MainView=view;
         instance.instanceCheckAllOpenBuffers( view );
     }
 
@@ -416,7 +416,7 @@ public class PMDJEditPlugin extends EBPlugin {
     }
 
     public static void cpdCurrentFile( View view ) throws IOException {
-    	instance.view=view;
+    	instance.MainView=view;
         String modeName = getFileType( view.getBuffer().getMode().getName() );
         if ( modeName == null ) {
             JOptionPane.showMessageDialog( view, jEdit.getProperty( "net.sf.pmd.Copy/Paste_detection_can_not_be_performed_on_this_file\nbecause_the_mode_can_not_be_determined.", "Copy/Paste detection can not be performed on this file\nbecause the mode can not be determined." ), jEdit.getProperty( "net.sf.pmd.Copy/Paste_Detector", "Copy/Paste Detector" ), JOptionPane.INFORMATION_MESSAGE );
@@ -426,7 +426,7 @@ public class PMDJEditPlugin extends EBPlugin {
     }
 
     public static void cpdCurrentFile( View view, VFSBrowser browser ) throws IOException {
-    	instance.view=view;
+    	instance.MainView=view;
         VFSFile selectedFile[] = browser.getSelectedFiles();
 
         if ( selectedFile == null || selectedFile.length == 0 ) {
@@ -474,7 +474,7 @@ public class PMDJEditPlugin extends EBPlugin {
     }
 
     public static void cpdDir( View view ) {
-    	instance.view=view;
+    	instance.MainView=view;
         JFileChooser chooser = new JFileChooser( jEdit.getProperty( LAST_DIRECTORY ) );
         chooser.setFileSelectionMode( JFileChooser.DIRECTORIES_ONLY );
 
@@ -558,7 +558,7 @@ public class PMDJEditPlugin extends EBPlugin {
      * directories, otherwise, just check the files in the selected directory only.
      */
     public static void cpdDir( View view, VFSBrowser browser, boolean recursive ) throws IOException {
-    	instance.view=view;
+    	instance.MainView=view;
     	if ( view != null && browser != null ) {
             VFSFile selectedDir[] = browser.getSelectedFiles();
             if ( selectedDir == null || selectedDir.length == 0 ) {
@@ -849,7 +849,8 @@ public class PMDJEditPlugin extends EBPlugin {
             pBar.setBackground( jEdit.getColorProperty( "view.status.background" ) );
 
             pBar.setStringPainted( true );
-            add( pBar, BorderLayout.CENTER );
+            //add( pBar, BorderLayout.CENTER );
+            MainView.getContentPane().add(BorderLayout.WEST, pBar);
         }
 
         public void increment( final int num ) {
