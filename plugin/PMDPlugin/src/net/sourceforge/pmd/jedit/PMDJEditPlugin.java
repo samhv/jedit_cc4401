@@ -466,7 +466,8 @@ public class PMDJEditPlugin extends EBPlugin {
             cpd.add( new File( filename ) );
             cpd.go();
             instance.processDuplicates( cpd, view );
-            view.getDockableWindowManager().showDockableWindow( "cpd-viewer" );
+            //view.getDockableWindowManager().showDockableWindow( "cpd-viewer" );
+            view.getDockableWindowManager().hideDockableWindow("cpd-viewer");
         } else {
             view.getStatus().setMessageAndClear( jEdit.getProperty( "net.sf.pmd.CPD_does_not_yet_support_this_file_type>_", "CPD does not yet support this file type: " ) + fileType );
             return;

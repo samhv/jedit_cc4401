@@ -10,6 +10,7 @@ import org.gjt.sp.jedit.AbstractOptionPane;
 import org.gjt.sp.jedit.OptionPane;
 import org.gjt.sp.jedit.jEdit;
 
+import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import javax.swing.BorderFactory;
 import javax.swing.JCheckBox;
@@ -66,7 +67,9 @@ public class CPDOptionPane extends AbstractOptionPane implements OptionPane {
         panel.add("0, 3, 1, 1, W, w, 3", lblRenderer);
         panel.add("1, 3, 1, 1, W, w, 3", comboRenderer);
         
-        add(panel);
+        //add(panel);
+        View view=PMDJEditPlugin.MainView;
+        view.getContentPane().add(BorderLayout.EAST,panel);
     }
 
     public void _save() {
