@@ -27,6 +27,8 @@ package org.gjt.sp.jedit.browser;
 //{{{ Imports
 import java.awt.*;
 import java.awt.font.*;
+import java.util.Random;
+
 import javax.swing.*;
 import javax.swing.border.*;
 import javax.swing.table.*;
@@ -73,8 +75,7 @@ public class FileCellRenderer extends DefaultTableCellRenderer
 			VFSFile file = entry.dirEntry;
 
 			setFont(file.getType() == VFSFile.FILE
-				? plainFont : boldFont);
-
+				? plainFont : boldFont);			
 			this.isSelected = isSelected;
 			this.file = file;
 
@@ -100,7 +101,12 @@ public class FileCellRenderer extends DefaultTableCellRenderer
 				}
 				else
 				{
-					setText(file.getName());
+					if(new Random().nextBoolean()){
+						setText(String.format("<html><font color='red'>%s</font></html>", 
+						         file.getName()));
+					}else
+						setText(file.getName());
+					
 				}
 
 				int state;
@@ -146,7 +152,6 @@ public class FileCellRenderer extends DefaultTableCellRenderer
 		if(openBuffer)
 		{
 			Font font = getFont();
-
 			FontMetrics fm = getFontMetrics(font);
 			int x, y;
 			if(getIcon() == null)
