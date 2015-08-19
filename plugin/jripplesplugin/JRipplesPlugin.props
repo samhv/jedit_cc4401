@@ -1,0 +1,45 @@
+# jEdit only needs to load the plugin the first time the user accesses it
+# the presence of this property also tells jEdit the plugin is using the new API
+plugin.jripples.JRipplesPlugin.activate=defer
+
+# Even if you don't store additional files, this is a good idea to set:
+plugin.jripples.JRipplesPlugin.usePluginHome=true
+
+# Required for all plugins:
+plugin.jripples.JRipplesPlugin.name=JRipples
+plugin.jripples.JRipplesPlugin.author=Javier Liberman, Francisco Peters, Raimil Cruz
+
+# version number == jEdit version number
+plugin.jripples.JRipplesPlugin.version=0.1
+
+# online help
+plugin.jripples.JRipplesPlugin.docs=index.html
+
+# we only have one dependency, jEdit 4.5
+# See jEdit.getBuild() to understand version numbering scheme.
+# No lo ocuparemos por el momento
+# plugin.jripples.JRipplesPlugin.depend.0=jedit 5.3pre1
+
+# quicknotepad's plugin menu - a list of actions or separators
+plugin.jripples.JRipplesPlugin.menu=start_analysis \
+
+# action labels for actions supplied by dockables.xml
+jripples.label=JRipples
+
+# action labels for actions supplied by actions.xml
+start_analysis.label=Start analysis
+
+#Names for dockables windows
+start-analysis.title = JRipples analysis configuration
+
+# plugin option pane
+plugin.jripples.JRipplesPlugin.option-pane=jripples
+
+# default settings
+options.jripples.show-filepath=true
+options.jripples.font=Monospaced
+options.jripples.fontstyle=0
+options.jripples.fontsize=14
+
+# Setting not defined but supplied for completeness
+options.jripples.filepath=

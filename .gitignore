@@ -1,5 +1,19 @@
+<<<<<<< HEAD
 /bin/
 *.class
 *.txt
 *.html
 *.class
+=======
+src/.idea
+src/.svn
+bin/
+src/.ant-targets-build.xml
+.project
+.classpath
+.DS_Store
+src/.ant-targets-build.xml
+>>>>>>> master
+*.classpath
+.classpath
+.project
