@@ -13,6 +13,7 @@ import java.beans.PropertyChangeListener;
 import java.io.*;
 import java.util.*;
 import java.util.regex.*;
+import java.awt.Component;
 
 import javax.swing.*;
 import javax.swing.border.EtchedBorder;
@@ -50,10 +51,13 @@ import org.gjt.sp.jedit.ServiceManager;
 import org.gjt.sp.jedit.View;
 import org.gjt.sp.jedit.jEdit;
 import org.gjt.sp.jedit.browser.VFSBrowser;
+import org.gjt.sp.jedit.io.VFS;
 import org.gjt.sp.jedit.io.VFSFile;
+import org.gjt.sp.jedit.io.VFSManager;
 import org.gjt.sp.jedit.msg.BufferUpdate;
 import org.gjt.sp.jedit.syntax.ModeProvider;
 import org.gjt.sp.util.Log;
+import org.gjt.sp.jedit.gui.DockableWindowManager;
 
 import errorlist.DefaultErrorSource;
 import errorlist.ErrorSource;
@@ -363,7 +367,7 @@ public class PMDJEditPlugin extends EBPlugin {
                     ctx.setLanguageVersion( languageVersion );
                     ctx.setSourceCodeFile( file );
                     ctx.setReport( new Report() );
-
+                 
                     pmd.processFiles( configuration, ruleFactory, fileToCheck, ctx, renderers );
                     if ( showProgress && instance.progressBar != null ) {
                         setProgress( count );
@@ -373,7 +377,8 @@ public class PMDJEditPlugin extends EBPlugin {
             }
 
             @Override
-            public void done() {
+            public void done() {                    
+
                 if ( showProgress ) {
                     endProgressBarDisplay();
                 }
@@ -462,6 +467,11 @@ public class PMDJEditPlugin extends EBPlugin {
         CPD cpd = getCPD( fileType );
         // Log.log(Log.DEBUG, PMDJEditPlugin.class , "See mode " + view.getBuffer().getMode().getName());
 
+        // TODO: accendiendo al label de los directorios, por completar
+           DockableWindowManager dwm = instance.MainView.getDockableWindowManager();                    
+           Component comp = dwm.getDockable("vfs.browser");
+           VFSBrowser browser = (VFSBrowser) comp;
+           browser.removeAll();
         if ( cpd != null ) {
             cpd.add( new File( filename ) );
             cpd.go();
