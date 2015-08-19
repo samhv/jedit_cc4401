@@ -4,3 +4,4 @@
 # Don't ignore .gitignore
 !.gitignore
 !/jars/
+!/setting/
