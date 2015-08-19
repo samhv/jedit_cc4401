@@ -227,6 +227,10 @@ public class TabbedBufferSwitcher extends JPanel {
 		int position = -1;
 		if (width_parent == -1)
 			return position;
+		if (index == -1){
+			index = 0;
+			return -1;
+		}
 		boolean overflow = false;
 		Tab t;
 		int j;
