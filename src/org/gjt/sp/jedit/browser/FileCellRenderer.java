@@ -101,11 +101,7 @@ public class FileCellRenderer extends DefaultTableCellRenderer
 				}
 				else
 				{
-					if(new Random().nextBoolean()){
-						setText(String.format("<html><font color='red'>%s</font></html>", 
-						         file.getName()));
-					}else
-						setText(file.getName());
+					setText(file.getName());
 					
 				}
 
