@@ -186,7 +186,18 @@ public class TabbedBufferSwitcher extends JPanel {
 					});
 				}*/
 				setTabs(buffers);
-				setUITabs();
+				int result;
+				do{
+					result = setUITabs();
+					switch(result){
+					case 1:
+						index++;
+						break;
+					case 2:
+						index--;
+						break;
+					}
+				}while(result==1 || result==2);
 				setSelectedItem(editPane.getBuffer());
 				//addDnD();
 				updating = false;
@@ -208,42 +219,53 @@ public class TabbedBufferSwitcher extends JPanel {
 		//setUITabs();
 	}
 
-	private void setUITabs() {
+	private int setUITabs() {
 		center.removeAll();
 		middle.remove(left);
 		middle.remove(right);
 		int length = 17*2, width = getWidth();
+		int position = -1;
 		if (width_parent == -1)
-			return;
+			return position;
 		boolean overflow = false;
-		List<Tab> subttabs = tabs.subList(index, tabs.size());
-		for(Tab t : subttabs){
+		Tab t;
+		int j;
+		for(j = index ; j < tabs.size() ; j++){
+			t = tabs.get(j);
 			if (t.getWidth() + length > width){
 				overflow = true;
 				break;
 			}
+			if (t.equals(getSelectedItem()))
+				position = 0;
 			length += t.getWidth();
 			center.add(t);
 		}
 		if (overflow){
+			if (tabs.subList(j, tabs.size()).contains(getSelectedItem()))
+				position = 1;
 			middle.add(right,BorderLayout.EAST);
 			middle.add(left,BorderLayout.WEST);
 		}else{
 			while(index > 0){
-				if ( tabs.get(index-1).getWidth() + length > width){
+				t = tabs.get(index-1);
+				if ( t.getWidth() + length > width){
 					middle.add(right,BorderLayout.EAST);
 					middle.add(left,BorderLayout.WEST);
 					break;
 				}
+				if (t.equals(getSelectedItem()))
+					position = 0;
 				index--;
-				length += tabs.get(index).getWidth();
-				center.add(tabs.get(index),0);
+				length += t.getWidth();
+				center.add(t,0);
 			}
 		}
 		middle.revalidate();
 		middle.repaint();
 		center.revalidate();
 		center.repaint();
+		return position==-1 ? 2 :position;
 	}
 
 	public void setMaximumRowCount(int integerProperty) {
