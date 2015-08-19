@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE DOCKABLES SYSTEM "dockables.dtd">
+
+<DOCKABLES>
+	<DOCKABLE NAME="start-analysis">
+		new jripples.ui.JRipplesProjectSelector(view, position);
+	</DOCKABLE>
+</DOCKABLES>

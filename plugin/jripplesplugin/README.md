@@ -1,0 +1,2 @@
+# JRipplesPlugin
+Este proyecto es un plugin para JEdit. Para compilar este proyecto es necesario copiar la carpeta https://jedit.svn.sourceforge.net/svnroot/jedit/build-support/trunk/ al mismo nivel del proyecto. Es necesario configurar la variables jedit.install.dir" y "install.dir" en el fichero build.xml. La variable jedit.install.dir debe hacer referencia a la carpeta donde se encuentra jedit.jar y la variable install.dir a la carpeta donde se desea desplegar el jar compilado del plugin (jripplesplugin.jar)
