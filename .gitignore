@@ -17,3 +17,5 @@ src/.ant-targets-build.xml
 *.classpath
 .classpath
 .project
+*.a
+*.o
