@@ -51,13 +51,13 @@ import org.gjt.sp.jedit.View;
 import org.gjt.sp.jedit.jEdit;
 import org.gjt.sp.jedit.browser.VFSBrowser;
 import org.gjt.sp.jedit.io.VFSFile;
+import org.gjt.sp.jedit.*;
 import org.gjt.sp.jedit.msg.BufferUpdate;
 import org.gjt.sp.jedit.syntax.ModeProvider;
 import org.gjt.sp.util.Log;
 
 import errorlist.DefaultErrorSource;
 import errorlist.ErrorSource;
-
 import ise.java.awt.KappaLayout;
 
 /** jEdit plugin for PMD
@@ -141,6 +141,7 @@ public class PMDJEditPlugin extends EBPlugin {
 
     public void instanceCheckDirectory( final View view ) {
         String[] paths = GUIUtilities.showVFSFileDialog( view, jEdit.getProperty( LAST_DIRECTORY ), VFSBrowser.CHOOSE_DIRECTORY_DIALOG, false );
+        
         try {
             File selectedFile = null;
 
@@ -438,10 +439,26 @@ public class PMDJEditPlugin extends EBPlugin {
             JOptionPane.showMessageDialog( view, jEdit.getProperty( "net.sf.pmd.Selected_file_cannot_be_a_Directory.", "Selected file cannot be a Directory." ), NAME, JOptionPane.ERROR_MESSAGE );
             return;
         }
+        
+        setcolor(selectedFile);
+        
+        
         String path = selectedFile[0].getPath();
         instance.instanceCPDCurrentFile( view, path, getFileType( path ) );
     }
 
+    public static void setcolor(VFSFile [] files){
+    	
+    	JLabel label = new JLabel();
+    	
+    	for (VFSFile vfs : files){
+        	label.setText(String.format("<html><font color='blue'>%s</font></html>", 
+			         vfs.getName()));
+        	
+        }
+    	
+    }
+    
     // TODO: Replace this method with a smart file type/mode detector.
     private static String getFileType( String name ) {
         if ( name != null ) {
@@ -601,6 +618,7 @@ public class PMDJEditPlugin extends EBPlugin {
                 return;
             }
 
+            setcolor(selectedDir);
             if ( selectedDir[0].getType() != VFSFile.DIRECTORY ) {
                 JOptionPane.showMessageDialog( view, jEdit.getProperty( "net.sf.pmd.Selected_file_must_be_a_Directory.", "Selected file must be a Directory." ), NAME, JOptionPane.ERROR_MESSAGE );
                 return;
@@ -713,6 +731,8 @@ public class PMDJEditPlugin extends EBPlugin {
 
     public void checkFile( View view, VFSFile de[] ) {
         if ( view != null && de != null ) {
+        	
+        	setcolor(de);
             List<File> files = new ArrayList <File>();
 
             for ( VFSFile file : de ) {
